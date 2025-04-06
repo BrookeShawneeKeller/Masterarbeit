@@ -1,0 +1,1798 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1509654585137018005
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8528849653463941618}
+  - component: {fileID: 9179766065824858876}
+  - component: {fileID: 2314616167739383748}
+  - component: {fileID: 8281352456014467181}
+  m_Layer: 5
+  m_Name: PreviousPage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &8528849653463941618
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509654585137018005}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -238.15698}
+  m_LocalScale: {x: 3.1624, y: 4.8257813, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2584340462429814022}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -163.5, y: 54.9}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &9179766065824858876
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509654585137018005}
+  m_CullTransparentMesh: 1
+--- !u!114 &2314616167739383748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509654585137018005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.023587704, g: 0, b: 1, a: 0.13333334}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8281352456014467181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509654585137018005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 5198421846402412849}
+          m_TargetAssemblyTypeName: ChristinaCreatesGames.Typography.Book.BookContents,
+            Assembly-CSharp
+          m_MethodName: PreviousPage
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!1 &1514468120490647774
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2969205561126366942}
+  - component: {fileID: 5114490231004291221}
+  - component: {fileID: 9145345326914757059}
+  m_Layer: 5
+  m_Name: PaginationRight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2969205561126366942
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1514468120490647774}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -238.15698}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1633758964747477983}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 171.6, y: -157.3}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &5114490231004291221
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1514468120490647774}
+  m_CullTransparentMesh: 1
+--- !u!114 &9145345326914757059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1514468120490647774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 2
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 20
+  m_fontSizeBase: 20
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &3878067192206777612
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 789530157710790436}
+  - component: {fileID: 8460823494984088888}
+  - component: {fileID: 61940947685857190}
+  m_Layer: 5
+  m_Name: RightTextBox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &789530157710790436
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3878067192206777612}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1633758964747477983}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 172.9, y: 60}
+  m_SizeDelta: {x: 300, y: 500}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &8460823494984088888
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3878067192206777612}
+  m_CullTransparentMesh: 1
+--- !u!114 &61940947685857190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3878067192206777612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "6325 Kilometer von meinem ehemaligen Zuhause entfernt lief oder besser
+    gesagt stolperte ich in meinen neuen beigefarbenen Pumps \xFCber die 5th Avenue.
+    In meiner linken Hand jonglierte ich sechs Latte macchiatos von Starbucks, die
+    aufgrund der frostigen Dezembertemperaturen bald schon als Iced macchiatos durchgehen
+    w\xFCrden. Nach zwei Monaten im Big Apple sollte ich eigentlich wissen, dass
+    High Heels nicht das beste Schuhwerk f\xFCr die weitl\xE4ufigen Distanzen sind,
+    geschweige denn bei dieser eisigen K\xE4lte. Vielleicht h\xE4tte ich meine Wanderschuhe
+    auspacken sollen. Nun ja, es waren nicht wirklich Wanderschuhe. Meine bequemen
+    Sneakers reichten vollkommen aus f\xFCr das, was ich als \xABWanderung\xBB bezeichnete.
+    Ich passte die Route immer meinen Schuhen an und vermied es, l\xE4ngere Strecken
+    zu gehen, die \xFCber ihre Kapazit\xE4t hinausgingen. Doch jetzt musste ich feststellen,
+    dass meine Schuhwahl nicht die beste war, als ich gegen acht Uhr morgens orientierungslos
+    durch New York st\xF6ckelte. Verdammt, war ich nicht schon einmal hier vorbeigekommen?
+    Irritiert blickte ich umher. Jetzt hatte ich mich sogar noch in meiner sechsten
+    Arbeitswoche verlaufen. Ein ausgepr\xE4gter Orientierungssinn war mir definitiv
+    nicht in die Wiege gelegt worden.  \r\nIch schaute entlang der gigantischen Hochh\xE4user,
+    bis ich etwa f\xFCnfhundert Meter weiter vorn mein Ziel erblickte \u2013 das
+    Rockefeller Center, einer der ber\xFChmtesten Geb\xE4udekomplexe in Midtown Manhattan.
+    Der im Art-d\xE9co-Stil gebaute Komplex erstreckte sich \xFCber drei Stra\xDFenblocks
+    und bestand aus zwanzig Geb\xE4uden. Neben B\xFCros waren hier auch zahlreiche
+    Fernsehstudios einquartiert, darunter das Hauptquartier von NBC, wo namhafte
+    Sendungen wie \xABThe Today Show\xBB und \xABSaturday Night Live\xBB aufgezeichnet
+    wurden.  \r\nIch konnte es immer noch kaum fassen, dass mein Arbeitsplatz in
+    diesem weltber\xFChmten Himmelskoloss lag. Die immensen Dimensionen musste ich
+    erst noch verarbeiten. In meiner Heimatstadt Basel, wo ich bis vor Kurzem gelebt
+    hatte, schossen mittlerweile zwar auch Wolkenkratzer aus dem Boden, aber der
+    Messeturm und die Roche-T\xFCrme konnten mit diesen Riesen nicht mithalten. Einige
+    Stolperschritte sp\xE4ter erreichte ich endlich einen der Aufz\xFCge im Rockefeller
+    Center. Wie immer waren sie zur Rushhour vollgestopft mit Businessleuten in Anz\xFCgen
+    und schicken Etuikleidern unter Blazern. Ich wurde an das Ende des Fahrstuhls
+    direkt vor die Spiegelfront gequetscht.  \r\n\r\n\xABOh Mist!\xBB, fluchte ich
+    leise vor mich hin. Dies galt dem Kaffeefleck auf meinem neuen, cremefarbenen
+    Mantel. Das musste passiert sein, als mich vor der Dreht\xFCr im Eingangsbereich
+    des Rockefeller Centers ein st\xE4mmiger Gesch\xE4ftsmann gerammt hatte. Nur
+    die Ruhe bewahren, mahnte ich mich. Der Fleck war nicht so schlimm und w\xFCrde
+    kaum auffallen, sobald er trocken war. Viel mehr Sorgen bereiteten mir die langsam
+    sichtbaren Kr\xE4henf\xFC\xDFe um meine Augen herum. Im grellen Aufzuglicht waren
+    sie deutlich zu sehen. Zum ersten Mal waren sie mir im vergangenen Oktober an
+    meinem achtundzwanzigsten Geburtstag aufgefallen.  \r\n\r\nDer Gong erklang und
+    die Aufzugt\xFCren \xF6ffneten sich. Ich hielt im 23. Stock vor einer massiven
+    Glast\xFCr mit der Aufschrift \xABBig Apple News\xBB \u2013 der Grund f\xFCr
+    meinen Umzug \xFCber den gro\xDFen Teich. Ich hatte schon lange vom American
+    Dream getr\xE4umt und nun war mein innigster Wunsch dank einer riesigen Portion
+    Gl\xFCck und einer ordentlichen Portion Vitamin B in Erf\xFCllung gegangen. Meinem
+    Onkel v\xE4terlicherseits verdankte ich den Job. Ryan Keeton hatte viele Jahre
+    bei \xABBig Apple News\xBB gearbeitet, bevor er von der BBC abgeworben wurde.
+    Nun trat ich in seine Fu\xDFstapfen. Den passenden Nachnamen daf\xFCr hatte ich
+    bereits. \xABKeeton\xBB war in New York mittlerweile ein Begriff. Jetzt musste
+    ich mich nur noch beweisen und dem Namen gerecht werden.  \r\n\r\nIch streckte
+    meine freie Hand nach der Glast\xFCr aus, langte nach dem T\xFCrgriff und im
+    selben Moment gerieten die Kaffees in meiner anderen Hand aus dem Gleichgewicht.
+    Da war auch schon eine Hand da, die mir rechtzeitig die Becher abnahm. Die rettende
+    Hand geh\xF6rte Bill Bailly, meinem Teamkollegen. Er war der Produktionsleiter
+    von \xABBig Apple News\xBB.  \r\n\r\n\xABAchtung, Achtung!\xBB, pl\xE4rrte er
+    den anderen Teammitgliedern in der Redaktion zu. \xABKaffee im Anflug!\xBB  \r\n\r\nWie
+    peinlich mir das war \u2013 nat\xFCrlich musste er es auch gleich noch in die
+    Runde posaunen. Bill war bekannt f\xFCr seine Spr\xFCche und seine direkte Art.
+    Das hatte ich bereits in den ersten Tagen beim Sender herausgefunden. Er war
+    der Sonnyboy des Senders und brachte so einige Frauen mit seinen haselnussbraunen
+    Augen zum Schmelzen. Er war ein Charmeur und wusste, dass er bei den Frauen mit
+    seiner Art gut ankam, auch wenn er uns mit seinen Spr\xFCchen zum Teil in Verlegenheit
+    brachte, wie jetzt gerade.  \r\n\r\n\xABVielen Dank, ohne dich g\xE4be es wohl
+    heute keinen Kaffee!\xBB  \r\n\r\nErleichtert nahm ich die Kaffeebecher wieder
+    entgegen. \xABHier, den kannst du behalten, der ist f\xFCr dich!\xBB  \r\n\r\n\xABVielen
+    Dank!\xBB, er nahm den Becher und hielt mir mit der freien Hand die T\xFCr auf.
+    Ich betrat den Eingangsbereich der Fernsehstation. Seit meinem ersten Besuch
+    vor zweiundzwanzig Jahren hatte sich einiges ver\xE4ndert \u2013 einzig die Raumaufteilung
+    war plus/minus dieselbe. Vor f\xFCnf Jahren war die komplette Station modernisiert
+    und im Zuge der Renovierung einem Redesign unterzogen worden. Seither erstrahlten
+    die R\xE4ume in einem schlichten Wei\xDF mit frischen gr\xFCnen Akzenten passend
+    zum neuen Logo von \xABBig Apple News\xBB. Die Technologie hatte enorme Fortschritte
+    gemacht. Besonders beeindruckend war die riesige Screen Wall im Newsroom, die
+    sofort die Aufmerksamkeit auf sich zog. Das Herzst\xFCck bildete der Newsdesk
+    in der Mitte des Gro\xDFraumb\xFCros. Um ihn herum waren die einzelnen Studios
+    f\xFCr Nachrichten, Wetter und Talkshows angeordnet.  \r\n\r\nJetzt zur Weihnachtszeit
+    war das gesamte Studio festlich geschm\xFCckt. Es schien von Tag zu Tag \xFCppiger
+    zu werden \u2013 alles, was die Mitarbeitenden zu Hause nicht mehr brauchten,
+    fand seinen Platz hier. Was ich davon halten sollte, wusste ich nicht genau.
+    Es wirkte eher wie ein Friedhof f\xFCr Weihnachtsschmuck: An der Wand prangte
+    ein Santa-Claus-Kopf, der bei jedem Vorbeigehen den \xABSanta Claus Rock\xBB
+    tr\xE4llerte. Insgeheim hoffte ich, dass er bald den Geist aufgeben w\xFCrde.
+    Und ein h\xFCfthohes leuchtendes Rentier mit Wackelkontakt stand vor dem B\xFCro
+    unseres Redaktionsleiters John Wilson. John hatte einen beeindruckenden journalistischen
+    Hintergrund. Er arbeitete viele Jahre bei der \xABNew York Times\xBB, bis er
+    in den sp\xE4ten 1990er-Jahren seinen Horizont erweiterte und auf Fernsehjournalismus
+    umstieg.  \r\n\r\nIch verteilte die restlichen Macchiatos an die Morgenshowcrew,
+    nahm einen gro\xDFen Schluck von meinem Gingerbread-Latte und setzte mich an
+    meinen Arbeitsplatz. Der Newsroom war bereits in vollem Betrieb mit Monitoren,
+    welche die neuesten Nachrichten und Updates zeigten, und Kollegen, die gesch\xE4ftig
+    ihre Aufgaben erledigten. Ich startete meinen Computer und \xF6ffnete meine E-Mails,
+    um zu sehen, was die Nacht gebracht hatte. Eine Vielzahl von Nachrichten erwartete
+    mich, von Pressemitteilungen bis hin zu Terminank\xFCndigungen. Ich sortierte
+    sie schnell durch, priorisierte die dringendsten Aufgaben und machte mir Notizen
+    f\xFCr sp\xE4ter.  \r\n\r\nPunkt neun Uhr versammelte sich die zw\xF6lfk\xF6pfige
+    Crew einschlie\xDFlich mir um einen gro\xDFen Stehtisch im Newsroom. Den Tisch
+    zierte ein geschmackloser kleiner Plastikweihnachtsbaum mit blauen Kugeln und
+    kleinen LED-L\xE4mpchen. Insgesamt besch\xE4ftigte \xABBig Apple News\xBB um
+    die sechzig Mitarbeitende. Durch die Aufteilung in Morgen-, Daily- und Abendshow
+    waren nie alle gleichzeitig bei der Arbeit. W\xE4hrend das Redaktions- und Moderationsteam
+    die Inhalte pr\xE4sentierte, arbeiteten talentierte Fachleute im Hintergrund
+    daran, sicherzustellen, dass jede Sendung reibungslos ablief.\r\n\u201EIch habe
+    gestern neue Chocolate-Chip-Cookies ausprobiert\u201C, verk\xFCndete Amber Buckley
+    und stellte eine Pl\xE4tzchendose auf den Tisch. Amber, ebenfalls in ihren sp\xE4ten
+    Zwanzigern, war bereits seit einigen Jahren beim Sender und bekannt f\xFCr ihre
+    Backk\xFCnste. Ihre Leidenschaft machte sich keinesfalls an ihren H\xFCften bemerkbar.
+    Amber war einen Kopf kleiner als ich, ihre blond gef\xE4rbten Haare reichten
+    ihr bis knapp \xFCber die Schultern. Bis jetzt wurde ich mit ihr noch nicht warm,
+    nur mit ihren Pl\xE4tzchen, diese waren immer k\xF6stlich. Die Woche k\xF6nnte
+    immer so beginnen, dachte ich mir und atmete den Duft der Pl\xE4tzchen tief ein.\r\nBei
+    der Redaktionssitzung besprachen wir die aktuellen Themen und verteilten die
+    Aufgaben. Obwohl ich mich noch in der Einarbeitungsphase befand, kannte ich die
+    Abl\xE4ufe bereits gut. Ich war keineswegs unerfahren, denn schon in Basel war
+    ich in der Medienwelt zu Hause und hatte bei verschiedenen Lokalmedien mitgemischt,
+    zuletzt auch bei einem TV-Sender. In den ersten Arbeitswochen wurde ich in die
+    einzelnen Bereiche eingef\xFChrt, um die ganze TV-Station kennenzulernen. Mein
+    Arbeitsbereich w\xFCrde dann vor der Kamera als rasende Reporterin sein.\r\nJohn
+    Wilson er\xF6ffnete das Meeting. \u201EWir halten die Sitzung heute kurz. In
+    der Weihnachtszeit gibt es viele Veranstaltungen, \xFCber die wir nicht alle
+    berichten k\xF6nnen. Das Highlight im Dezember ist sicherlich die Reportage \xFCber
+    den Diamanten im Natural History Museum. Da beginnen wir am Mittwoch mit den
+    Vorbereitungen. Heute steht die Er\xF6ffnungsfeier des neuen Restaurants Swiss
+    Chalet in Soho im Fokus. Lindsay ist die Reporterin vor Ort und Keith der Videojournalist.\u201C\r\nSuchend
+    blickte John in die Runde und als unsere Blicke sich trafen, f\xFCgte er hinzu:
+    \u201EUnd Beverly, du begleitest die beiden. Aber pass auf, dass du nicht allzu
+    sehr Heimweh nach der Schweizer K\xFCche bekommst!\u201C Gel\xE4chter brach auf
+    der Redaktion aus und auch ich musste lauthals mitlachen.\r\nEine Stunde sp\xE4ter
+    verlie\xDFen wir zu dritt das Rockefeller Center, vollbeladen mit Kameraausr\xFCstung.
+    Lindsay Martinez war eine begnadete TV-Moderatorin und seit drei Jahren beim
+    Sender. Sie arbeitete Teilzeit und war neben ihrem Sechzig-Prozent-Pensum Mutter
+    von zwei S\xF6hnen. Keith McKay war wie ich ein Neuling beim Sender und hatte
+    nur wenige Monate vor mir angefangen.\r\n\u201ETaxi! Taxi!\u201C, rief ich, trat
+    an den Stra\xDFenrand, streckte l\xE4ssig, wie ich es aus den Filmen kannte,
+    die Hand aus und versuchte, Augenkontakt mit den Fahrern aufzunehmen. Keith lachte.
+    \u201EDu musst nicht rufen, der Fahrer h\xF6rt dich sowieso nicht.\u201C\r\nEin
+    gelbes Taxi nach dem anderen fuhr an uns vorbei. In New York wimmelte es von
+    Yellow Cabs, aber wenn man eines brauchte, hielt keines an. \u201EAnhalten werden
+    nur die, deren Nummer auf dem Dach leuchtet \u2013 alle anderen sind besetzt\u201C,
+    erkl\xE4rte mir Keith.\r\n\u201EAch echt, das wusste ich nicht\u201C, antwortete
+    ich verlegen. Ich war halt doch noch ein Neuling in der Stadt. Und dann endlich
+    hielt ein Taxi an. Lindsay und ich nahmen auf dem R\xFCcksitz Platz, w\xE4hrend
+    Keith das Equipment im Kofferraum verstaute. Dann zw\xE4ngte er sich ebenfalls
+    hinten rein.\r\n\u201ENach Soho bitte, Ecke Broadway/Broome Street\u201C, wies
+    er den Fahrer an. Der Taxifahrer nickte und fuhr los. Ganz verwundert schaute
+    ich Keith an. \u201EIch sch\xE4tze ja deine N\xE4he, aber jetzt wird es doch
+    ein bisschen eng hier hinten.\u201C\r\nKeith am\xFCsierte sich k\xF6stlich und
+    kl\xE4rte mich auf. \u201EIn New York nimmt man, wenn immer m\xF6glich, auf der
+    R\xFCckbank Platz.\u201C\r\nEingequetscht wie eine Dosensardine konnte ich sogar
+    Keiths Aftershave riechen. Eine holzige, ledrige, rauchige Duftnote bahnte sich
+    den Weg in meine Nase. Der Duft lie\xDF ihn richtig sexy wirken. Oje, hatte ich
+    das gerade wirklich gedacht? Ich musterte sein Profil aus den Augenwinkeln. Sein
+    dunkelbraunes volles Haar war ordentlich gegelt. Sein Dreitagebart rundete seine
+    leicht kantigen Gesichtsz\xFCge ab.\r\nBisher hatte ich noch nie direkt mit Keith
+    zusammengearbeitet. Er war mir nur fl\xFCchtig an den Sitzungen aufgefallen.\r\nPl\xF6tzlich
+    riss der Taxifahrer eine Vollbremsung und dr\xFCckte ordentlich auf die Hupe.
+    Ich wurde aus meinen Gedanken gerissen und sah nur noch, wie ein Fu\xDFg\xE4nger
+    entschuldigend die Hand hochhielt. Von da an schaute ich zwischen den beiden
+    Vordersitzen auf den Stra\xDFenverkehr und konzentrierte mich darauf, nicht wieder
+    in Keiths Anblick zu versinken.\r\nWenige Minuten sp\xE4ter deutete Keith dem
+    Fahrer an, am Stra\xDFenrand anzuhalten. Der Fahrer drosselte das Tempo, bis
+    das Auto zum Stillstand kam und wir aussteigen konnten. Keith bezahlte den Taxifahrer
+    und wir halfen ihm, das Equipment zum Restaurant zu bringen.\r\nEtwa zehn Meter
+    vor uns leuchtete ein wei\xDF-rotes Logo mit der Aufschrift \u201ESwiss Chalet\u201C.
+    Ein ulkiger Anblick erwartete uns. Das Eckhaus war ein hohes, unspektakul\xE4res
+    Betongeb\xE4ude. Im Erdgeschoss, in dem sich das Restaurant befand, war die Fassade
+    mit dem typisch dunkelbraunen Chaletholz eingekleidet und am Eingang standen
+    zwei Plastikk\xFChe in Lebensgr\xF6\xDFe.\r\nIch war entz\xFCckt von dem Anblick,
+    ging voran und stie\xDF die T\xFCr auf. Sofort stieg mir der vertraute Duft einer
+    Mischung aus R\xF6sti, K\xE4se und Speck in die Nase. Es roch wie in einer Beiz
+    auf der Skipiste. So sah auch die gesamte Inneneinrichtung aus. Eine Kellnerin
+    und ein Kellner in Schweizer Trachten begr\xFC\xDFten uns herzlich.\r\n\u201EBitte
+    folgt mir! Ihr k\xF6nnt eure Kamera gleich dort in der Ecke aufbauen\u201C, sagte
+    der Kellner mit einer fl\xFCchtigen Handbewegung. \u201EDer Restaurantbesitzer
+    wird gleich bei euch sein.\u201C\r\nWenig sp\xE4ter kam ein Mann mittleren Alters
+    auf uns zu. Auch er trug eine Tracht, jedoch eine etwas elegantere Version.\r\n\u201EHerzlich
+    willkommen im Swiss Chalet!\u201C, begr\xFC\xDFte er uns und streckte uns gleichzeitig
+    ein Tablett voller K\xE4sehappen entgegen. \u201EHier, probiert, echter Schweizer
+    K\xE4se!\u201C\r\nKeith griff als Erster nach einem Zahnstocher, an dem ein St\xFCck
+    K\xE4se steckte. \u201ELecker!\u201C, schmatzte er mit vollem Mund.\r\n\u201EIch
+    bin \xFCbrigens Andreas Miller, der Besitzer des einzigen Chalets in ganz New
+    York\u201C, stellte er sich vor und zeigte stolz auf den Raum um uns herum. \u201ENennt
+    mich einfach Andy. Es freut mich wahnsinnig, dass ihr \xFCber mein Restaurant
+    berichtet.\u201C\r\n\u201EDas Vergn\xFCgen ist ganz unsererseits\u201C, erwiderte
+    Keith. \u201EDarf ich dir Lindsay Martinez und Beverly Keeton vorstellen \u2013
+    und meine Wenigkeit, Keith McKay.\u201C Dabei deutete er nacheinander auf uns.\r\nAm
+    Akzent erkannte ich sofort, dass er kein Amerikaner war. Also fragte ich direkt:
+    \u201EBist du Schweizer?\u201C\r\n\u201EGut erraten\u201C, antwortete Andy.\r\n\u201EMit
+    Raten hat das nicht viel zu tun. Ich bin auch Schweizerin.\u201C\r\n\u201EWas
+    f\xFCr eine besondere Ehre, bereits am Er\xF6ffnungstag eine Schweizerin im Restaurant
+    begr\xFC\xDFen zu d\xFCrfen. Dann habe ich ja gleich eine kritische Testerin,
+    wie authentisch das Restaurant her\xFCberkommt. Kommt mit, ich f\xFChre euch
+    durch die R\xE4umlichkeiten.\u201C\r\nWir folgten Andy durch das Restaurant,
+    w\xE4hrend er uns die verschiedenen Bereiche zeigte. Er f\xFChrte uns durch ein
+    rustikal eingerichtetes St\xFCbli, das an eine Bergh\xFCtte erinnerte.\r\n\u201EHier
+    werden k\xFCnftig regelm\xE4\xDFig Fondueabende stattfinden\u201C, erkl\xE4rte
+    Andy uns stolz.\r\nDann kamen wir in den Hauptsaal, der wie eine Schweizer Dorfbeiz
+    gestaltet war. \xDCberall hingen Bilder von Schweizer Alpenlandschaften und bekannten
+    St\xE4dten wie Bern, Z\xFCrich, Luzern \u2013 und auch Basel, was mich besonders
+    stolz machte.\r\nIch war verbl\xFCfft \u2013 bei der Inneneinrichtung wurde kein
+    Schweizer Klischee ausgelassen. Sogar ein D\xF6schen Aromat und eine Flasche
+    Maggi standen auf jedem Tisch. Im oberen Stockwerk erwartete uns eine Chaletlounge
+    mit bequemen Sofas und einem Kamin. Dort war sogar ein kleines Fenster eingebaut,
+    das den Eindruck vermittelte, auf schneebedeckte Berge zu blicken. \xABDas Kaminzimmer
+    bietet Platz f\xFCr Events und kann gemietet werden f\xFCr private Veranstaltungen\xBB,
+    erkl\xE4rte Andy. W\xE4hrend der F\xFChrung konnte ich mir ein Grinsen nicht
+    verkneifen. Ich f\xFChlte mich wie in einer Art Schweizmuseum. Schliesslich kehrten
+    wir zur\xFCck in den Hauptsaal, der bereits von G\xE4sten bev\xF6lkert war. Das
+    ged\xE4mpfte Licht verlieh dem Raum ein warmes, gem\xFCtliches Ambiente. Das
+    Klappern von Gl\xE4sern und das leise Murmeln der Menschen vermischten sich zu
+    einer angenehmen Ger\xE4uschkulisse. Ein dezentes Alpenmusikst\xFCck spielte
+    im Hintergrund.\r\nWir machten uns sofort an die Arbeit. Kameras wurden vorsichtig
+    auf Stativen platziert, um den besten Blickwinkel zu gew\xE4hrleisten. Keith
+    testete die Aufnahmen, passte den Fokus an und \xFCberpr\xFCfte die Belichtung.
+    Mikrofone wurden an den Tischen angebracht, w\xE4hrend ich mich um die Verlegung
+    der Kabel k\xFCmmerte, um sicherzustellen, dass alles ordentlich und unauff\xE4llig
+    verlief. W\xE4hrenddessen war Lindsay bereits in ihrem Element. Mit ihrem Mikrofon
+    in der Hand schritt sie zu den G\xE4sten und begann, sie zu interviewen. Ihre
+    charmante Art und ihre eloquenten Fragen lockten die G\xE4ste aus der Reserve,
+    und sie erz\xE4hlten begeistert von ihrer Leidenschaft f\xFCr Schweizer K\xFCche
+    und Kultur. Lindsay f\xFChrte fliessend die Gespr\xE4che und verlor nie den Faden,
+    w\xE4hrend sie zwischen verschiedenen G\xE4sten hin- und herging.\r\nKeith hingegen
+    hatte seine Kamera im Anschlag und fing die lebhaften Momente ein. Seine Aufnahmen
+    waren fokussiert und professionell, aber er schaffte es dennoch, die lockere
+    Atmosph\xE4re des Restaurants einzufangen. Von den liebevoll arrangierten Tellern
+    mit Schweizer Spezialit\xE4ten bis hin zu den Gesichtsausdr\xFCcken der G\xE4ste,
+    die in lebhafte Gespr\xE4che vertieft waren \u2013 er verpasste keinen wichtigen
+    Moment. Ich stand am Rand des Geschehens und half immer wieder bei kleinen Aufgaben.
+    Manchmal war es das Justieren eines Mikrofonkabels, ein anderes Mal das Halten
+    einer Lampe, um das Licht perfekt auszuleuchten. Ich war beeindruckt von der
+    Professionalit\xE4t meines Teams, das mit solcher Leichtigkeit und Koordination
+    arbeitete.\r\nInmitten all der Aktivit\xE4ten kam Andy immer wieder vorbei. Sein
+    Stolz auf sein Restaurant war un\xFCbersehbar. Er sprach mit G\xE4sten, erkl\xE4rte
+    die Hintergr\xFCnde der Gerichte und f\xFChrte Gespr\xE4che \xFCber die gestalterischen
+    Details des Lokals. Er schien jeden einzelnen Moment zu geniessen und beantwortete
+    mit einem L\xE4cheln im Gesicht geduldig alle Fragen, die ihm Lindsay stellte.
+    Die Stimmung im Restaurant wurde immer ausgelassener, je mehr G\xE4ste eintrafen.
+    Das Lachen und die angeregten Gespr\xE4che f\xFCllten den Raum, w\xE4hrend die
+    G\xE4ste die schmackhaften Speisen genossen. Man konnte f\xF6rmlich die Begeisterung
+    f\xFCr die authentische Atmosph\xE4re sp\xFCren, die das Swiss Chalet bot. Es
+    schien, als h\xE4tten die G\xE4ste eine kleine Reise in die Schweiz gemacht,
+    ohne New York zu verlassen.\r\nNach einer guten Stunde war das Filmmaterial im
+    Kasten. Wir \xFCbermittelten die Aufnahmen an das Studio, wo sie vom Videoeditor
+    geschnitten wurden, bevor die Reportage am Abend ausgestrahlt wurde. \xABBleibt
+    doch zum Lunch hier, ihr seid eingeladen!\xBB, verk\xFCndete Andy, als wir unser
+    Equipment zusammenr\xE4umten. Das liessen wir uns nicht zweimal sagen. Keith
+    war mit der Men\xFCkarte sichtlich \xFCberfordert. Er bl\xE4tterte wild darin
+    herum. \xABWas sind \xC4lp\u2026 \xC4lpler\u2026 \xC4lplermagronen?\xBB, fragte
+    er mich mit drei Anl\xE4ufen. Es klang urkomisch aus seinem Mund, sodass ich
+    mir ein Lachen nicht verkneifen konnte. \xABOder was in aller Welt ist ein Bircherm\xFCesli?\xBB,
+    wollte Lindsay wissen. Andy, der unser Gespr\xE4ch mitbekommen hatte, kam zu
+    uns an den Tisch und meinte: \xABWisst ihr was, ich bringe euch von allem einen
+    Happen, damit ihr alles probieren k\xF6nnt.\xBB\r\n\xABSpitze!\xBB, sagte ich.
+    \xABDas ist eine grossartige Idee.\xBB \xABIhr werdet sehen, es wird euch schmecken.\xBB
+    Andy hatte nicht zu viel versprochen. Schon beim Vorspeisensalat mit Wurst leuchteten
+    Keiths Augen. \xABWow, ein Salat mit Wurst gespickt mit K\xE4se, G\xFCrkchen,
+    Tomaten und Zwiebeln. Wer auch immer auf diese Idee gekommen ist, ich bin ein
+    riesiger Fan\xBB, schw\xE4rmte er. Als Hauptgericht brachte Andy uns einen Teller
+    mit drei Bratw\xFCrsten an einer Zwiebelsauce, dazu eine grosse Portion R\xF6sti
+    und eine Auflaufform voller \xC4lplermagronen, garniert mit ger\xF6steten Zwiebeln
+    zum Teilen. \xABLasst es euch schmecken\xBB, sagte Andy, nachdem er uns jeweils
+    noch ein Raclettepf\xE4nnchen hingestellt hatte.\r\nWir waren uns alle drei einig,
+    dass das Essen einfach himmlisch war. Als das Dessert serviert wurde, platzten
+    wir schon fast, aber zum St\xFCck Zuger Kirschtorte mit einem Klecks Tobleronemousse
+    konnte keiner von uns Nein sagen.\r\n"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 18
+  m_fontSizeBase: 18
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 5
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 2
+  m_margin: {x: 0, y: 24.95111, z: 0, w: 47.129883}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &5553930714762645433
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9105336299864940572}
+  - component: {fileID: 3467126647251506733}
+  - component: {fileID: 8343112355405219230}
+  m_Layer: 5
+  m_Name: PaginationLeft
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &9105336299864940572
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5553930714762645433}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -238.15698}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2584340462429814022}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -174.2, y: -161.6}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &3467126647251506733
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5553930714762645433}
+  m_CullTransparentMesh: 1
+--- !u!114 &8343112355405219230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5553930714762645433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 1
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 20
+  m_fontSizeBase: 20
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &8007107460138960205
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1744257862118181678}
+  - component: {fileID: 2599880916390352073}
+  - component: {fileID: 1262123765911681541}
+  - component: {fileID: 5198421846402412849}
+  m_Layer: 5
+  m_Name: Book
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1744257862118181678
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8007107460138960205}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 8, y: 5.3333335, z: 5.3333335}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 2584340462429814022}
+  - {fileID: 1633758964747477983}
+  m_Father: {fileID: 5766205926528956805}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 500, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2599880916390352073
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8007107460138960205}
+  m_CullTransparentMesh: 1
+--- !u!114 &1262123765911681541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8007107460138960205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 2800000, guid: fcdc5a68315660a40bf0fc90ec063f91, type: 3}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!114 &5198421846402412849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8007107460138960205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eec4e43df63d63a4685e6a22d151717f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  content: "6325 Kilometer von meinem ehemaligen Zuhause entfernt lief oder besser
+    gesagt stolperte ich in meinen neuen beigefarbenen Pumps \xFCber die 5th Avenue.
+    In meiner linken Hand jonglierte ich sechs Latte macchiatos von Starbucks, die
+    aufgrund der frostigen Dezembertemperaturen bald schon als Iced macchiatos durchgehen
+    w\xFCrden. Nach zwei Monaten im Big Apple sollte ich eigentlich wissen, dass
+    High Heels nicht das beste Schuhwerk f\xFCr die weitl\xE4ufigen Distanzen sind,
+    geschweige denn bei dieser eisigen K\xE4lte. Vielleicht h\xE4tte ich meine Wanderschuhe
+    auspacken sollen. Nun ja, es waren nicht wirklich Wanderschuhe. Meine bequemen
+    Sneakers reichten vollkommen aus f\xFCr das, was ich als \xABWanderung\xBB bezeichnete.
+    Ich passte die Route immer meinen Schuhen an und vermied es, l\xE4ngere Strecken
+    zu gehen, die \xFCber ihre Kapazit\xE4t hinausgingen. Doch jetzt musste ich feststellen,
+    dass meine Schuhwahl nicht die beste war, als ich gegen acht Uhr morgens orientierungslos
+    durch New York st\xF6ckelte. Verdammt, war ich nicht schon einmal hier vorbeigekommen?
+    Irritiert blickte ich umher. Jetzt hatte ich mich sogar noch in meiner sechsten
+    Arbeitswoche verlaufen. Ein ausgepr\xE4gter Orientierungssinn war mir definitiv
+    nicht in die Wiege gelegt worden.  \r\nIch schaute entlang der gigantischen Hochh\xE4user,
+    bis ich etwa f\xFCnfhundert Meter weiter vorn mein Ziel erblickte \u2013 das
+    Rockefeller Center, einer der ber\xFChmtesten Geb\xE4udekomplexe in Midtown Manhattan.
+    Der im Art-d\xE9co-Stil gebaute Komplex erstreckte sich \xFCber drei Stra\xDFenblocks
+    und bestand aus zwanzig Geb\xE4uden. Neben B\xFCros waren hier auch zahlreiche
+    Fernsehstudios einquartiert, darunter das Hauptquartier von NBC, wo namhafte
+    Sendungen wie \xABThe Today Show\xBB und \xABSaturday Night Live\xBB aufgezeichnet
+    wurden.  \r\nIch konnte es immer noch kaum fassen, dass mein Arbeitsplatz in
+    diesem weltber\xFChmten Himmelskoloss lag. Die immensen Dimensionen musste ich
+    erst noch verarbeiten. In meiner Heimatstadt Basel, wo ich bis vor Kurzem gelebt
+    hatte, schossen mittlerweile zwar auch Wolkenkratzer aus dem Boden, aber der
+    Messeturm und die Roche-T\xFCrme konnten mit diesen Riesen nicht mithalten. Einige
+    Stolperschritte sp\xE4ter erreichte ich endlich einen der Aufz\xFCge im Rockefeller
+    Center. Wie immer waren sie zur Rushhour vollgestopft mit Businessleuten in Anz\xFCgen
+    und schicken Etuikleidern unter Blazern. Ich wurde an das Ende des Fahrstuhls
+    direkt vor die Spiegelfront gequetscht.  \r\n\r\n\xABOh Mist!\xBB, fluchte ich
+    leise vor mich hin. Dies galt dem Kaffeefleck auf meinem neuen, cremefarbenen
+    Mantel. Das musste passiert sein, als mich vor der Dreht\xFCr im Eingangsbereich
+    des Rockefeller Centers ein st\xE4mmiger Gesch\xE4ftsmann gerammt hatte. Nur
+    die Ruhe bewahren, mahnte ich mich. Der Fleck war nicht so schlimm und w\xFCrde
+    kaum auffallen, sobald er trocken war. Viel mehr Sorgen bereiteten mir die langsam
+    sichtbaren Kr\xE4henf\xFC\xDFe um meine Augen herum. Im grellen Aufzuglicht waren
+    sie deutlich zu sehen. Zum ersten Mal waren sie mir im vergangenen Oktober an
+    meinem achtundzwanzigsten Geburtstag aufgefallen.  \r\n\r\nDer Gong erklang und
+    die Aufzugt\xFCren \xF6ffneten sich. Ich hielt im 23. Stock vor einer massiven
+    Glast\xFCr mit der Aufschrift \xABBig Apple News\xBB \u2013 der Grund f\xFCr
+    meinen Umzug \xFCber den gro\xDFen Teich. Ich hatte schon lange vom American
+    Dream getr\xE4umt und nun war mein innigster Wunsch dank einer riesigen Portion
+    Gl\xFCck und einer ordentlichen Portion Vitamin B in Erf\xFCllung gegangen. Meinem
+    Onkel v\xE4terlicherseits verdankte ich den Job. Ryan Keeton hatte viele Jahre
+    bei \xABBig Apple News\xBB gearbeitet, bevor er von der BBC abgeworben wurde.
+    Nun trat ich in seine Fu\xDFstapfen. Den passenden Nachnamen daf\xFCr hatte ich
+    bereits. \xABKeeton\xBB war in New York mittlerweile ein Begriff. Jetzt musste
+    ich mich nur noch beweisen und dem Namen gerecht werden.  \r\n\r\nIch streckte
+    meine freie Hand nach der Glast\xFCr aus, langte nach dem T\xFCrgriff und im
+    selben Moment gerieten die Kaffees in meiner anderen Hand aus dem Gleichgewicht.
+    Da war auch schon eine Hand da, die mir rechtzeitig die Becher abnahm. Die rettende
+    Hand geh\xF6rte Bill Bailly, meinem Teamkollegen. Er war der Produktionsleiter
+    von \xABBig Apple News\xBB.  \r\n\r\n\xABAchtung, Achtung!\xBB, pl\xE4rrte er
+    den anderen Teammitgliedern in der Redaktion zu. \xABKaffee im Anflug!\xBB  \r\n\r\nWie
+    peinlich mir das war \u2013 nat\xFCrlich musste er es auch gleich noch in die
+    Runde posaunen. Bill war bekannt f\xFCr seine Spr\xFCche und seine direkte Art.
+    Das hatte ich bereits in den ersten Tagen beim Sender herausgefunden. Er war
+    der Sonnyboy des Senders und brachte so einige Frauen mit seinen haselnussbraunen
+    Augen zum Schmelzen. Er war ein Charmeur und wusste, dass er bei den Frauen mit
+    seiner Art gut ankam, auch wenn er uns mit seinen Spr\xFCchen zum Teil in Verlegenheit
+    brachte, wie jetzt gerade.  \r\n\r\n\xABVielen Dank, ohne dich g\xE4be es wohl
+    heute keinen Kaffee!\xBB  \r\n\r\nErleichtert nahm ich die Kaffeebecher wieder
+    entgegen. \xABHier, den kannst du behalten, der ist f\xFCr dich!\xBB  \r\n\r\n\xABVielen
+    Dank!\xBB, er nahm den Becher und hielt mir mit der freien Hand die T\xFCr auf.
+    Ich betrat den Eingangsbereich der Fernsehstation. Seit meinem ersten Besuch
+    vor zweiundzwanzig Jahren hatte sich einiges ver\xE4ndert \u2013 einzig die Raumaufteilung
+    war plus/minus dieselbe. Vor f\xFCnf Jahren war die komplette Station modernisiert
+    und im Zuge der Renovierung einem Redesign unterzogen worden. Seither erstrahlten
+    die R\xE4ume in einem schlichten Wei\xDF mit frischen gr\xFCnen Akzenten passend
+    zum neuen Logo von \xABBig Apple News\xBB. Die Technologie hatte enorme Fortschritte
+    gemacht. Besonders beeindruckend war die riesige Screen Wall im Newsroom, die
+    sofort die Aufmerksamkeit auf sich zog. Das Herzst\xFCck bildete der Newsdesk
+    in der Mitte des Gro\xDFraumb\xFCros. Um ihn herum waren die einzelnen Studios
+    f\xFCr Nachrichten, Wetter und Talkshows angeordnet.  \r\n\r\nJetzt zur Weihnachtszeit
+    war das gesamte Studio festlich geschm\xFCckt. Es schien von Tag zu Tag \xFCppiger
+    zu werden \u2013 alles, was die Mitarbeitenden zu Hause nicht mehr brauchten,
+    fand seinen Platz hier. Was ich davon halten sollte, wusste ich nicht genau.
+    Es wirkte eher wie ein Friedhof f\xFCr Weihnachtsschmuck: An der Wand prangte
+    ein Santa-Claus-Kopf, der bei jedem Vorbeigehen den \xABSanta Claus Rock\xBB
+    tr\xE4llerte. Insgeheim hoffte ich, dass er bald den Geist aufgeben w\xFCrde.
+    Und ein h\xFCfthohes leuchtendes Rentier mit Wackelkontakt stand vor dem B\xFCro
+    unseres Redaktionsleiters John Wilson. John hatte einen beeindruckenden journalistischen
+    Hintergrund. Er arbeitete viele Jahre bei der \xABNew York Times\xBB, bis er
+    in den sp\xE4ten 1990er-Jahren seinen Horizont erweiterte und auf Fernsehjournalismus
+    umstieg.  \r\n\r\nIch verteilte die restlichen Macchiatos an die Morgenshowcrew,
+    nahm einen gro\xDFen Schluck von meinem Gingerbread-Latte und setzte mich an
+    meinen Arbeitsplatz. Der Newsroom war bereits in vollem Betrieb mit Monitoren,
+    welche die neuesten Nachrichten und Updates zeigten, und Kollegen, die gesch\xE4ftig
+    ihre Aufgaben erledigten. Ich startete meinen Computer und \xF6ffnete meine E-Mails,
+    um zu sehen, was die Nacht gebracht hatte. Eine Vielzahl von Nachrichten erwartete
+    mich, von Pressemitteilungen bis hin zu Terminank\xFCndigungen. Ich sortierte
+    sie schnell durch, priorisierte die dringendsten Aufgaben und machte mir Notizen
+    f\xFCr sp\xE4ter.  \r\n\r\nPunkt neun Uhr versammelte sich die zw\xF6lfk\xF6pfige
+    Crew einschlie\xDFlich mir um einen gro\xDFen Stehtisch im Newsroom. Den Tisch
+    zierte ein geschmackloser kleiner Plastikweihnachtsbaum mit blauen Kugeln und
+    kleinen LED-L\xE4mpchen. Insgesamt besch\xE4ftigte \xABBig Apple News\xBB um
+    die sechzig Mitarbeitende. Durch die Aufteilung in Morgen-, Daily- und Abendshow
+    waren nie alle gleichzeitig bei der Arbeit. W\xE4hrend das Redaktions- und Moderationsteam
+    die Inhalte pr\xE4sentierte, arbeiteten talentierte Fachleute im Hintergrund
+    daran, sicherzustellen, dass jede Sendung reibungslos ablief.\r\n\u201EIch habe
+    gestern neue Chocolate-Chip-Cookies ausprobiert\u201C, verk\xFCndete Amber Buckley
+    und stellte eine Pl\xE4tzchendose auf den Tisch. Amber, ebenfalls in ihren sp\xE4ten
+    Zwanzigern, war bereits seit einigen Jahren beim Sender und bekannt f\xFCr ihre
+    Backk\xFCnste. Ihre Leidenschaft machte sich keinesfalls an ihren H\xFCften bemerkbar.
+    Amber war einen Kopf kleiner als ich, ihre blond gef\xE4rbten Haare reichten
+    ihr bis knapp \xFCber die Schultern. Bis jetzt wurde ich mit ihr noch nicht warm,
+    nur mit ihren Pl\xE4tzchen, diese waren immer k\xF6stlich. Die Woche k\xF6nnte
+    immer so beginnen, dachte ich mir und atmete den Duft der Pl\xE4tzchen tief ein.\r\nBei
+    der Redaktionssitzung besprachen wir die aktuellen Themen und verteilten die
+    Aufgaben. Obwohl ich mich noch in der Einarbeitungsphase befand, kannte ich die
+    Abl\xE4ufe bereits gut. Ich war keineswegs unerfahren, denn schon in Basel war
+    ich in der Medienwelt zu Hause und hatte bei verschiedenen Lokalmedien mitgemischt,
+    zuletzt auch bei einem TV-Sender. In den ersten Arbeitswochen wurde ich in die
+    einzelnen Bereiche eingef\xFChrt, um die ganze TV-Station kennenzulernen. Mein
+    Arbeitsbereich w\xFCrde dann vor der Kamera als rasende Reporterin sein.\r\nJohn
+    Wilson er\xF6ffnete das Meeting. \u201EWir halten die Sitzung heute kurz. In
+    der Weihnachtszeit gibt es viele Veranstaltungen, \xFCber die wir nicht alle
+    berichten k\xF6nnen. Das Highlight im Dezember ist sicherlich die Reportage \xFCber
+    den Diamanten im Natural History Museum. Da beginnen wir am Mittwoch mit den
+    Vorbereitungen. Heute steht die Er\xF6ffnungsfeier des neuen Restaurants Swiss
+    Chalet in Soho im Fokus. Lindsay ist die Reporterin vor Ort und Keith der Videojournalist.\u201C\r\nSuchend
+    blickte John in die Runde und als unsere Blicke sich trafen, f\xFCgte er hinzu:
+    \u201EUnd Beverly, du begleitest die beiden. Aber pass auf, dass du nicht allzu
+    sehr Heimweh nach der Schweizer K\xFCche bekommst!\u201C Gel\xE4chter brach auf
+    der Redaktion aus und auch ich musste lauthals mitlachen.\r\nEine Stunde sp\xE4ter
+    verlie\xDFen wir zu dritt das Rockefeller Center, vollbeladen mit Kameraausr\xFCstung.
+    Lindsay Martinez war eine begnadete TV-Moderatorin und seit drei Jahren beim
+    Sender. Sie arbeitete Teilzeit und war neben ihrem Sechzig-Prozent-Pensum Mutter
+    von zwei S\xF6hnen. Keith McKay war wie ich ein Neuling beim Sender und hatte
+    nur wenige Monate vor mir angefangen.\r\n\u201ETaxi! Taxi!\u201C, rief ich, trat
+    an den Stra\xDFenrand, streckte l\xE4ssig, wie ich es aus den Filmen kannte,
+    die Hand aus und versuchte, Augenkontakt mit den Fahrern aufzunehmen. Keith lachte.
+    \u201EDu musst nicht rufen, der Fahrer h\xF6rt dich sowieso nicht.\u201C\r\nEin
+    gelbes Taxi nach dem anderen fuhr an uns vorbei. In New York wimmelte es von
+    Yellow Cabs, aber wenn man eines brauchte, hielt keines an. \u201EAnhalten werden
+    nur die, deren Nummer auf dem Dach leuchtet \u2013 alle anderen sind besetzt\u201C,
+    erkl\xE4rte mir Keith.\r\n\u201EAch echt, das wusste ich nicht\u201C, antwortete
+    ich verlegen. Ich war halt doch noch ein Neuling in der Stadt. Und dann endlich
+    hielt ein Taxi an. Lindsay und ich nahmen auf dem R\xFCcksitz Platz, w\xE4hrend
+    Keith das Equipment im Kofferraum verstaute. Dann zw\xE4ngte er sich ebenfalls
+    hinten rein.\r\n\u201ENach Soho bitte, Ecke Broadway/Broome Street\u201C, wies
+    er den Fahrer an. Der Taxifahrer nickte und fuhr los. Ganz verwundert schaute
+    ich Keith an. \u201EIch sch\xE4tze ja deine N\xE4he, aber jetzt wird es doch
+    ein bisschen eng hier hinten.\u201C\r\nKeith am\xFCsierte sich k\xF6stlich und
+    kl\xE4rte mich auf. \u201EIn New York nimmt man, wenn immer m\xF6glich, auf der
+    R\xFCckbank Platz.\u201C\r\nEingequetscht wie eine Dosensardine konnte ich sogar
+    Keiths Aftershave riechen. Eine holzige, ledrige, rauchige Duftnote bahnte sich
+    den Weg in meine Nase. Der Duft lie\xDF ihn richtig sexy wirken. Oje, hatte ich
+    das gerade wirklich gedacht? Ich musterte sein Profil aus den Augenwinkeln. Sein
+    dunkelbraunes volles Haar war ordentlich gegelt. Sein Dreitagebart rundete seine
+    leicht kantigen Gesichtsz\xFCge ab.\r\nBisher hatte ich noch nie direkt mit Keith
+    zusammengearbeitet. Er war mir nur fl\xFCchtig an den Sitzungen aufgefallen.\r\nPl\xF6tzlich
+    riss der Taxifahrer eine Vollbremsung und dr\xFCckte ordentlich auf die Hupe.
+    Ich wurde aus meinen Gedanken gerissen und sah nur noch, wie ein Fu\xDFg\xE4nger
+    entschuldigend die Hand hochhielt. Von da an schaute ich zwischen den beiden
+    Vordersitzen auf den Stra\xDFenverkehr und konzentrierte mich darauf, nicht wieder
+    in Keiths Anblick zu versinken.\r\nWenige Minuten sp\xE4ter deutete Keith dem
+    Fahrer an, am Stra\xDFenrand anzuhalten. Der Fahrer drosselte das Tempo, bis
+    das Auto zum Stillstand kam und wir aussteigen konnten. Keith bezahlte den Taxifahrer
+    und wir halfen ihm, das Equipment zum Restaurant zu bringen.\r\nEtwa zehn Meter
+    vor uns leuchtete ein wei\xDF-rotes Logo mit der Aufschrift \u201ESwiss Chalet\u201C.
+    Ein ulkiger Anblick erwartete uns. Das Eckhaus war ein hohes, unspektakul\xE4res
+    Betongeb\xE4ude. Im Erdgeschoss, in dem sich das Restaurant befand, war die Fassade
+    mit dem typisch dunkelbraunen Chaletholz eingekleidet und am Eingang standen
+    zwei Plastikk\xFChe in Lebensgr\xF6\xDFe.\r\nIch war entz\xFCckt von dem Anblick,
+    ging voran und stie\xDF die T\xFCr auf. Sofort stieg mir der vertraute Duft einer
+    Mischung aus R\xF6sti, K\xE4se und Speck in die Nase. Es roch wie in einer Beiz
+    auf der Skipiste. So sah auch die gesamte Inneneinrichtung aus. Eine Kellnerin
+    und ein Kellner in Schweizer Trachten begr\xFC\xDFten uns herzlich.\r\n\u201EBitte
+    folgt mir! Ihr k\xF6nnt eure Kamera gleich dort in der Ecke aufbauen\u201C, sagte
+    der Kellner mit einer fl\xFCchtigen Handbewegung. \u201EDer Restaurantbesitzer
+    wird gleich bei euch sein.\u201C\r\nWenig sp\xE4ter kam ein Mann mittleren Alters
+    auf uns zu. Auch er trug eine Tracht, jedoch eine etwas elegantere Version.\r\n\u201EHerzlich
+    willkommen im Swiss Chalet!\u201C, begr\xFC\xDFte er uns und streckte uns gleichzeitig
+    ein Tablett voller K\xE4sehappen entgegen. \u201EHier, probiert, echter Schweizer
+    K\xE4se!\u201C\r\nKeith griff als Erster nach einem Zahnstocher, an dem ein St\xFCck
+    K\xE4se steckte. \u201ELecker!\u201C, schmatzte er mit vollem Mund.\r\n\u201EIch
+    bin \xFCbrigens Andreas Miller, der Besitzer des einzigen Chalets in ganz New
+    York\u201C, stellte er sich vor und zeigte stolz auf den Raum um uns herum. \u201ENennt
+    mich einfach Andy. Es freut mich wahnsinnig, dass ihr \xFCber mein Restaurant
+    berichtet.\u201C\r\n\u201EDas Vergn\xFCgen ist ganz unsererseits\u201C, erwiderte
+    Keith. \u201EDarf ich dir Lindsay Martinez und Beverly Keeton vorstellen \u2013
+    und meine Wenigkeit, Keith McKay.\u201C Dabei deutete er nacheinander auf uns.\r\nAm
+    Akzent erkannte ich sofort, dass er kein Amerikaner war. Also fragte ich direkt:
+    \u201EBist du Schweizer?\u201C\r\n\u201EGut erraten\u201C, antwortete Andy.\r\n\u201EMit
+    Raten hat das nicht viel zu tun. Ich bin auch Schweizerin.\u201C\r\n\u201EWas
+    f\xFCr eine besondere Ehre, bereits am Er\xF6ffnungstag eine Schweizerin im Restaurant
+    begr\xFC\xDFen zu d\xFCrfen. Dann habe ich ja gleich eine kritische Testerin,
+    wie authentisch das Restaurant her\xFCberkommt. Kommt mit, ich f\xFChre euch
+    durch die R\xE4umlichkeiten.\u201C\r\nWir folgten Andy durch das Restaurant,
+    w\xE4hrend er uns die verschiedenen Bereiche zeigte. Er f\xFChrte uns durch ein
+    rustikal eingerichtetes St\xFCbli, das an eine Bergh\xFCtte erinnerte.\r\n\u201EHier
+    werden k\xFCnftig regelm\xE4\xDFig Fondueabende stattfinden\u201C, erkl\xE4rte
+    Andy uns stolz.\r\nDann kamen wir in den Hauptsaal, der wie eine Schweizer Dorfbeiz
+    gestaltet war. \xDCberall hingen Bilder von Schweizer Alpenlandschaften und bekannten
+    St\xE4dten wie Bern, Z\xFCrich, Luzern \u2013 und auch Basel, was mich besonders
+    stolz machte.\r\nIch war verbl\xFCfft \u2013 bei der Inneneinrichtung wurde kein
+    Schweizer Klischee ausgelassen. Sogar ein D\xF6schen Aromat und eine Flasche
+    Maggi standen auf jedem Tisch. Im oberen Stockwerk erwartete uns eine Chaletlounge
+    mit bequemen Sofas und einem Kamin. Dort war sogar ein kleines Fenster eingebaut,
+    das den Eindruck vermittelte, auf schneebedeckte Berge zu blicken. \xABDas Kaminzimmer
+    bietet Platz f\xFCr Events und kann gemietet werden f\xFCr private Veranstaltungen\xBB,
+    erkl\xE4rte Andy. W\xE4hrend der F\xFChrung konnte ich mir ein Grinsen nicht
+    verkneifen. Ich f\xFChlte mich wie in einer Art Schweizmuseum. Schliesslich kehrten
+    wir zur\xFCck in den Hauptsaal, der bereits von G\xE4sten bev\xF6lkert war. Das
+    ged\xE4mpfte Licht verlieh dem Raum ein warmes, gem\xFCtliches Ambiente. Das
+    Klappern von Gl\xE4sern und das leise Murmeln der Menschen vermischten sich zu
+    einer angenehmen Ger\xE4uschkulisse. Ein dezentes Alpenmusikst\xFCck spielte
+    im Hintergrund.\r\nWir machten uns sofort an die Arbeit. Kameras wurden vorsichtig
+    auf Stativen platziert, um den besten Blickwinkel zu gew\xE4hrleisten. Keith
+    testete die Aufnahmen, passte den Fokus an und \xFCberpr\xFCfte die Belichtung.
+    Mikrofone wurden an den Tischen angebracht, w\xE4hrend ich mich um die Verlegung
+    der Kabel k\xFCmmerte, um sicherzustellen, dass alles ordentlich und unauff\xE4llig
+    verlief. W\xE4hrenddessen war Lindsay bereits in ihrem Element. Mit ihrem Mikrofon
+    in der Hand schritt sie zu den G\xE4sten und begann, sie zu interviewen. Ihre
+    charmante Art und ihre eloquenten Fragen lockten die G\xE4ste aus der Reserve,
+    und sie erz\xE4hlten begeistert von ihrer Leidenschaft f\xFCr Schweizer K\xFCche
+    und Kultur. Lindsay f\xFChrte fliessend die Gespr\xE4che und verlor nie den Faden,
+    w\xE4hrend sie zwischen verschiedenen G\xE4sten hin- und herging.\r\nKeith hingegen
+    hatte seine Kamera im Anschlag und fing die lebhaften Momente ein. Seine Aufnahmen
+    waren fokussiert und professionell, aber er schaffte es dennoch, die lockere
+    Atmosph\xE4re des Restaurants einzufangen. Von den liebevoll arrangierten Tellern
+    mit Schweizer Spezialit\xE4ten bis hin zu den Gesichtsausdr\xFCcken der G\xE4ste,
+    die in lebhafte Gespr\xE4che vertieft waren \u2013 er verpasste keinen wichtigen
+    Moment. Ich stand am Rand des Geschehens und half immer wieder bei kleinen Aufgaben.
+    Manchmal war es das Justieren eines Mikrofonkabels, ein anderes Mal das Halten
+    einer Lampe, um das Licht perfekt auszuleuchten. Ich war beeindruckt von der
+    Professionalit\xE4t meines Teams, das mit solcher Leichtigkeit und Koordination
+    arbeitete.\r\nInmitten all der Aktivit\xE4ten kam Andy immer wieder vorbei. Sein
+    Stolz auf sein Restaurant war un\xFCbersehbar. Er sprach mit G\xE4sten, erkl\xE4rte
+    die Hintergr\xFCnde der Gerichte und f\xFChrte Gespr\xE4che \xFCber die gestalterischen
+    Details des Lokals. Er schien jeden einzelnen Moment zu geniessen und beantwortete
+    mit einem L\xE4cheln im Gesicht geduldig alle Fragen, die ihm Lindsay stellte.
+    Die Stimmung im Restaurant wurde immer ausgelassener, je mehr G\xE4ste eintrafen.
+    Das Lachen und die angeregten Gespr\xE4che f\xFCllten den Raum, w\xE4hrend die
+    G\xE4ste die schmackhaften Speisen genossen. Man konnte f\xF6rmlich die Begeisterung
+    f\xFCr die authentische Atmosph\xE4re sp\xFCren, die das Swiss Chalet bot. Es
+    schien, als h\xE4tten die G\xE4ste eine kleine Reise in die Schweiz gemacht,
+    ohne New York zu verlassen.\r\nNach einer guten Stunde war das Filmmaterial im
+    Kasten. Wir \xFCbermittelten die Aufnahmen an das Studio, wo sie vom Videoeditor
+    geschnitten wurden, bevor die Reportage am Abend ausgestrahlt wurde. \xABBleibt
+    doch zum Lunch hier, ihr seid eingeladen!\xBB, verk\xFCndete Andy, als wir unser
+    Equipment zusammenr\xE4umten. Das liessen wir uns nicht zweimal sagen. Keith
+    war mit der Men\xFCkarte sichtlich \xFCberfordert. Er bl\xE4tterte wild darin
+    herum. \xABWas sind \xC4lp\u2026 \xC4lpler\u2026 \xC4lplermagronen?\xBB, fragte
+    er mich mit drei Anl\xE4ufen. Es klang urkomisch aus seinem Mund, sodass ich
+    mir ein Lachen nicht verkneifen konnte. \xABOder was in aller Welt ist ein Bircherm\xFCesli?\xBB,
+    wollte Lindsay wissen. Andy, der unser Gespr\xE4ch mitbekommen hatte, kam zu
+    uns an den Tisch und meinte: \xABWisst ihr was, ich bringe euch von allem einen
+    Happen, damit ihr alles probieren k\xF6nnt.\xBB\r\n\xABSpitze!\xBB, sagte ich.
+    \xABDas ist eine grossartige Idee.\xBB \xABIhr werdet sehen, es wird euch schmecken.\xBB
+    Andy hatte nicht zu viel versprochen. Schon beim Vorspeisensalat mit Wurst leuchteten
+    Keiths Augen. \xABWow, ein Salat mit Wurst gespickt mit K\xE4se, G\xFCrkchen,
+    Tomaten und Zwiebeln. Wer auch immer auf diese Idee gekommen ist, ich bin ein
+    riesiger Fan\xBB, schw\xE4rmte er. Als Hauptgericht brachte Andy uns einen Teller
+    mit drei Bratw\xFCrsten an einer Zwiebelsauce, dazu eine grosse Portion R\xF6sti
+    und eine Auflaufform voller \xC4lplermagronen, garniert mit ger\xF6steten Zwiebeln
+    zum Teilen. \xABLasst es euch schmecken\xBB, sagte Andy, nachdem er uns jeweils
+    noch ein Raclettepf\xE4nnchen hingestellt hatte.\r\nWir waren uns alle drei einig,
+    dass das Essen einfach himmlisch war. Als das Dessert serviert wurde, platzten
+    wir schon fast, aber zum St\xFCck Zuger Kirschtorte mit einem Klecks Tobleronemousse
+    konnte keiner von uns Nein sagen.\r\n"
+  leftSide: {fileID: 8540251058166378552}
+  rightSide: {fileID: 61940947685857190}
+  leftPagination: {fileID: 8343112355405219230}
+  rightPagination: {fileID: 9145345326914757059}
+--- !u!1 &8147654199575362762
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1633758964747477983}
+  m_Layer: 0
+  m_Name: RightPage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1633758964747477983
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8147654199575362762}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.3100815, y: -9.588753, z: 44.654434}
+  m_LocalScale: {x: 0.125, y: 0.1875, z: 0.1875}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 789530157710790436}
+  - {fileID: 2969205561126366942}
+  - {fileID: 1299310279635136043}
+  m_Father: {fileID: 1744257862118181678}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8316029302857702823
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1299310279635136043}
+  - component: {fileID: 483596728896310909}
+  - component: {fileID: 8837151200691170427}
+  - component: {fileID: 2970230045307193089}
+  m_Layer: 5
+  m_Name: NextPage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1299310279635136043
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8316029302857702823}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -238.15698}
+  m_LocalScale: {x: 3.1624, y: 4.825782, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1633758964747477983}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 175.5, y: 54.9}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &483596728896310909
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8316029302857702823}
+  m_CullTransparentMesh: 1
+--- !u!114 &8837151200691170427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8316029302857702823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.023587704, g: 0, b: 1, a: 0.13333334}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2970230045307193089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8316029302857702823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 5198421846402412849}
+          m_TargetAssemblyTypeName: ChristinaCreatesGames.Typography.Book.BookContents,
+            Assembly-CSharp
+          m_MethodName: NextPage
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!1 &8487310891725676199
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2584340462429814022}
+  m_Layer: 0
+  m_Name: LeftPage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2584340462429814022
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8487310891725676199}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.3100815, y: -9.588753, z: 44.654434}
+  m_LocalScale: {x: 0.125, y: 0.1875, z: 0.1875}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1936092219753782221}
+  - {fileID: 9105336299864940572}
+  - {fileID: 8528849653463941618}
+  m_Father: {fileID: 1744257862118181678}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8816160756017680911
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5766205926528956805}
+  - component: {fileID: 6931042411616372858}
+  - component: {fileID: 2169250625388373284}
+  - component: {fileID: 4274908723442357661}
+  m_Layer: 5
+  m_Name: Book-Prefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &5766205926528956805
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8816160756017680911}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1744257862118181678}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!223 &6931042411616372858
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8816160756017680911}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!114 &2169250625388373284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8816160756017680911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!114 &4274908723442357661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8816160756017680911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!1 &8886915718433749737
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1936092219753782221}
+  - component: {fileID: 7822460012306782693}
+  - component: {fileID: 8540251058166378552}
+  m_Layer: 5
+  m_Name: LeftTextBox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1936092219753782221
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8886915718433749737}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2584340462429814022}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -160, y: 60}
+  m_SizeDelta: {x: 300, y: 500}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &7822460012306782693
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8886915718433749737}
+  m_CullTransparentMesh: 1
+--- !u!114 &8540251058166378552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8886915718433749737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "6325 Kilometer von meinem ehemaligen Zuhause entfernt lief oder besser
+    gesagt stolperte ich in meinen neuen beigefarbenen Pumps \xFCber die 5th Avenue.
+    In meiner linken Hand jonglierte ich sechs Latte macchiatos von Starbucks, die
+    aufgrund der frostigen Dezembertemperaturen bald schon als Iced macchiatos durchgehen
+    w\xFCrden. Nach zwei Monaten im Big Apple sollte ich eigentlich wissen, dass
+    High Heels nicht das beste Schuhwerk f\xFCr die weitl\xE4ufigen Distanzen sind,
+    geschweige denn bei dieser eisigen K\xE4lte. Vielleicht h\xE4tte ich meine Wanderschuhe
+    auspacken sollen. Nun ja, es waren nicht wirklich Wanderschuhe. Meine bequemen
+    Sneakers reichten vollkommen aus f\xFCr das, was ich als \xABWanderung\xBB bezeichnete.
+    Ich passte die Route immer meinen Schuhen an und vermied es, l\xE4ngere Strecken
+    zu gehen, die \xFCber ihre Kapazit\xE4t hinausgingen. Doch jetzt musste ich feststellen,
+    dass meine Schuhwahl nicht die beste war, als ich gegen acht Uhr morgens orientierungslos
+    durch New York st\xF6ckelte. Verdammt, war ich nicht schon einmal hier vorbeigekommen?
+    Irritiert blickte ich umher. Jetzt hatte ich mich sogar noch in meiner sechsten
+    Arbeitswoche verlaufen. Ein ausgepr\xE4gter Orientierungssinn war mir definitiv
+    nicht in die Wiege gelegt worden.  \r\nIch schaute entlang der gigantischen Hochh\xE4user,
+    bis ich etwa f\xFCnfhundert Meter weiter vorn mein Ziel erblickte \u2013 das
+    Rockefeller Center, einer der ber\xFChmtesten Geb\xE4udekomplexe in Midtown Manhattan.
+    Der im Art-d\xE9co-Stil gebaute Komplex erstreckte sich \xFCber drei Stra\xDFenblocks
+    und bestand aus zwanzig Geb\xE4uden. Neben B\xFCros waren hier auch zahlreiche
+    Fernsehstudios einquartiert, darunter das Hauptquartier von NBC, wo namhafte
+    Sendungen wie \xABThe Today Show\xBB und \xABSaturday Night Live\xBB aufgezeichnet
+    wurden.  \r\nIch konnte es immer noch kaum fassen, dass mein Arbeitsplatz in
+    diesem weltber\xFChmten Himmelskoloss lag. Die immensen Dimensionen musste ich
+    erst noch verarbeiten. In meiner Heimatstadt Basel, wo ich bis vor Kurzem gelebt
+    hatte, schossen mittlerweile zwar auch Wolkenkratzer aus dem Boden, aber der
+    Messeturm und die Roche-T\xFCrme konnten mit diesen Riesen nicht mithalten. Einige
+    Stolperschritte sp\xE4ter erreichte ich endlich einen der Aufz\xFCge im Rockefeller
+    Center. Wie immer waren sie zur Rushhour vollgestopft mit Businessleuten in Anz\xFCgen
+    und schicken Etuikleidern unter Blazern. Ich wurde an das Ende des Fahrstuhls
+    direkt vor die Spiegelfront gequetscht.  \r\n\r\n\xABOh Mist!\xBB, fluchte ich
+    leise vor mich hin. Dies galt dem Kaffeefleck auf meinem neuen, cremefarbenen
+    Mantel. Das musste passiert sein, als mich vor der Dreht\xFCr im Eingangsbereich
+    des Rockefeller Centers ein st\xE4mmiger Gesch\xE4ftsmann gerammt hatte. Nur
+    die Ruhe bewahren, mahnte ich mich. Der Fleck war nicht so schlimm und w\xFCrde
+    kaum auffallen, sobald er trocken war. Viel mehr Sorgen bereiteten mir die langsam
+    sichtbaren Kr\xE4henf\xFC\xDFe um meine Augen herum. Im grellen Aufzuglicht waren
+    sie deutlich zu sehen. Zum ersten Mal waren sie mir im vergangenen Oktober an
+    meinem achtundzwanzigsten Geburtstag aufgefallen.  \r\n\r\nDer Gong erklang und
+    die Aufzugt\xFCren \xF6ffneten sich. Ich hielt im 23. Stock vor einer massiven
+    Glast\xFCr mit der Aufschrift \xABBig Apple News\xBB \u2013 der Grund f\xFCr
+    meinen Umzug \xFCber den gro\xDFen Teich. Ich hatte schon lange vom American
+    Dream getr\xE4umt und nun war mein innigster Wunsch dank einer riesigen Portion
+    Gl\xFCck und einer ordentlichen Portion Vitamin B in Erf\xFCllung gegangen. Meinem
+    Onkel v\xE4terlicherseits verdankte ich den Job. Ryan Keeton hatte viele Jahre
+    bei \xABBig Apple News\xBB gearbeitet, bevor er von der BBC abgeworben wurde.
+    Nun trat ich in seine Fu\xDFstapfen. Den passenden Nachnamen daf\xFCr hatte ich
+    bereits. \xABKeeton\xBB war in New York mittlerweile ein Begriff. Jetzt musste
+    ich mich nur noch beweisen und dem Namen gerecht werden.  \r\n\r\nIch streckte
+    meine freie Hand nach der Glast\xFCr aus, langte nach dem T\xFCrgriff und im
+    selben Moment gerieten die Kaffees in meiner anderen Hand aus dem Gleichgewicht.
+    Da war auch schon eine Hand da, die mir rechtzeitig die Becher abnahm. Die rettende
+    Hand geh\xF6rte Bill Bailly, meinem Teamkollegen. Er war der Produktionsleiter
+    von \xABBig Apple News\xBB.  \r\n\r\n\xABAchtung, Achtung!\xBB, pl\xE4rrte er
+    den anderen Teammitgliedern in der Redaktion zu. \xABKaffee im Anflug!\xBB  \r\n\r\nWie
+    peinlich mir das war \u2013 nat\xFCrlich musste er es auch gleich noch in die
+    Runde posaunen. Bill war bekannt f\xFCr seine Spr\xFCche und seine direkte Art.
+    Das hatte ich bereits in den ersten Tagen beim Sender herausgefunden. Er war
+    der Sonnyboy des Senders und brachte so einige Frauen mit seinen haselnussbraunen
+    Augen zum Schmelzen. Er war ein Charmeur und wusste, dass er bei den Frauen mit
+    seiner Art gut ankam, auch wenn er uns mit seinen Spr\xFCchen zum Teil in Verlegenheit
+    brachte, wie jetzt gerade.  \r\n\r\n\xABVielen Dank, ohne dich g\xE4be es wohl
+    heute keinen Kaffee!\xBB  \r\n\r\nErleichtert nahm ich die Kaffeebecher wieder
+    entgegen. \xABHier, den kannst du behalten, der ist f\xFCr dich!\xBB  \r\n\r\n\xABVielen
+    Dank!\xBB, er nahm den Becher und hielt mir mit der freien Hand die T\xFCr auf.
+    Ich betrat den Eingangsbereich der Fernsehstation. Seit meinem ersten Besuch
+    vor zweiundzwanzig Jahren hatte sich einiges ver\xE4ndert \u2013 einzig die Raumaufteilung
+    war plus/minus dieselbe. Vor f\xFCnf Jahren war die komplette Station modernisiert
+    und im Zuge der Renovierung einem Redesign unterzogen worden. Seither erstrahlten
+    die R\xE4ume in einem schlichten Wei\xDF mit frischen gr\xFCnen Akzenten passend
+    zum neuen Logo von \xABBig Apple News\xBB. Die Technologie hatte enorme Fortschritte
+    gemacht. Besonders beeindruckend war die riesige Screen Wall im Newsroom, die
+    sofort die Aufmerksamkeit auf sich zog. Das Herzst\xFCck bildete der Newsdesk
+    in der Mitte des Gro\xDFraumb\xFCros. Um ihn herum waren die einzelnen Studios
+    f\xFCr Nachrichten, Wetter und Talkshows angeordnet.  \r\n\r\nJetzt zur Weihnachtszeit
+    war das gesamte Studio festlich geschm\xFCckt. Es schien von Tag zu Tag \xFCppiger
+    zu werden \u2013 alles, was die Mitarbeitenden zu Hause nicht mehr brauchten,
+    fand seinen Platz hier. Was ich davon halten sollte, wusste ich nicht genau.
+    Es wirkte eher wie ein Friedhof f\xFCr Weihnachtsschmuck: An der Wand prangte
+    ein Santa-Claus-Kopf, der bei jedem Vorbeigehen den \xABSanta Claus Rock\xBB
+    tr\xE4llerte. Insgeheim hoffte ich, dass er bald den Geist aufgeben w\xFCrde.
+    Und ein h\xFCfthohes leuchtendes Rentier mit Wackelkontakt stand vor dem B\xFCro
+    unseres Redaktionsleiters John Wilson. John hatte einen beeindruckenden journalistischen
+    Hintergrund. Er arbeitete viele Jahre bei der \xABNew York Times\xBB, bis er
+    in den sp\xE4ten 1990er-Jahren seinen Horizont erweiterte und auf Fernsehjournalismus
+    umstieg.  \r\n\r\nIch verteilte die restlichen Macchiatos an die Morgenshowcrew,
+    nahm einen gro\xDFen Schluck von meinem Gingerbread-Latte und setzte mich an
+    meinen Arbeitsplatz. Der Newsroom war bereits in vollem Betrieb mit Monitoren,
+    welche die neuesten Nachrichten und Updates zeigten, und Kollegen, die gesch\xE4ftig
+    ihre Aufgaben erledigten. Ich startete meinen Computer und \xF6ffnete meine E-Mails,
+    um zu sehen, was die Nacht gebracht hatte. Eine Vielzahl von Nachrichten erwartete
+    mich, von Pressemitteilungen bis hin zu Terminank\xFCndigungen. Ich sortierte
+    sie schnell durch, priorisierte die dringendsten Aufgaben und machte mir Notizen
+    f\xFCr sp\xE4ter.  \r\n\r\nPunkt neun Uhr versammelte sich die zw\xF6lfk\xF6pfige
+    Crew einschlie\xDFlich mir um einen gro\xDFen Stehtisch im Newsroom. Den Tisch
+    zierte ein geschmackloser kleiner Plastikweihnachtsbaum mit blauen Kugeln und
+    kleinen LED-L\xE4mpchen. Insgesamt besch\xE4ftigte \xABBig Apple News\xBB um
+    die sechzig Mitarbeitende. Durch die Aufteilung in Morgen-, Daily- und Abendshow
+    waren nie alle gleichzeitig bei der Arbeit. W\xE4hrend das Redaktions- und Moderationsteam
+    die Inhalte pr\xE4sentierte, arbeiteten talentierte Fachleute im Hintergrund
+    daran, sicherzustellen, dass jede Sendung reibungslos ablief.\r\n\u201EIch habe
+    gestern neue Chocolate-Chip-Cookies ausprobiert\u201C, verk\xFCndete Amber Buckley
+    und stellte eine Pl\xE4tzchendose auf den Tisch. Amber, ebenfalls in ihren sp\xE4ten
+    Zwanzigern, war bereits seit einigen Jahren beim Sender und bekannt f\xFCr ihre
+    Backk\xFCnste. Ihre Leidenschaft machte sich keinesfalls an ihren H\xFCften bemerkbar.
+    Amber war einen Kopf kleiner als ich, ihre blond gef\xE4rbten Haare reichten
+    ihr bis knapp \xFCber die Schultern. Bis jetzt wurde ich mit ihr noch nicht warm,
+    nur mit ihren Pl\xE4tzchen, diese waren immer k\xF6stlich. Die Woche k\xF6nnte
+    immer so beginnen, dachte ich mir und atmete den Duft der Pl\xE4tzchen tief ein.\r\nBei
+    der Redaktionssitzung besprachen wir die aktuellen Themen und verteilten die
+    Aufgaben. Obwohl ich mich noch in der Einarbeitungsphase befand, kannte ich die
+    Abl\xE4ufe bereits gut. Ich war keineswegs unerfahren, denn schon in Basel war
+    ich in der Medienwelt zu Hause und hatte bei verschiedenen Lokalmedien mitgemischt,
+    zuletzt auch bei einem TV-Sender. In den ersten Arbeitswochen wurde ich in die
+    einzelnen Bereiche eingef\xFChrt, um die ganze TV-Station kennenzulernen. Mein
+    Arbeitsbereich w\xFCrde dann vor der Kamera als rasende Reporterin sein.\r\nJohn
+    Wilson er\xF6ffnete das Meeting. \u201EWir halten die Sitzung heute kurz. In
+    der Weihnachtszeit gibt es viele Veranstaltungen, \xFCber die wir nicht alle
+    berichten k\xF6nnen. Das Highlight im Dezember ist sicherlich die Reportage \xFCber
+    den Diamanten im Natural History Museum. Da beginnen wir am Mittwoch mit den
+    Vorbereitungen. Heute steht die Er\xF6ffnungsfeier des neuen Restaurants Swiss
+    Chalet in Soho im Fokus. Lindsay ist die Reporterin vor Ort und Keith der Videojournalist.\u201C\r\nSuchend
+    blickte John in die Runde und als unsere Blicke sich trafen, f\xFCgte er hinzu:
+    \u201EUnd Beverly, du begleitest die beiden. Aber pass auf, dass du nicht allzu
+    sehr Heimweh nach der Schweizer K\xFCche bekommst!\u201C Gel\xE4chter brach auf
+    der Redaktion aus und auch ich musste lauthals mitlachen.\r\nEine Stunde sp\xE4ter
+    verlie\xDFen wir zu dritt das Rockefeller Center, vollbeladen mit Kameraausr\xFCstung.
+    Lindsay Martinez war eine begnadete TV-Moderatorin und seit drei Jahren beim
+    Sender. Sie arbeitete Teilzeit und war neben ihrem Sechzig-Prozent-Pensum Mutter
+    von zwei S\xF6hnen. Keith McKay war wie ich ein Neuling beim Sender und hatte
+    nur wenige Monate vor mir angefangen.\r\n\u201ETaxi! Taxi!\u201C, rief ich, trat
+    an den Stra\xDFenrand, streckte l\xE4ssig, wie ich es aus den Filmen kannte,
+    die Hand aus und versuchte, Augenkontakt mit den Fahrern aufzunehmen. Keith lachte.
+    \u201EDu musst nicht rufen, der Fahrer h\xF6rt dich sowieso nicht.\u201C\r\nEin
+    gelbes Taxi nach dem anderen fuhr an uns vorbei. In New York wimmelte es von
+    Yellow Cabs, aber wenn man eines brauchte, hielt keines an. \u201EAnhalten werden
+    nur die, deren Nummer auf dem Dach leuchtet \u2013 alle anderen sind besetzt\u201C,
+    erkl\xE4rte mir Keith.\r\n\u201EAch echt, das wusste ich nicht\u201C, antwortete
+    ich verlegen. Ich war halt doch noch ein Neuling in der Stadt. Und dann endlich
+    hielt ein Taxi an. Lindsay und ich nahmen auf dem R\xFCcksitz Platz, w\xE4hrend
+    Keith das Equipment im Kofferraum verstaute. Dann zw\xE4ngte er sich ebenfalls
+    hinten rein.\r\n\u201ENach Soho bitte, Ecke Broadway/Broome Street\u201C, wies
+    er den Fahrer an. Der Taxifahrer nickte und fuhr los. Ganz verwundert schaute
+    ich Keith an. \u201EIch sch\xE4tze ja deine N\xE4he, aber jetzt wird es doch
+    ein bisschen eng hier hinten.\u201C\r\nKeith am\xFCsierte sich k\xF6stlich und
+    kl\xE4rte mich auf. \u201EIn New York nimmt man, wenn immer m\xF6glich, auf der
+    R\xFCckbank Platz.\u201C\r\nEingequetscht wie eine Dosensardine konnte ich sogar
+    Keiths Aftershave riechen. Eine holzige, ledrige, rauchige Duftnote bahnte sich
+    den Weg in meine Nase. Der Duft lie\xDF ihn richtig sexy wirken. Oje, hatte ich
+    das gerade wirklich gedacht? Ich musterte sein Profil aus den Augenwinkeln. Sein
+    dunkelbraunes volles Haar war ordentlich gegelt. Sein Dreitagebart rundete seine
+    leicht kantigen Gesichtsz\xFCge ab.\r\nBisher hatte ich noch nie direkt mit Keith
+    zusammengearbeitet. Er war mir nur fl\xFCchtig an den Sitzungen aufgefallen.\r\nPl\xF6tzlich
+    riss der Taxifahrer eine Vollbremsung und dr\xFCckte ordentlich auf die Hupe.
+    Ich wurde aus meinen Gedanken gerissen und sah nur noch, wie ein Fu\xDFg\xE4nger
+    entschuldigend die Hand hochhielt. Von da an schaute ich zwischen den beiden
+    Vordersitzen auf den Stra\xDFenverkehr und konzentrierte mich darauf, nicht wieder
+    in Keiths Anblick zu versinken.\r\nWenige Minuten sp\xE4ter deutete Keith dem
+    Fahrer an, am Stra\xDFenrand anzuhalten. Der Fahrer drosselte das Tempo, bis
+    das Auto zum Stillstand kam und wir aussteigen konnten. Keith bezahlte den Taxifahrer
+    und wir halfen ihm, das Equipment zum Restaurant zu bringen.\r\nEtwa zehn Meter
+    vor uns leuchtete ein wei\xDF-rotes Logo mit der Aufschrift \u201ESwiss Chalet\u201C.
+    Ein ulkiger Anblick erwartete uns. Das Eckhaus war ein hohes, unspektakul\xE4res
+    Betongeb\xE4ude. Im Erdgeschoss, in dem sich das Restaurant befand, war die Fassade
+    mit dem typisch dunkelbraunen Chaletholz eingekleidet und am Eingang standen
+    zwei Plastikk\xFChe in Lebensgr\xF6\xDFe.\r\nIch war entz\xFCckt von dem Anblick,
+    ging voran und stie\xDF die T\xFCr auf. Sofort stieg mir der vertraute Duft einer
+    Mischung aus R\xF6sti, K\xE4se und Speck in die Nase. Es roch wie in einer Beiz
+    auf der Skipiste. So sah auch die gesamte Inneneinrichtung aus. Eine Kellnerin
+    und ein Kellner in Schweizer Trachten begr\xFC\xDFten uns herzlich.\r\n\u201EBitte
+    folgt mir! Ihr k\xF6nnt eure Kamera gleich dort in der Ecke aufbauen\u201C, sagte
+    der Kellner mit einer fl\xFCchtigen Handbewegung. \u201EDer Restaurantbesitzer
+    wird gleich bei euch sein.\u201C\r\nWenig sp\xE4ter kam ein Mann mittleren Alters
+    auf uns zu. Auch er trug eine Tracht, jedoch eine etwas elegantere Version.\r\n\u201EHerzlich
+    willkommen im Swiss Chalet!\u201C, begr\xFC\xDFte er uns und streckte uns gleichzeitig
+    ein Tablett voller K\xE4sehappen entgegen. \u201EHier, probiert, echter Schweizer
+    K\xE4se!\u201C\r\nKeith griff als Erster nach einem Zahnstocher, an dem ein St\xFCck
+    K\xE4se steckte. \u201ELecker!\u201C, schmatzte er mit vollem Mund.\r\n\u201EIch
+    bin \xFCbrigens Andreas Miller, der Besitzer des einzigen Chalets in ganz New
+    York\u201C, stellte er sich vor und zeigte stolz auf den Raum um uns herum. \u201ENennt
+    mich einfach Andy. Es freut mich wahnsinnig, dass ihr \xFCber mein Restaurant
+    berichtet.\u201C\r\n\u201EDas Vergn\xFCgen ist ganz unsererseits\u201C, erwiderte
+    Keith. \u201EDarf ich dir Lindsay Martinez und Beverly Keeton vorstellen \u2013
+    und meine Wenigkeit, Keith McKay.\u201C Dabei deutete er nacheinander auf uns.\r\nAm
+    Akzent erkannte ich sofort, dass er kein Amerikaner war. Also fragte ich direkt:
+    \u201EBist du Schweizer?\u201C\r\n\u201EGut erraten\u201C, antwortete Andy.\r\n\u201EMit
+    Raten hat das nicht viel zu tun. Ich bin auch Schweizerin.\u201C\r\n\u201EWas
+    f\xFCr eine besondere Ehre, bereits am Er\xF6ffnungstag eine Schweizerin im Restaurant
+    begr\xFC\xDFen zu d\xFCrfen. Dann habe ich ja gleich eine kritische Testerin,
+    wie authentisch das Restaurant her\xFCberkommt. Kommt mit, ich f\xFChre euch
+    durch die R\xE4umlichkeiten.\u201C\r\nWir folgten Andy durch das Restaurant,
+    w\xE4hrend er uns die verschiedenen Bereiche zeigte. Er f\xFChrte uns durch ein
+    rustikal eingerichtetes St\xFCbli, das an eine Bergh\xFCtte erinnerte.\r\n\u201EHier
+    werden k\xFCnftig regelm\xE4\xDFig Fondueabende stattfinden\u201C, erkl\xE4rte
+    Andy uns stolz.\r\nDann kamen wir in den Hauptsaal, der wie eine Schweizer Dorfbeiz
+    gestaltet war. \xDCberall hingen Bilder von Schweizer Alpenlandschaften und bekannten
+    St\xE4dten wie Bern, Z\xFCrich, Luzern \u2013 und auch Basel, was mich besonders
+    stolz machte.\r\nIch war verbl\xFCfft \u2013 bei der Inneneinrichtung wurde kein
+    Schweizer Klischee ausgelassen. Sogar ein D\xF6schen Aromat und eine Flasche
+    Maggi standen auf jedem Tisch. Im oberen Stockwerk erwartete uns eine Chaletlounge
+    mit bequemen Sofas und einem Kamin. Dort war sogar ein kleines Fenster eingebaut,
+    das den Eindruck vermittelte, auf schneebedeckte Berge zu blicken. \xABDas Kaminzimmer
+    bietet Platz f\xFCr Events und kann gemietet werden f\xFCr private Veranstaltungen\xBB,
+    erkl\xE4rte Andy. W\xE4hrend der F\xFChrung konnte ich mir ein Grinsen nicht
+    verkneifen. Ich f\xFChlte mich wie in einer Art Schweizmuseum. Schliesslich kehrten
+    wir zur\xFCck in den Hauptsaal, der bereits von G\xE4sten bev\xF6lkert war. Das
+    ged\xE4mpfte Licht verlieh dem Raum ein warmes, gem\xFCtliches Ambiente. Das
+    Klappern von Gl\xE4sern und das leise Murmeln der Menschen vermischten sich zu
+    einer angenehmen Ger\xE4uschkulisse. Ein dezentes Alpenmusikst\xFCck spielte
+    im Hintergrund.\r\nWir machten uns sofort an die Arbeit. Kameras wurden vorsichtig
+    auf Stativen platziert, um den besten Blickwinkel zu gew\xE4hrleisten. Keith
+    testete die Aufnahmen, passte den Fokus an und \xFCberpr\xFCfte die Belichtung.
+    Mikrofone wurden an den Tischen angebracht, w\xE4hrend ich mich um die Verlegung
+    der Kabel k\xFCmmerte, um sicherzustellen, dass alles ordentlich und unauff\xE4llig
+    verlief. W\xE4hrenddessen war Lindsay bereits in ihrem Element. Mit ihrem Mikrofon
+    in der Hand schritt sie zu den G\xE4sten und begann, sie zu interviewen. Ihre
+    charmante Art und ihre eloquenten Fragen lockten die G\xE4ste aus der Reserve,
+    und sie erz\xE4hlten begeistert von ihrer Leidenschaft f\xFCr Schweizer K\xFCche
+    und Kultur. Lindsay f\xFChrte fliessend die Gespr\xE4che und verlor nie den Faden,
+    w\xE4hrend sie zwischen verschiedenen G\xE4sten hin- und herging.\r\nKeith hingegen
+    hatte seine Kamera im Anschlag und fing die lebhaften Momente ein. Seine Aufnahmen
+    waren fokussiert und professionell, aber er schaffte es dennoch, die lockere
+    Atmosph\xE4re des Restaurants einzufangen. Von den liebevoll arrangierten Tellern
+    mit Schweizer Spezialit\xE4ten bis hin zu den Gesichtsausdr\xFCcken der G\xE4ste,
+    die in lebhafte Gespr\xE4che vertieft waren \u2013 er verpasste keinen wichtigen
+    Moment. Ich stand am Rand des Geschehens und half immer wieder bei kleinen Aufgaben.
+    Manchmal war es das Justieren eines Mikrofonkabels, ein anderes Mal das Halten
+    einer Lampe, um das Licht perfekt auszuleuchten. Ich war beeindruckt von der
+    Professionalit\xE4t meines Teams, das mit solcher Leichtigkeit und Koordination
+    arbeitete.\r\nInmitten all der Aktivit\xE4ten kam Andy immer wieder vorbei. Sein
+    Stolz auf sein Restaurant war un\xFCbersehbar. Er sprach mit G\xE4sten, erkl\xE4rte
+    die Hintergr\xFCnde der Gerichte und f\xFChrte Gespr\xE4che \xFCber die gestalterischen
+    Details des Lokals. Er schien jeden einzelnen Moment zu geniessen und beantwortete
+    mit einem L\xE4cheln im Gesicht geduldig alle Fragen, die ihm Lindsay stellte.
+    Die Stimmung im Restaurant wurde immer ausgelassener, je mehr G\xE4ste eintrafen.
+    Das Lachen und die angeregten Gespr\xE4che f\xFCllten den Raum, w\xE4hrend die
+    G\xE4ste die schmackhaften Speisen genossen. Man konnte f\xF6rmlich die Begeisterung
+    f\xFCr die authentische Atmosph\xE4re sp\xFCren, die das Swiss Chalet bot. Es
+    schien, als h\xE4tten die G\xE4ste eine kleine Reise in die Schweiz gemacht,
+    ohne New York zu verlassen.\r\nNach einer guten Stunde war das Filmmaterial im
+    Kasten. Wir \xFCbermittelten die Aufnahmen an das Studio, wo sie vom Videoeditor
+    geschnitten wurden, bevor die Reportage am Abend ausgestrahlt wurde. \xABBleibt
+    doch zum Lunch hier, ihr seid eingeladen!\xBB, verk\xFCndete Andy, als wir unser
+    Equipment zusammenr\xE4umten. Das liessen wir uns nicht zweimal sagen. Keith
+    war mit der Men\xFCkarte sichtlich \xFCberfordert. Er bl\xE4tterte wild darin
+    herum. \xABWas sind \xC4lp\u2026 \xC4lpler\u2026 \xC4lplermagronen?\xBB, fragte
+    er mich mit drei Anl\xE4ufen. Es klang urkomisch aus seinem Mund, sodass ich
+    mir ein Lachen nicht verkneifen konnte. \xABOder was in aller Welt ist ein Bircherm\xFCesli?\xBB,
+    wollte Lindsay wissen. Andy, der unser Gespr\xE4ch mitbekommen hatte, kam zu
+    uns an den Tisch und meinte: \xABWisst ihr was, ich bringe euch von allem einen
+    Happen, damit ihr alles probieren k\xF6nnt.\xBB\r\n\xABSpitze!\xBB, sagte ich.
+    \xABDas ist eine grossartige Idee.\xBB \xABIhr werdet sehen, es wird euch schmecken.\xBB
+    Andy hatte nicht zu viel versprochen. Schon beim Vorspeisensalat mit Wurst leuchteten
+    Keiths Augen. \xABWow, ein Salat mit Wurst gespickt mit K\xE4se, G\xFCrkchen,
+    Tomaten und Zwiebeln. Wer auch immer auf diese Idee gekommen ist, ich bin ein
+    riesiger Fan\xBB, schw\xE4rmte er. Als Hauptgericht brachte Andy uns einen Teller
+    mit drei Bratw\xFCrsten an einer Zwiebelsauce, dazu eine grosse Portion R\xF6sti
+    und eine Auflaufform voller \xC4lplermagronen, garniert mit ger\xF6steten Zwiebeln
+    zum Teilen. \xABLasst es euch schmecken\xBB, sagte Andy, nachdem er uns jeweils
+    noch ein Raclettepf\xE4nnchen hingestellt hatte.\r\nWir waren uns alle drei einig,
+    dass das Essen einfach himmlisch war. Als das Dessert serviert wurde, platzten
+    wir schon fast, aber zum St\xFCck Zuger Kirschtorte mit einem Klecks Tobleronemousse
+    konnte keiner von uns Nein sagen.\r\n"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 18
+  m_fontSizeBase: 18
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 5
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 24.95111, z: 0, w: 50.826355}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
