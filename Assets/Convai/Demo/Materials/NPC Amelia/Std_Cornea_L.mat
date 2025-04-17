@@ -16,6 +16,7 @@ Material:
   m_InvalidKeywords:
   - _DISABLE_SSR_TRANSPARENT
   - _ENABLE_FOG_ON_TRANSPARENT
+  - _ISLEFTEYE_ON
   - _SURFACE_TYPE_TRANSPARENT
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
@@ -61,13 +62,27 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
     - BOOLEAN_ISCORNEA: 1
     - _AOStrength: 0.5
+    - _AlphaCutoff: 0.5
     - _ColorBlendStrength: 0
     - _CorneaSmoothness: 0.88
     - _DepthRadius: 0.8
+    - _EnvironmentReflections: 1
     - _IOR: 1.4
     - _IrisBrightness: 1.6500001
     - _IrisDepth: 0.2997
@@ -83,6 +98,9 @@ Material:
     - _PMod: 6.2717
     - _ParallaxRadius: 0.1175
     - _PupilScale: 0.71175003
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _ReceiveShadows: 1
     - _ScleraBrightness: 0.82944924
     - _ScleraHue: 0.51
     - _ScleraNormalStrength: 0.100000024
@@ -93,15 +111,19 @@ Material:
     - _ScleraSubsurfaceScale: 0.5
     - _ShadowHardness: 0.5
     - _ShadowRadius: 0.3
+    - _SpecularHighlights: 1
     - _TransAmbient: 0.2
     - _TransDirect: 1
+    - _TransNormal: 0.5
     - _TransNormalDistortion: 0.95
     - _TransScattering: 2
     - _TransShadow: 0.9
+    - _TransStrength: 1
     - _Translucency: 3
     - __dirty: 1
     m_Colors:
     - _CornerShadowColor: {r: 0.99999994, g: 0.8741368, b: 0.8553658, a: 1}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissiveColor: {r: 0, g: 0, b: 0, a: 0}
     - _IrisCloudyColor: {r: 0, g: 0, b: 0, a: 1}
     - _IrisColor: {r: 0.99999994, g: 0.99999994, b: 0.99999994, a: 1}
