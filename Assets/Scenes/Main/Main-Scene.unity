@@ -555,8 +555,16 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6416268973968594715, guid: 93589b90e208c064aa94b47597fac0b2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1855321263}
   m_SourcePrefab: {fileID: 100100000, guid: 93589b90e208c064aa94b47597fac0b2, type: 3}
+--- !u!1 &1057604372 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6416268973968594715, guid: 93589b90e208c064aa94b47597fac0b2, type: 3}
+  m_PrefabInstance: {fileID: 1057604371}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1076103840
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -584,6 +592,180 @@ PrefabInstance:
     - target: {fileID: 2169250625388373284, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: m_ReferenceResolution.y
       value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: narrativeTrigger
+      value: 
+      objectReference: {fileID: 1250541345}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: pageTriggers.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: choiceContents.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: pageTriggers.Array.data[0].eventName
+      value: start_section_trigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: pageTriggers.Array.data[1].eventName
+      value: transportation_trigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: pageTriggers.Array.data[2].eventName
+      value: focus_trigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: pageTriggers.Array.data[3].eventName
+      value: confrontation_trigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: pageTriggers.Array.data[4].eventName
+      value: tracking_trigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: pageTriggers.Array.data[5].eventName
+      value: choice_trigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: pageTriggers.Array.data[0].pageNumber
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: pageTriggers.Array.data[1].pageNumber
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: pageTriggers.Array.data[2].pageNumber
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: pageTriggers.Array.data[3].pageNumber
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: pageTriggers.Array.data[4].pageNumber
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: pageTriggers.Array.data[5].pageNumber
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: choiceContents.Array.data[0].choiceName
+      value: e203e516-19db-11f0-b31c-42010a7be01a
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: choiceContents.Array.data[0].newContent
+      value: Brooke hat DurstBrooke hat DurstBrooke hat DurstBrooke hat DurstBrooke
+        hat DurstBrooke hat DurstBrooke hat DurstBrooke hat DurstBrooke hat DurstBrooke
+        hat DurstBrooke hat DurstBrooke hat DurstBrooke hat DurstBrooke hat DurstBrooke
+        hat DurstBrooke hat DurstBrooke hat DurstBrooke hat DurstBrooke hat DurstBrooke
+        hat DurstBrooke hat DurstBrooke hat DurstBrooke hat DurstBrooke hat DurstBrooke
+        hat DurstBrooke hat DurstBrooke hat DurstBrooke hat DurstBrooke hat Durst
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: choiceContents.Array.data[1].choiceName
+      value: dc7cae70-19db-11f0-84f5-42010a7be01a
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: choiceContents.Array.data[1].newContent
+      value: Elias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
+        hat HungerElias hat HungerElias hat HungerElias hat Hunger
       objectReference: {fileID: 0}
     - target: {fileID: 5766205926528956805, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: m_Pivot.x
@@ -669,6 +851,66 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8281352456014467181, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8281352456014467181, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8281352456014467181, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8281352456014467181, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8281352456014467181, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1855321264}
+    - target: {fileID: 8281352456014467181, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1855321264}
+    - target: {fileID: 8281352456014467181, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8281352456014467181, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8281352456014467181, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TriggerEvent
+      objectReference: {fileID: 0}
+    - target: {fileID: 8281352456014467181, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: TriggerEvent
+      objectReference: {fileID: 0}
+    - target: {fileID: 8281352456014467181, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Convai.Scripts.Runtime.Core.ConvaiNPC, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8281352456014467181, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Convai.Scripts.Runtime.Core.ConvaiNPC, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8281352456014467181, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: Convai.Scripts.Runtime.Core.ConvaiNPC, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8281352456014467181, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8281352456014467181, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8343112355405219230, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: m_ActiveFontFeatures.Array.data[0]
       value: 1801810542
@@ -701,6 +943,62 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5766205926528956805, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
   m_PrefabInstance: {fileID: 1076103840}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1250541344
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1250541346}
+  - component: {fileID: 1250541345}
+  m_Layer: 0
+  m_Name: Narrative_Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1250541345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1250541344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c783ed73e64a204ebf38b93c054b566, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  convaiNPC: {fileID: 1855321264}
+  selectedTriggerIndex: -1
+  availableTriggers:
+  - confrontation_trigger
+  - start_section_trigger
+  - transportation_trigger
+  - tracking_trigger
+  - focus_trigger
+  - choice_trigger
+  onTriggerEvent:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &1250541346
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1250541344}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1146.7648, y: 448.66013, z: -6.9795966}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1479141829
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,6 +1219,357 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5927012054273772961, guid: 93589b90e208c064aa94b47597fac0b2, type: 3}
   m_PrefabInstance: {fileID: 1057604371}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1855321263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1057604372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d56bc33052944e0aba5a0fe7073c3ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sectionChangeEventsDataList:
+  - id: e203e516-19db-11f0-b31c-42010a7be01a
+    onSectionStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onSectionEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: 5042e242-1d16-11f0-a3d8-42010a7be01a
+    onSectionStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onSectionEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: 9990e12e-1c8a-11f0-a3d8-42010a7be01a
+    onSectionStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onSectionEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: 6833cac2-1c91-11f0-8386-42010a7be01a
+    onSectionStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onSectionEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: 935c095c-1d14-11f0-b7c6-42010a7be01a
+    onSectionStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onSectionEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: 5570a358-1d16-11f0-a32a-42010a7be01a
+    onSectionStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onSectionEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: 203a9516-1ca0-11f0-8e2d-42010a7be01a
+    onSectionStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onSectionEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: dc7cae70-19db-11f0-84f5-42010a7be01a
+    onSectionStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onSectionEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: 58701d38-1d19-11f0-8e2d-42010a7be01a
+    onSectionStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onSectionEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: 90f63df4-1d14-11f0-8386-42010a7be01a
+    onSectionStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onSectionEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: 8660d266-1c9f-11f0-a523-42010a7be01a
+    onSectionStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onSectionEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: c2b0d020-19db-11f0-977e-42010a7be01a
+    onSectionStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onSectionEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: de2c157e-1c8a-11f0-bf37-42010a7be01a
+    onSectionStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onSectionEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: 3e0d4052-1c8c-11f0-b174-42010a7be01a
+    onSectionStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onSectionEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: 9b89a66e-1c8a-11f0-8b3f-42010a7be01a
+    onSectionStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onSectionEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: 0ad2be40-1c9d-11f0-a740-42010a7be01a
+    onSectionStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onSectionEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: 87a4d2a8-1c9f-11f0-8e4d-42010a7be01a
+    onSectionStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onSectionEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: fdf26f90-1c9c-11f0-8e4d-42010a7be01a
+    onSectionStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onSectionEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: 9ac44326-1d14-11f0-8b3f-42010a7be01a
+    onSectionStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onSectionEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: d73ff812-1d15-11f0-8b3f-42010a7be01a
+    onSectionStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onSectionEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: 52b72b00-1d16-11f0-8b3f-42010a7be01a
+    onSectionStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onSectionEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: 9580eefa-1d14-11f0-bc50-42010a7be01a
+    onSectionStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onSectionEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  sectionDataList:
+  - sectionId: e203e516-19db-11f0-b31c-42010a7be01a
+    sectionName: Welcome_End
+    behaviorTreeConstants: 
+    objective: "Schade, ich h\xE4tte dich gerne mit auf eine Reise in die Stadt die
+      niemals schl\xE4ft mitgenommen."
+    characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
+  - sectionId: 5042e242-1d16-11f0-a3d8-42010a7be01a
+    sectionName: section 19
+    behaviorTreeConstants: 
+    objective: "Den beiden hinterher gehen! Ich will wissen was die beiden zu so
+      sp\xE4ter Stunde im Museum machen."
+    characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
+  - sectionId: 9990e12e-1c8a-11f0-a3d8-42010a7be01a
+    sectionName: To_transportation_trigger
+    behaviorTreeConstants: 
+    objective: "Say this paragraph to the user inclusive the question at the end:\nMit
+      dem Taxi k\xF6nnte ich es noch rechtzeitig schaffen, aber das kostet mich einiges
+      an Geld. Handkehrum bin ich sowiso zu sp\xE4t, lieber gebe ich das Geld f\xFCr
+      zwei, drei Cosmopolitans aus. Soll ich ein Taxi nehmen oder doch lieber die
+      U-Bahn? \n\n"
+    characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
+  - sectionId: 6833cac2-1c91-11f0-8386-42010a7be01a
+    sectionName: To_focus_trigger
+    behaviorTreeConstants: 
+    objective: "Say this paragraph to the user inclusive the question at the end:\nKeith
+      hat mich so abgelenkt. Was meinst du, kann ich meinen Fokus wieder zur\xFCck
+      auf die Moderation lenken?"
+    characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
+  - sectionId: 935c095c-1d14-11f0-b7c6-42010a7be01a
+    sectionName: Roller
+    behaviorTreeConstants: 
+    objective: 
+    characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
+  - sectionId: 5570a358-1d16-11f0-a32a-42010a7be01a
+    sectionName: section 21
+    behaviorTreeConstants: 
+    objective: 
+    characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
+  - sectionId: 203a9516-1ca0-11f0-8e2d-42010a7be01a
+    sectionName: To_tracking_trigger
+    behaviorTreeConstants: 
+    objective: "Say this paragraph to the user inclusive the question at the end:\nWas
+      meinst du. Sollen wir Keith mit dem Roller, den Fahrr\xE4dern oder dem Taxi
+      verfolgen? Oder sollen wir ihn besser nicht verfolgen?\n"
+    characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
+  - sectionId: dc7cae70-19db-11f0-84f5-42010a7be01a
+    sectionName: Start reading
+    behaviorTreeConstants: 
+    objective: "Say this paragraph to the user:\nSuper, dann lass uns in die Stadt
+      die niemals schl\xE4ft eintauchen. Ich w\xFCnsche dir viel Spass beim Lesen."
+    characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
+  - sectionId: 58701d38-1d19-11f0-8e2d-42010a7be01a
+    sectionName: Tracking_End
+    behaviorTreeConstants: 
+    objective: 
+    characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
+  - sectionId: 90f63df4-1d14-11f0-8386-42010a7be01a
+    sectionName: No tracking
+    behaviorTreeConstants: 
+    objective: 
+    characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
+  - sectionId: 8660d266-1c9f-11f0-a523-42010a7be01a
+    sectionName: Confrontation_Nein
+    behaviorTreeConstants: 
+    objective: 'Say this paragraph to the user:
+
+      Gute Entscheidung. Es geht
+      mich nicht an, mit wem er sich trifft. '
+    characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
+  - sectionId: c2b0d020-19db-11f0-977e-42010a7be01a
+    sectionName: Welcome Section
+    behaviorTreeConstants: 
+    objective: "Say this paragraph to the user inclusive the question at the end:\nHallo,
+      ich begr\xFCsse dich herzlich im Buch Cosmopolitan on the Rocks - Die Verwicklung.
+      Ich bin die Protagonistin Beverly Keeton, eine New Yorker Journalistin beim
+      angesehenen Fernsehsender Big Apple News in New York. Ich lade dich ein, meine
+      Welt zu entdecken. Bist du bereit?\n\nIf the user response is not an answer
+      to the above question then answer the user question and ask if user would like
+      to start."
+    characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
+  - sectionId: de2c157e-1c8a-11f0-bf37-42010a7be01a
+    sectionName: U-Bahn
+    behaviorTreeConstants: 
+    objective: 'Say this paragraph to the user:
+
+      Gute Entscheidung! Mit dem
+      gesparten Geld, kann ich mir doch glatt drei Cosmopolitans bestellen.'
+    characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
+  - sectionId: 3e0d4052-1c8c-11f0-b174-42010a7be01a
+    sectionName: To_confrontation_trigger
+    behaviorTreeConstants: 
+    objective: "Say this paragraph to the user inclusive the question at the end:\nEs
+      nimmt mich schon wunder mit wem er sich sp sp\xE4t noch trifft. Soll ich Ihn
+      fregen, mit wem er sich gleich treffen wird?"
+    characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
+  - sectionId: 9b89a66e-1c8a-11f0-8b3f-42010a7be01a
+    sectionName: Taxi
+    behaviorTreeConstants: 
+    objective: "Say this paragraph to the user:\nGute Entscheidung. Ich will meine
+      Kollegen schliesslich nicht noch l\xE4nger warten lassen."
+    characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
+  - sectionId: 0ad2be40-1c9d-11f0-a740-42010a7be01a
+    sectionName: Focus_Nein
+    behaviorTreeConstants: 
+    objective: "Say this paragraph to the user:\nDu hast Recht! Wie kann man sich
+      bei solch einen sch\xF6nen Anblick noch konzentrieren."
+    characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
+  - sectionId: 87a4d2a8-1c9f-11f0-8e4d-42010a7be01a
+    sectionName: Confrontation_Ja
+    behaviorTreeConstants: 
+    objective: Super, dann werde ich ihn gleich mal damit konfrontieren.
+    characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
+  - sectionId: fdf26f90-1c9c-11f0-8e4d-42010a7be01a
+    sectionName: Focus_Ja
+    behaviorTreeConstants: 
+    objective: 'Say this paragraph to the user:
+
+      Du hast Recht! Ich lasse mich
+      von Keith nicht ablenken. '
+    characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
+  - sectionId: 9ac44326-1d14-11f0-8b3f-42010a7be01a
+    sectionName: Taxi_2
+    behaviorTreeConstants: 
+    objective: 
+    characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
+  - sectionId: d73ff812-1d15-11f0-8b3f-42010a7be01a
+    sectionName: section 18
+    behaviorTreeConstants: 
+    objective: 
+    characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
+  - sectionId: 52b72b00-1d16-11f0-8b3f-42010a7be01a
+    sectionName: section 20
+    behaviorTreeConstants: 
+    objective: "Da l\xE4sst sich nichts machen. Der Fall ist klar, die beiden haben
+      eine Aff\xE4ire."
+    characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
+  - sectionId: 9580eefa-1d14-11f0-bc50-42010a7be01a
+    sectionName: "Fahrr\xE4der"
+    behaviorTreeConstants: 
+    objective: 
+    characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
+  triggerDataList:
+  - triggerId: 04abbffa-1c8c-11f0-9759-42010a7be01a
+    triggerName: confrontation_trigger
+    triggerMessage: The user has finished reading.
+    destinationSection: 3e0d4052-1c8c-11f0-b174-42010a7be01a
+    characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
+  - triggerId: 3896f7bc-1c78-11f0-a571-42010a7be01a
+    triggerName: start_section_trigger
+    triggerMessage: User enters the scene
+    destinationSection: c2b0d020-19db-11f0-977e-42010a7be01a
+    characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
+  - triggerId: 4120dcf6-1c8a-11f0-8b3f-42010a7be01a
+    triggerName: transportation_trigger
+    triggerMessage: The user has finished reading.
+    destinationSection: 9990e12e-1c8a-11f0-a3d8-42010a7be01a
+    characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
+  - triggerId: b7fe6ea0-1c9f-11f0-8ace-42010a7be01a
+    triggerName: tracking_trigger
+    triggerMessage: The user has finished reading.
+    destinationSection: 203a9516-1ca0-11f0-8e2d-42010a7be01a
+    characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
+  - triggerId: 664a2620-1c91-11f0-81dc-42010a7be01a
+    triggerName: focus_trigger
+    triggerMessage: The user has finished reading.
+    destinationSection: 6833cac2-1c91-11f0-8386-42010a7be01a
+    characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
+  - triggerId: fa99d3aa-1d15-11f0-8ace-42010a7be01a
+    triggerName: choice_trigger
+    triggerMessage: The user has finished reading.
+    destinationSection: d73ff812-1d15-11f0-8b3f-42010a7be01a
+    characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
+--- !u!114 &1855321264 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1925729846038284158, guid: 93589b90e208c064aa94b47597fac0b2, type: 3}
+  m_PrefabInstance: {fileID: 1057604371}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1057604372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b38e4bc919e1f040ba78aea7472893e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -931,3 +1580,4 @@ SceneRoots:
   - {fileID: 803684209}
   - {fileID: 1076103840}
   - {fileID: 309342842}
+  - {fileID: 1250541346}
