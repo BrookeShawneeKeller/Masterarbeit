@@ -17,6 +17,10 @@ namespace ChristinaCreatesGames.Typography.Book
         [SerializeField] private TMP_Text leftPagination;
         [SerializeField] private TMP_Text rightPagination;
 
+        [Header("UI Controls")]
+        [Tooltip("Das GameObject, das den Next-Page-Knopf enthält")]
+        [SerializeField] private GameObject nextPageObject;
+
         [Header("Narrative Design Trigger")]
         [SerializeField] private NarrativeDesignTrigger narrativeTrigger;
 
@@ -46,7 +50,7 @@ namespace ChristinaCreatesGames.Typography.Book
 
         private void Awake()
         {
-            // Initialer Text‑ & Pagination‑Aufbau
+            // Initialer Aufbau
             SetupContent();
             UpdatePagination();
             BuildTriggerDictionary();
@@ -55,13 +59,11 @@ namespace ChristinaCreatesGames.Typography.Book
 
         private void Start()
         {
-            // Starte Coroutine, die wartet bis die Section-Liste geladen ist
             StartCoroutine(InitSectionSubscriptions());
         }
 
         private IEnumerator InitSectionSubscriptions()
         {
-            // Warte bis Manager + Liste existieren und mindestens ein Eintrag da ist
             yield return new WaitUntil(() =>
                 narrativeTrigger != null
                 && narrativeTrigger.convaiNPC != null
@@ -144,6 +146,10 @@ namespace ChristinaCreatesGames.Typography.Book
                     narrativeTrigger.selectedTriggerIndex = idx;
                     narrativeTrigger.InvokeSelectedTrigger();
                     Debug.Log($"[BookContents] ConvAI‑Trigger '{eventName}' (Index {idx}) auf Seite {currentPage} gesendet.");
+
+                    // NextPage-Knopf ausblenden
+                    if (nextPageObject != null)
+                        nextPageObject.SetActive(false);
                 }
                 else
                 {
@@ -155,22 +161,16 @@ namespace ChristinaCreatesGames.Typography.Book
         private void SubscribeSectionEvents()
         {
             var ndManager = narrativeTrigger.convaiNPC.narrativeDesignManager;
-
             Debug.Log($"[BookContents] Registriere {ndManager.sectionChangeEventsDataList.Count} Section-Events.");
 
             foreach (var sc in ndManager.sectionChangeEventsDataList)
             {
-                string sectionId = sc.id;  // lokale Kopie für den Lambda‑Closure
+                string sectionId = sc.id;
                 sc.onSectionStart.AddListener(() => HandleSectionStart(sectionId));
                 Debug.Log($"[BookContents] Listener für Section '{sectionId}' registriert.");
             }
         }
 
-        /// <summary>
-        /// Wird aufgerufen, wenn ConvAI über den NarrativeDesignManager
-        /// eine neue Section startet. Gibt die Section-ID im Log aus
-        /// und tauscht den Buchtext, falls ein Mapping existiert.
-        /// </summary>
         private void HandleSectionStart(string sectionId)
         {
             Debug.Log($"[BookContents] Section-Start empfangen: '{sectionId}'");
@@ -181,6 +181,10 @@ namespace ChristinaCreatesGames.Typography.Book
                 SetupContent();
                 UpdatePagination();
                 Debug.Log($"[BookContents] Text für Section '{sectionId}' aktualisiert.");
+
+                // NextPage-Knopf wieder einblenden
+                if (nextPageObject != null)
+                    nextPageObject.SetActive(true);
             }
             else
             {

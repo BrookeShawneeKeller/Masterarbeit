@@ -403,6 +403,7 @@ GameObject:
   - component: {fileID: 833862652}
   - component: {fileID: 833862651}
   - component: {fileID: 833862650}
+  - component: {fileID: 833862653}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -484,6 +485,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &833862653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 833862649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    quality: 3
+    frameInfluence: 0.1
+    jitterScale: 1
+    mipBias: 0
+    varianceClampScale: 0.9
+    contrastAdaptiveSharpening: 0
 --- !u!1001 &1057604371
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -594,6 +639,32 @@ PrefabInstance:
       value: 1080
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: content
+      value: "Kapitel 8\nNew York\nFreitag, 13. Dezember 2022\n\n\n<b><i><color=#00FF00>Verdammt</color></i></b>.
+        Ich hatte verschlafen. Wie hatte das passieren k\xF6nnen? Ich musste den
+        Wecker einfach weggedr\xFCckt haben, ohne es zu merken. Das grelle Leuchten
+        meines Handydisplays blendete mich: 10:45 Uhr. In einer Viertelstunde sollte
+        ich bereits im Natural History Museum sein f\xFCr meine erste grosse live
+        Moderation und das schien kaum machbar. Die Subwayfahrt von Dumbo bis zum
+        Museum w\xFCrde mindestens dreissig Minuten in Anspruch nehmen. Panik durchstr\xF6mte
+        mich, w\xE4hrend ich eilig auf meinem Smartphone tippte und Keith benachrichtigte:\n\nShit!
+        Habe verschlafen. Ich beeile mich, es sollte mir auf 11:45 Uhr reichen. Sorry!\n\nHoffentlich
+        w\xFCrde diese Nachricht ausreichen, um die Situation zu retten. Immerhin
+        begann die Livesendung erst um vierzehn Uhr und wir hatten nicht mehr allzu
+        viel vorzubereiten.\n\nEine Nachricht von Keith ploppte auf: \n\nKeine Sorge,
+        Bill und ich haben alles im Griff! Bis gleich.\n\nJetzt aber los, dachte
+        ich mir. Ich \xFCberlegte, wie ich am schnellsten zum National History Museum
+        gelangte. Mit einem Taxi w\xE4re ich bestimmt schneller als mit der U-Bahn."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: nextPageObject
+      value: 
+      objectReference: {fileID: 1400197825}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: narrativeTrigger
       value: 
       objectReference: {fileID: 1250541345}
@@ -603,7 +674,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: choiceContents.Array.size
-      value: 2
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: pageTriggers.Array.data[0].eventName
@@ -655,117 +726,823 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: choiceContents.Array.data[0].choiceName
-      value: e203e516-19db-11f0-b31c-42010a7be01a
-      objectReference: {fileID: 0}
-    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
-      propertyPath: choiceContents.Array.data[0].newContent
-      value: Brooke hat DurstBrooke hat DurstBrooke hat DurstBrooke hat DurstBrooke
-        hat DurstBrooke hat DurstBrooke hat DurstBrooke hat DurstBrooke hat DurstBrooke
-        hat DurstBrooke hat DurstBrooke hat DurstBrooke hat DurstBrooke hat DurstBrooke
-        hat DurstBrooke hat DurstBrooke hat DurstBrooke hat DurstBrooke hat DurstBrooke
-        hat DurstBrooke hat DurstBrooke hat DurstBrooke hat DurstBrooke hat DurstBrooke
-        hat DurstBrooke hat DurstBrooke hat DurstBrooke hat DurstBrooke hat Durst
-      objectReference: {fileID: 0}
-    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
-      propertyPath: choiceContents.Array.data[1].choiceName
       value: dc7cae70-19db-11f0-84f5-42010a7be01a
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: choiceContents.Array.data[0].newContent
+      value: START READING
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: choiceContents.Array.data[1].choiceName
+      value: e203e516-19db-11f0-b31c-42010a7be01a
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: choiceContents.Array.data[1].newContent
-      value: Elias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat HungerElias hat HungerElias
-        hat HungerElias hat HungerElias hat HungerElias hat Hunger
+      value: WELCOME END
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: choiceContents.Array.data[2].choiceName
+      value: 9b89a66e-1c8a-11f0-8b3f-42010a7be01a
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: choiceContents.Array.data[2].newContent
+      value: "TAXI\nMit einem energischen Satz sprang ich aus den Federn, zog schnell
+        meinen Pyjama aus und schl\xFCpfte stattdessen in meinen dunkelblauen Jumpsuit.
+        Im Badezimmer putzte ich mir die Z\xE4hne und zwang meine wilden Haare zu
+        einem strengen Dutt. Keine halbe Stunde sp\xE4ter sass ich bereits in einem
+        Taxi und hoffte, dass ich so schneller an mein Ziel gelangen w\xFCrde.\r\nDoch
+        schon nach wenigen Minuten wurde mir klar, dass ich einen Fehler gemacht
+        hatte. Der Verkehr in New York bewegte sich im Schneckentempo. Hupende Autos,
+        genervte Fahrer und rote Ampeln reihten sich wie eine endlose Kette aneinander.
+        Ich trommelte ungeduldig mit den Fingern auf meine Handtasche und warf einen
+        Blick auf die Uhr. \xABNicht im Ernst!\xBB, murmelte ich w\xFCtend. Ich h\xE4tte
+        genauso gut die U-Bahn nehmen k\xF6nnen \u2013 nein, eigentlich w\xE4re ich
+        l\xE4ngst angekommen!\r\nNach einer gef\xFChlten Ewigkeit hielt das Taxi
+        endlich vor dem Museum. Ich warf dem Fahrer hastig ein paar Dollar zu \u2013
+        viel zu viel f\xFCr das, was diese Fahrt wert gewesen war \u2013 und sprang
+        heraus. Mein Puls raste, w\xE4hrend ich die Treppen zum Eingang hinaufsprintete,
+        meinen Presseausweis z\xFCckte und mich direkt zur Edelsteinhalle begab.\r\nDie
+        Vitrine, in der nun endlich der Diamant sein m\xFCsste, war mit einem mysteri\xF6sen
+        schwarzen Tuch verh\xFCllt. Ich konnte nur annehmen, dass der Diamant bereits
+        auf seinem Platz war. Die Aufregung in mir wuchs.\r\nDie Kameras waren schon
+        positioniert und die Mikrofone lagen einsatzbereit neben dem Schnittpult.
+        Als ich mich umsah, entdeckte ich Keith, Bill und die zwei Praktikanten Kenneth
+        und Tom, die gerade damit besch\xE4ftigt waren, die letzten Kabel zu verbinden.\r\n\r\n\xABHallo
+        zusammen! Ich habe es auch noch geschafft\xBB, begr\xFCsste ich die Crew
+        mit einem verlegenen L\xE4cheln. \r\nKeith reckte seinen Kopf \xFCber den
+        Tisch und witzelte. \xABNa, Dornr\xF6schen, hast du gut geschlafen?\xBB \r\nBill,
+        der nun ebenfalls aufgestanden war, brach in schallendes Gel\xE4chter aus.
+        \r\n\xABJaja, lacht ihr nur!\xBB, entgegnete ich grinsend. \r\nKeith griff
+        nach einem Pappbecher und streckte ihn mir entgegen. \xABHier, wir haben
+        dir einen Gingerbread-Latte geholt. Er ist mittlerweile zwar etwas abgek\xFChlt.\xBB
+        \r\nEine Gingernote stieg mir in die Nase und mir lief sogleich das Wasser
+        im Mund zusammen. Genau das brauchte ich jetzt. Die S\xFCsse des Kaffees
+        garniert mit einem Hauch von Zimt war wie Balsam f\xFCr meine aufgew\xFChlten
+        Nerven. So s\xFCss \u2013 Keith hatte sich tats\xE4chlich meinen Lieblingskaffee
+        gemerkt, den ich die letzten Tage immer im B\xFCro getrunken hatte. \xABWow,
+        vielen Dank, du bist ein Schatz! Der rettet mir den Tag!\xBB \r\nDie Jungs
+        hatten bereits alles vorbereitet, sodass wir gleich mit dem Kamera- und Toncheck
+        starten konnten. Gl\xFCcklicherweise funktionierte alles einwandfrei und
+        wir konnten unseren Lunch geniessen, bevor es f\xFCr mich in die Maske ging.\r\nKurz
+        vor vierzehn Uhr erreichte meine Nervosit\xE4t ihren H\xF6hepunkt, als ich
+        meinen Platz vor der Kamera einnahm. Ich versuchte sie jedoch bestm\xF6glich
+        zu unterdr\xFCcken. Schliesslich hatte ich so lange auf diesen Moment hingearbeitet
+        und jetzt war er endlich da. Die Visagistin t\xE4nzelte erneut um mich herum
+        und wedelte mit dem Pinsel \xFCber mein Gesicht. Die feinen H\xE4rchen kitzelten
+        meine Nase und ich riss mich zusammen, um keinen Niesanfall zu riskieren.\r\n\xABIt\u2019s
+        showtime!\xBB, rief Bill enthusiastisch. \xABUnd in drei, zwei, eins \u2013
+        wir sind auf Sendung.\xBB\r\nDie Kameras fingen an zu laufen und ich begann
+        mit meiner einstudierten Moderation. \xABHallo New York!\xBB, begann ich,
+        meine Stimme hallte durch den Saal des Museums. \r\n\xABIn diesem Moment
+        wird der Cosmopolitan, einer der wertvollsten Diamanten weltweit, erstmals
+        der \xD6ffentlichkeit pr\xE4sentiert\u2009\u2026\xBB Ich sp\xFCrte die geballte
+        Aufmerksamkeit des Teams und der Zuschauenden, welche die Sendung live verfolgten.
+        Die Aufregung in der Luft war greifbar und ich wusste, dass dies der Moment
+        war, auf den ich so hart hingearbeitet hatte.\r\n\xABDer Cosmopolitan\u2009\u2026\xBB,
+        fuhr ich fort, meine Stimme fest und doch aufgeregt, \xABist einer der seltensten
+        Diamanten weltweit. Er ist nicht nur aussergew\xF6hnlich kostbar, sondern
+        auch von atemberaubender Reinheit und Farbe. Ein Juwel von solcher Einzigartigkeit
+        bekommt man nur selten zu Gesicht.\xBB W\xE4hrend ich sprach, wanderten die
+        Kameras mit Spannung zwischen dem Diamanten, der noch unter der Vitrine mit
+        schwarzem Tuch verborgen war, und mir hin und her.\r\n\xABUnd das Beste daran\xBB,
+        fuhr ich fort, meine Stimme ein wenig lebhafter, \xABist, dass Sie, unsere
+        gesch\xE4tzten Zuschauenden, die M\xF6glichkeit haben werden, diesen Diamanten
+        heute live zu sehen.\xBB W\xE4hrend ich sprach, schwenkten die Kameras \xFCber
+        das erwartungsvolle Publikum, das sich im Museum versammelt hatte, um dieses
+        seltene Ereignis zu erleben. Ich konnte die Aufregung und das Staunen in
+        den Gesichtern der Menschen sehen.\r\n\xABAber bevor wir diesen atemberaubenden
+        Diamanten enth\xFCllen\xBB, k\xFCndigte ich an und blickte auf die Uhr, \xABm\xF6chte
+        Ihnen Melissa Clark, die Kuratorin der Edelsteinhalle des Natural History
+        Museums, einige Hintergrundinformationen zu diesem Juwel geben. Einen grossen
+        Applaus f\xFCr Melissa Clark, bitte.\xBB Ich deutete auf Melissa und der
+        Raum wurde von einem Klatschen erf\xFCllt. Sie winkte in die Kamera und begr\xFCsste
+        die Zuschauenden. \r\n\xABMelissa, du hast dich in den letzten Monaten mit
+        dem Diamanten auseinandergesetzt, was kannst du uns \xFCber die Geschichte
+        des einzigartigen Juwels erz\xE4hlen?\xBB\r\nW\xE4hrend sie \xFCber die Herkunft
+        des Cosmopolitan sprach, zeigte die Regie Bilder und historische Aufnahmen
+        auf den Bildschirmen im Hintergrund. \r\n\xABDer Cosmopolitan\xBB, f\xFChrte
+        sie aus, \xABhat eine bewegte Geschichte. Urspr\xFCnglich wurde er in den
+        indischen Golkonda-Minen entdeckt und anschliessend von einem englischen
+        Diamantenschleifer zu seiner heutigen Form geschliffen.\xBB\r\nW\xE4hrend
+        sie erz\xE4hlte, wurde eine Nachbildung des urspr\xFCnglichen Rohdiamanten
+        eingeblendet, der aussah wie ein glitzernder Eisbrocken und die rohe Sch\xF6nheit
+        und das enorme Potenzial des ungeschliffenen Steins deutlich machte. \r\n\xABSeitdem
+        hat der Diamant eine lange Reise hinter sich\xBB, fuhr ich fort, \xABund
+        er war im Besitz verschiedener Sammler und Juweliere, bevor er schliesslich
+        den Weg hierher in dieses Museum gefunden hat.\xBB\r\n\xABSind Sie jetzt\xBB,
+        sagte Melissa schliesslich mit einem L\xE4cheln, \xABbereit, den Cosmopolitan
+        zu sehen?\xBB\r\nDas Publikum brach in Applaus aus und die Spannung in der
+        Luft erreichte ihren H\xF6hepunkt. Ein Museumsmitarbeiter erhielt ein Zeichen,
+        daraufhin enth\xFCllte er langsam den Diamanten, w\xE4hrend die Kameras jede
+        Facette dieses wertvollen Juwels einfingen. Der Anblick des strahlenden Diamanten
+        in seiner ganzen Pracht raubte allen den Atem. Die Live\xFCbertragung ging
+        weiter und ich f\xFChrte das Interview mit Melissa fort. In dem Moment entdeckte
+        ich Keith im Publikum. F\xFCr einen Moment geriet ich ins Stocken. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: choiceContents.Array.data[3].choiceName
+      value: de2c157e-1c8a-11f0-bf37-42010a7be01a
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: choiceContents.Array.data[3].newContent
+      value: "U-BAHN\nMit einem energischen Satz sprang ich aus den Federn, zog schnell
+        meinen Pyjama aus und schl\xFCpfte stattdessen in meinen dunkelblauen Jumpsuit.
+        Im Badezimmer putzte ich mir die Z\xE4hne und zwang meine wilden Haare zu
+        einem strengen Dutt. Keine halbe Stunde sp\xE4ter befand ich mich bereits
+        in der U-Bahn.\r\nIch sprintete die Treppe zum Museumseingang hinauf, zeigte
+        meinen Presseausweis vor und steuerte direkt auf die Edelsteinhalle zu. Die
+        Vitrine, in der nun endlich der Diamant drin sein m\xFCsste, war mit einem
+        mysteri\xF6sen schwarzen Tuch verh\xFCllt. Ich konnte nur annehmen, dass
+        der Diamant bereits auf seinem Platz war. Die Aufregung in mir wuchs.\r\nDie
+        Kameras waren schon positioniert und die Mikrofone lagen einsatzbereit neben
+        dem Schnittpult. Als ich mich umsah, entdeckte ich Keith, Bill und die zwei
+        Praktikanten Kenneth und Tom, die gerade damit besch\xE4ftigt waren, die
+        letzten Kabel zu verbinden.\r\n\r\n\xABHallo zusammen! Ich habe es auch noch
+        geschafft\xBB, begr\xFCsste ich die Crew mit einem verlegenen L\xE4cheln.
+        \r\nKeith reckte seinen Kopf \xFCber den Tisch und witzelte. \xABNa, Dornr\xF6schen,
+        hast du gut geschlafen?\xBB \r\nBill, der nun ebenfalls aufgestanden war,
+        brach in schallendes Gel\xE4chter aus. \r\n\xABJaja, lacht ihr nur!\xBB,
+        entgegnete ich grinsend. \r\nKeith griff nach einem Pappbecher und streckte
+        ihn mir entgegen. \xABHier, wir haben dir einen Gingerbread-Latte geholt.
+        Er ist mittlerweile zwar etwas abgek\xFChlt.\xBB \r\nEine Gingernote stieg
+        mir in die Nase und mir lief sogleich das Wasser im Mund zusammen. Genau
+        das brauchte ich jetzt. Die S\xFCsse des Kaffees garniert mit einem Hauch
+        von Zimt war wie Balsam f\xFCr meine aufgew\xFChlten Nerven. So s\xFCss \u2013
+        Keith hatte sich tats\xE4chlich meinen Lieblingskaffee gemerkt, den ich die
+        letzten Tage immer im B\xFCro getrunken hatte. \xABWow, vielen Dank, du bist
+        ein Schatz! Der rettet mir den Tag!\xBB \r\nDie Jungs hatten bereits alles
+        vorbereitet, sodass wir gleich mit dem Kamera- und Toncheck starten konnten.
+        Gl\xFCcklicherweise funktionierte alles einwandfrei und wir konnten unseren
+        Lunch geniessen, bevor es f\xFCr mich in die Maske ging.\r\nKurz vor vierzehn
+        Uhr erreichte meine Nervosit\xE4t ihren H\xF6hepunkt, als ich meinen Platz
+        vor der Kamera einnahm. Ich versuchte sie jedoch bestm\xF6glich zu unterdr\xFCcken.
+        Schliesslich hatte ich so lange auf diesen Moment hingearbeitet und jetzt
+        war er endlich da. Die Visagistin t\xE4nzelte erneut um mich herum und wedelte
+        mit dem Pinsel \xFCber mein Gesicht. Die feinen H\xE4rchen kitzelten meine
+        Nase und ich riss mich zusammen, um keinen Niesanfall zu riskieren.\r\n\xABIt\u2019s
+        showtime!\xBB, rief Bill enthusiastisch. \xABUnd in drei, zwei, eins \u2013
+        wir sind auf Sendung.\xBB\r\nDie Kameras fingen an zu laufen und ich begann
+        mit meiner einstudierten Moderation. \xABHallo New York!\xBB, begann ich,
+        meine Stimme hallte durch den Saal des Museums. \r\n\xABIn diesem Moment
+        wird der Cosmopolitan, einer der wertvollsten Diamanten weltweit, erstmals
+        der \xD6ffentlichkeit pr\xE4sentiert\u2009\u2026\xBB Ich sp\xFCrte die geballte
+        Aufmerksamkeit des Teams und der Zuschauenden, welche die Sendung live verfolgten.
+        Die Aufregung in der Luft war greifbar und ich wusste, dass dies der Moment
+        war, auf den ich so hart hingearbeitet hatte.\r\n\xABDer Cosmopolitan\u2009\u2026\xBB,
+        fuhr ich fort, meine Stimme fest und doch aufgeregt, \xABist einer der seltensten
+        Diamanten weltweit. Er ist nicht nur aussergew\xF6hnlich kostbar, sondern
+        auch von atemberaubender Reinheit und Farbe. Ein Juwel von solcher Einzigartigkeit
+        bekommt man nur selten zu Gesicht.\xBB W\xE4hrend ich sprach, wanderten die
+        Kameras mit Spannung zwischen dem Diamanten, der noch unter der Vitrine mit
+        schwarzem Tuch verborgen war, und mir hin und her.\r\n\xABUnd das Beste daran\xBB,
+        fuhr ich fort, meine Stimme ein wenig lebhafter, \xABist, dass Sie, unsere
+        gesch\xE4tzten Zuschauenden, die M\xF6glichkeit haben werden, diesen Diamanten
+        heute live zu sehen.\xBB W\xE4hrend ich sprach, schwenkten die Kameras \xFCber
+        das erwartungsvolle Publikum, das sich im Museum versammelt hatte, um dieses
+        seltene Ereignis zu erleben. Ich konnte die Aufregung und das Staunen in
+        den Gesichtern der Menschen sehen.\r\n\xABAber bevor wir diesen atemberaubenden
+        Diamanten enth\xFCllen\xBB, k\xFCndigte ich an und blickte auf die Uhr, \xABm\xF6chte
+        Ihnen Melissa Clark, die Kuratorin der Edelsteinhalle des Natural History
+        Museums, einige Hintergrundinformationen zu diesem Juwel geben. Einen grossen
+        Applaus f\xFCr Melissa Clark, bitte.\xBB Ich deutete auf Melissa und der
+        Raum wurde von einem Klatschen erf\xFCllt. Sie winkte in die Kamera und begr\xFCsste
+        die Zuschauenden. \r\n\xABMelissa, du hast dich in den letzten Monaten mit
+        dem Diamanten auseinandergesetzt, was kannst du uns \xFCber die Geschichte
+        des einzigartigen Juwels erz\xE4hlen?\xBB\r\nW\xE4hrend sie \xFCber die Herkunft
+        des Cosmopolitan sprach, zeigte die Regie Bilder und historische Aufnahmen
+        auf den Bildschirmen im Hintergrund. \r\n\xABDer Cosmopolitan\xBB, f\xFChrte
+        sie aus, \xABhat eine bewegte Geschichte. Urspr\xFCnglich wurde er in den
+        indischen Golkonda-Minen entdeckt und anschliessend von einem englischen
+        Diamantenschleifer zu seiner heutigen Form geschliffen.\xBB\r\nW\xE4hrend
+        sie erz\xE4hlte, wurde eine Nachbildung des urspr\xFCnglichen Rohdiamanten
+        eingeblendet, der aussah wie ein glitzernder Eisbrocken und die rohe Sch\xF6nheit
+        und das enorme Potenzial des ungeschliffenen Steins deutlich machte. \r\n\xABSeitdem
+        hat der Diamant eine lange Reise hinter sich\xBB, fuhr ich fort, \xABund
+        er war im Besitz verschiedener Sammler und Juweliere, bevor er schliesslich
+        den Weg hierher in dieses Museum gefunden hat.\xBB\r\n\xABSind Sie jetzt\xBB,
+        sagte Melissa schliesslich mit einem L\xE4cheln, \xABbereit, den Cosmopolitan
+        zu sehen?\xBB\r\nDas Publikum brach in Applaus aus und die Spannung in der
+        Luft erreichte ihren H\xF6hepunkt. Ein Museumsmitarbeiter erhielt ein Zeichen,
+        daraufhin enth\xFCllte er langsam den Diamanten, w\xE4hrend die Kameras jede
+        Facette dieses wertvollen Juwels einfingen. Der Anblick des strahlenden Diamanten
+        in seiner ganzen Pracht raubte allen den Atem. Die Live\xFCbertragung ging
+        weiter und ich f\xFChrte das Interview mit Melissa fort. In dem Moment entdeckte
+        ich Keith im Publikum. F\xFCr einen Moment geriet ich ins Stocken. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: choiceContents.Array.data[4].choiceName
+      value: 0ad2be40-1c9d-11f0-a740-42010a7be01a
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: choiceContents.Array.data[4].newContent
+      value: "FOCUS_NEIN\nEr stand l\xE4ssig im Publikum, die Arme verschr\xE4nkt,
+        das Licht spiegelte sich in seinen Haaren, und er hatte diesen Blick \u2013
+        diesen unwiderstehlichen, verschmitzten Keith-Blick, der aussah, als h\xE4tte
+        er gerade etwas unglaublich Lustiges gedacht, das er mir sofort ins Ohr fl\xFCstern
+        wollte.\r\nOh. Mein. Gott.\r\nMein Hirn stotterte, mein Mund \xF6ffnete sich,
+        aber meine Gedanken fielen wie Dominosteine um. Was hatte ich gerade sagen
+        wollen? Worum ging es hier nochmal? Diamanten? Museen? Oder um die Tatsache,
+        dass Keith in einem schwarzen Hemd wirklich skandal\xF6s gut aussah?\r\nEin
+        leises R\xE4uspern von Melissa brachte mich zur\xFCck in die Realit\xE4t.
+        Die Kameras liefen. Die Zuschauer starrten. Ich starrte Keith an. Und Keith?
+        Er grinste. Der Kerl wusste genau, was er tat.\r\n\xAB\xC4hm, ja ... also
+        ... \xE4hm ...\xBB\r\nPeinliche Pause.\r\n\xABDas ist nat\xFCrlich ... ein
+        sehr ... faszinierender Moment!\xBB Meine Stimme klang eine Spur zu hoch,
+        als h\xE4tte ich gerade Helium inhaliert. Ich lachte nerv\xF6s, versuchte,
+        mich zu fangen, aber Keiths Blick machte es mir nicht gerade leicht. Ich
+        konnte f\xF6rmlich h\xF6ren, wie meine innere Carrie Bradshaw ihre Manolos
+        gegen die Wand warf und rief: \xABReiss dich zusammen!\xBB\r\nMelissa \xFCbernahm
+        schnell und sprach weiter \xFCber die Seltenheit des Cosmopolitan-Diamanten,
+        w\xE4hrend ich mich fieberhaft bem\xFChte, mein Gehirn wieder in Gang zu
+        bringen. Keith hob eine Augenbraue und schenkte mir ein winziges Zwinkern!
+        Ich schw\xF6re, er tat das mit Absicht.\r\nIch nahm einen tiefen Atemzug.
+        \xABNun, liebe Zuschauer, nach dieser ... \xE4h ... funkelnden Pr\xE4sentation
+        ...\xBB Ich hielt kurz inne, warf Keith einen Blick zu und f\xFCgte trocken
+        hinzu, \xAB\u2026 kehren wir nun zur Moderation zur\xFCck, bevor mich weitere
+        Ablenkungen aus dem Konzept bringen.\xBB\r\nKeith lachte laut auf \u2013
+        und ich wusste, dass ich verloren hatte.\r\nNachdem die Kameras aus waren,
+        sagte Bill mit einem breiten Grinsen: \xABBeverly, einfach spitze - also
+        der Anfang! Was ist am Schluss mit dir passiert?\xBB \r\nEr streckte seine
+        Hand f\xFCr einen High five aus und ich klatschte ab. \xABVielen Dank! Ich
+        weiss auch nicht\xBB, versuchte ich mich aus der Situation zu retten.\r\n\xABEgal,
+        das kann jedem passieren. Trotzdem, dein erster Auftritt vor der Kamera!
+        Das muss definitiv gefeiert werden. Wer ist bei einem Abstecher nach Soho
+        auf ein paar Drinks dabei?\xBB, fragte Bill in die Runde.\r\n\r\nErst jetzt
+        entdeckte ich einige weitere Gesichter von \xABBig Apple News\xBB, die nach
+        der Show dazugestossen waren. Amber willigte sofort ein und auch Lindsay
+        liess sich die Gelegenheit nicht entgehen, den erfolgreichen Tag zu feiern.
+        \r\nBill stiess Keith freundschaftlich an. \xABWie siehts mit dir aus, Kumpel?\xBB
+        \r\nIch konnte f\xF6rmlich sp\xFCren, wie Keith kurzzeitig \xFCberfordert
+        wirkte. Seine Augen suchten nach einer Antwort und f\xFCr einen Moment trafen
+        sich unsere Blicke. Ein seltsames Gef\xFChl durchzuckte mich, bevor ich mich
+        schnell von ihm abwandte. Obwohl ein Teil von mir hoffte, dass er mitkommen
+        w\xFCrde, wusste ich auch, dass der Abend ohne ihn entspannter f\xFCr mich
+        w\xE4re. Von mir sollte er seine Antwort nicht abh\xE4ngig machen. Aber so
+        wie es schien, hatte ich ihm die Antwort gegeben.\r\n\xABKlar, das lass ich
+        mir nicht entgehen!\xBB, antwortete er.\r\nKnapp zwei Stunden sp\xE4ter,
+        nachdem wir das Kameraequipment abgebaut und im Studio abgeladen hatten,
+        bestellten wir in einer angesagten Bar in Soho die erste Runde. Schon bald
+        flossen die Getr\xE4nke und die Gespr\xE4che wurden immer lebhafter. Die
+        Anspannung des Arbeitstags l\xF6ste sich langsam auf und wir genossen die
+        Gesellschaft. Nur Keith war merkw\xFCrdig drauf. Im F\xFCnfminutentakt schaute
+        er auf sein Smartphone. Ich fragte mich, auf welche Nachricht er so gebannt
+        wartete \u2013 und was mich noch brennender interessierte: von wem.\r\nDann
+        klingelte sein Smartphone, er nahm ab, stand auf und verliess die Bar. Ich
+        w\xFCrde Keith zu gerne belauschen und herausfinden, mit wem er telefoniert.
+        Wie von fremder Hand gesteuert stand auch ich auf und schlich m\xF6glichst
+        unauff\xE4llig vom Tisch, um die Bar zu verlassen. Die restlichen vier am
+        Tisch schienen unseren Abgang gar nicht zu bemerken, so vertieft waren sie
+        in ihr Gespr\xE4ch. Vor der T\xFCr wurde ich von einer Rauchwolke eingenebelt.
+        Von Keith fehlte jede Spur. Nur ein paar Rauchergr\xFCppchen hatten sich
+        vor dem Lokal versammelt. Ich \xFCberlegte kurz, in welche Richtung er gegangen
+        sein mochte, und entschied mich f\xFCr die schmale Seitengasse. Vorsichtig
+        blickte ich um die Ecke und tats\xE4chlich, dort stand er und telefonierte.
+        Dass er dies im Versteckten machte, liess vermuten, dass er etwas zu verbergen
+        hatte. Doch was war es? Ich versuchte dem Telefongespr\xE4ch zu lauschen,
+        doch ich bekam nur gerade noch mit, wie er sich verabschiedete und das Telefonat
+        beendete.\r\n\xABAlso dann bis sp\xE4ter, bye\xBB, h\xF6rte ich ihn gerade
+        noch sagen. Tausend Gedanken schossen mir durch den Kopf. Mit wem traf er
+        sich noch zu n\xE4chtlicher Stunde? Er liess das Smartphone in der Jackentasche
+        verschwinden und setzte sich in Bewegung. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: choiceContents.Array.data[5].choiceName
+      value: fdf26f90-1c9c-11f0-8e4d-42010a7be01a
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: choiceContents.Array.data[5].newContent
+      value: "FOCUS_JA\nDie Live\xFCbertragung ging weiter und ich f\xFChrte das
+        Interview mit Melissa fort. Es war ein magischer Moment und ich konnte es
+        kaum glauben, dass ich Teil dieses historischen Ereignisses war.\r\nIch hatte
+        w\xE4hrend der gesamten Sendezeit Angst, dass meine Stimme versagte oder
+        dass ich den Faden verl\xF6re, aber das passierte nicht. Ich vergass die
+        Zuschauenden und die Kameras um mich herum und f\xFChrte gelassen das Gespr\xE4ch
+        zu Ende. \r\nNachdem die Kameras aus waren, sagte Bill mit einem breiten
+        Grinsen: \xABBeverly, einfach spitze!\xBB \r\nEr streckte seine Hand f\xFCr
+        einen High five aus und ich klatschte ab. \xABVielen Dank! Es war der Wahnsinn!
+        Es war genau so, wie ich mir meine erste Live\xADreportage immer ertr\xE4umt
+        hatte \u2013 nein, es war sogar noch viel aufregender!\xBB, sagte ich \xFCberw\xE4ltigt.\r\n\xABDein
+        erster Auftritt vor der Kamera! Das muss definitiv gefeiert werden. Wer ist
+        bei einem Abstecher nach Soho auf ein paar Drinks dabei?\xBB, fragte Bill
+        in die Runde. \r\n\r\nErst jetzt entdeckte ich einige weitere Gesichter von
+        \xABBig Apple News\xBB, die nach der Show dazugestossen waren. Amber willigte
+        sofort ein und auch Lindsay liess sich die Gelegenheit nicht entgehen, den
+        erfolgreichen Tag zu feiern. \r\nBill stiess Keith freundschaftlich an. \xABWie
+        siehts mit dir aus, Kumpel?\xBB \r\nIch konnte f\xF6rmlich sp\xFCren, wie
+        Keith kurzzeitig \xFCberfordert wirkte. Seine Augen suchten nach einer Antwort
+        und f\xFCr einen Moment trafen sich unsere Blicke. Ein seltsames Gef\xFChl
+        durchzuckte mich, bevor ich mich schnell von ihm abwandte. Obwohl ein Teil
+        von mir hoffte, dass er mitkommen w\xFCrde, wusste ich auch, dass der Abend
+        ohne ihn entspannter f\xFCr mich w\xE4re. Von mir sollte er seine Antwort
+        nicht abh\xE4ngig machen. Aber so wie es schien, hatte ich ihm die Antwort
+        gegeben.\r\n\xABKlar, das lass ich mir nicht entgehen!\xBB, antwortete er.\r\nKnapp
+        zwei Stunden sp\xE4ter, nachdem wir das Kameraequipment abgebaut und im Studio
+        abgeladen hatten, bestellten wir in einer angesagten Bar in Soho die erste
+        Runde. Schon bald flossen die Getr\xE4nke und die Gespr\xE4che wurden immer
+        lebhafter. Die Anspannung des Arbeitstags l\xF6ste sich langsam auf und wir
+        genossen die Gesellschaft. Nur Keith war merkw\xFCrdig drauf. Im F\xFCnfminutentakt
+        schaute er auf sein Smartphone. Ich fragte mich, auf welche Nachricht er
+        so gebannt wartete \u2013 und was mich noch brennender interessierte: von
+        wem.\r\nDann klingelte sein Smartphone, er nahm ab, stand auf und verliess
+        die Bar. Ich w\xFCrde Keith zu gerne belauschen und herausfinden, mit wem
+        er telefoniert. Wie von fremder Hand gesteuert stand auch ich auf und schlich
+        m\xF6glichst unauff\xE4llig vom Tisch, um die Bar zu verlassen. Die restlichen
+        vier am Tisch schienen unseren Abgang gar nicht zu bemerken, so vertieft
+        waren sie in ihr Gespr\xE4ch. Vor der T\xFCr wurde ich von einer Rauchwolke
+        eingenebelt. Von Keith fehlte jede Spur. Nur ein paar Rauchergr\xFCppchen
+        hatten sich vor dem Lokal versammelt. Ich \xFCberlegte kurz, in welche Richtung
+        er gegangen sein mochte, und entschied mich f\xFCr die schmale Seitengasse.
+        Vorsichtig blickte ich um die Ecke und tats\xE4chlich, dort stand er und
+        telefonierte. Dass er dies im Versteckten machte, liess vermuten, dass er
+        etwas zu verbergen hatte. Doch was war es? Ich versuchte dem Telefongespr\xE4ch
+        zu lauschen, doch ich bekam nur gerade noch mit, wie er sich verabschiedete
+        und das Telefonat beendete.\r\n\xABAlso dann bis sp\xE4ter, bye\xBB, h\xF6rte
+        ich ihn gerade noch sagen. Tausend Gedanken schossen mir durch den Kopf.
+        Mit wem traf er sich noch zu n\xE4chtlicher Stunde? Er liess das Smartphone
+        in der Jackentasche verschwinden und setzte sich in Bewegung. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: choiceContents.Array.data[6].choiceName
+      value: 8660d266-1c9f-11f0-a523-42010a7be01a
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: choiceContents.Array.data[6].newContent
+      value: "CONFRONTATION_NEIN\nIch war wie versteinert. In dem Moment wurde mir
+        klar, wie bescheuert es von mir war, ihm hinterherzuspionieren. Ich musste
+        schleunigst hier weg, um unentdeckt zu bleiben. Die Eingangst\xFCr war zu
+        weit entfernt. Jetzt war schnelles Handeln gefragt. Ich mischte mich einfach
+        unbemerkt unter die Rauchenden, schloss mich einem F\xFCnfergr\xFCppchen
+        an und fragte in die Runde: \xABHat jemand eine Zigarette f\xFCr mich?\xBB
+        \r\n\xABKlar, kannst eine von mir haben\xBB, antwortete mir ein s\xFCdl\xE4ndischer
+        Typ mit Baseballcap. Dankend nahm ich sie entgegen. In diesem Moment h\xF6rte
+        ich von hinten Keiths Stimme. \xABBev? Beverly? Was machst du hier draussen?
+        Wusste gar nicht, dass du rauchst!\xBB \r\nVerdammte Scheisse, ja, das wusste
+        ich auch nicht. Wie konnte ich mich auch nur immer in solche Situationen
+        hineinreiten? Ich musste das Spiel weiterziehen. L\xE4ssig drehte ich mich
+        zu ihm um und nahm das Feuerzeug, das mir der Latinotyp hinstreckte, entgegen.
+        Meine Hand bewegte sich mit dem Feuerzeug langsam in Richtung Mund. Ich entz\xFCndete
+        eine kleine Flamme. Ein langer Atemzug liess die Zigarette erglimmen. Ich
+        stiess den Rauch so sachte aus, wie es mir nur m\xF6glich war und hoffte
+        dabei, dass ich irgendwie sexy aussah. Ich sp\xFCrte das Nikotin in meiner
+        Lunge, es gab mir in diesem Moment einen Kick und ich antwortete Keith ganz
+        locker: \xABAch weisst du, hin und wieder, wenn mir gerade danach ist.\xBB
+        \r\nIch setzte die Zigarette erneut an, was sich als grosser Fehler herausstellte.
+        Der Rauch reizte meinen Rachen und ich wurde mit einem Hustenanfall bestraft.
+        Mein Kopf err\xF6tete und ich hoffte, dass meine Tarnung nicht aufgeflogen
+        war und Keith mir meine Schauspielk\xFCnste abkaufte. \r\n\xABAlles klar,
+        dann will ich dich nicht weiter st\xF6ren. Ich geselle mich wieder zu den
+        anderen\xBB, sagte er und machte einen Wink in Richtung Bar. \r\n\xABIch
+        komme gleich nach\xBB, entgegnete ich und schaute Keith nach, wie er im Lokal
+        verschwand.  Ich wandte mich von der Rauchergruppe ab und lief auf direktem
+        Weg zu den Toiletten.\r\n\r\n Ich schloss mich ein, setzte mich auf den WC-Deckel
+        und vergrub mein Gesicht in meinen H\xE4nden. Es \xE4rgerte mich, dass ich
+        jetzt schon angefangen hatte, Keith hinterherzuspionieren. Ich schloss die
+        Toilettent\xFCr wieder auf und da stand Amber neben den Lavabos. Als sie
+        mich entdeckte, pfiff sie mir zu und zwinkerte mir entgegen. \xABUhhh, wo
+        wart ihr denn? Pl\xF6tzlich waren du und Keith verschwunden. Hattest du Spass?\xBB\r\n\xABDu
+        meinst ich und Keith\u2009\u2026 hier?\xBB, ich hielt inne und seufzte schliesslich.
+        \xABSch\xF6n w\xE4rs! Aber nein, Keith erhielt einen Anruf und ich spionierte
+        ihm nach.\xBB \r\nEntsetzt schaute mich Amber an. \xABDu hast was gemacht?\xBB
+        \r\n\xABJa, ich weiss, ich f\xFChre mich auf wie ein Teenie.\xBB \r\n\xABWar
+        deine Spionage wenigstens erfolgreich?\xBB, wollte Amber wissen. Nun, ich
+        stellte mir selbst die Frage, war ich erfolgreich?\r\n\xABNein, also ich
+        meine, ja\u2009\u2026\xBB\r\n\xABJa?\xBB\r\n\xABNun, ich habe nicht herausgefunden,
+        mit wem er das Telefongespr\xE4ch f\xFChrte, aber ich war gerade noch rechtzeitig
+        dort, um den Schluss mitzubekommen.\xBB\r\n\xABUnd?\xBB \r\n\xABEr verabschiedete
+        sich von der Person am anderen Ende der Leitung und meinte bis sp\xE4ter.\xBB\r\n\xABUm
+        diese Uhrzeit noch!\xBB, betonte Amber. \r\n\xABJa, das ist es ja, was mich
+        an der ganzen Sache st\xF6rt.\xBB\r\n\xABIch habs!\xBB, Amber schaute mich
+        verschw\xF6rerisch an. \xABWir folgen ihm.\xBB\r\n\xABWir machen was?\xBB\r\n\xABSobald
+        er sich nachher von der Truppe verabschiedet, sagen wir ebenfalls, dass es
+        Zeit f\xFCr uns ist, nach Hause zu gehen. Wir lassen Keith einen kurzen Vorsprung
+        und beobachten genau, in welche Richtung er geht, und dann schleichen wir
+        ihm nach.\xBB Ambers Augen funkelten bei dieser Idee. \r\n\xABSpinnst du?
+        Wir k\xF6nnen ihn doch nicht verfolgen!\xBB, meinte ich entsetzt.\r\n\xABWieso
+        nicht? Das hast du doch bereits eben getan.\xBB \r\n\xABJa, aber\u2009\u2026\xBB
+        \u2013 mir fiel keine Ausrede mehr ein.\r\n\xABSiehst du, wir haben einen
+        Schlachtplan!\xBB, sagte sie entz\xFCckt. \r\nMir war ganz flau im Magen,
+        doch ich wusste, wenn sich Amber etwas in den Kopf gesetzt hatte, liess sie
+        sich nicht mehr davon abbringen. Widerwillig lenkte ich ein. \r\nDer Weg
+        zu unserer Gruppe f\xFChlte sich an wie ein \xABWalk of Shame\xBB. Es kam
+        mir vor, als w\xFCrden uns die ganzen Barbesuchenden misstrauische Blicke
+        zuwerfen, als h\xE4tten sie von unserem Vorhaben Wind bekommen. Ganz benommen
+        nahm ich an unserem Tisch Platz. Anscheinend ging es nur mir so, denn Amber
+        gesellte sich frisch-fr\xF6hlich zu der Gruppe und brachte sich direkt wieder
+        mit ein. \r\n\xABWer ist bei einem weiteren Durchgang Tequila-shots dabei?\xBB,
+        fragte sie in die Runde. Alle prosteten ihr zu und riefen: \xABTequila, Tequila,
+        Tequila!\xBB \r\nIch war zwar der Meinung, dass ich f\xFCr den heutigen Abend
+        gen\xFCgend Alkohol hatte, doch wenn ich genauer nachdachte, kam mir der
+        Shot gerade gelegen. Ich hoffte, mit zunehmendem Alkoholpegel die kommende
+        Spionageaktion etwas lockerer zu sehen. \r\nEs folgten zwei weitere Shotrunden,
+        bis Keith gegen dreiundzwanzig Uhr aufstand und meinte, es w\xE4re Zeit f\xFCr
+        ihn zu gehen mit dem Vorwand, er h\xE4tte ja morgen Fr\xFChdienst. Das war
+        unser Stichwort. Amber suchte meinen Blick und warf mir ein Nicken zu. Verdammt,
+        was erwartete sie nun von mir? Keith war bereits bei der Ausgangst\xFCr.
+        Ich stand auf, f\xFChrte theatralisch meine Hand zu meinem Mund und t\xE4uschte
+        ein G\xE4hnen vor. \xABIch verabschiede mich ebenfalls f\xFCr heute. War
+        ein langer, anstrengender Tag f\xFCr mich.\xBB \r\nBill hob nochmals sein
+        Bier. \xABAuf dich und deine erste Livemoderation bei \u2039Big Apple News\u203A!\xBB\r\n\xABLeute,
+        ich danke euch vielmals f\xFCr diesen Tag und eure Unterst\xFCtzung. Ihr
+        wart der Knaller.\xBB\r\nJetzt stand auch Amber auf. \xABIch wollte auch
+        gleich gehen, ich komme mit dir noch bis zur n\xE4chsten Subwaystation mit.\xBB
+        \r\n\r\nKeith war gerade dabei, in ein Taxi zu steigen, als wir aus der Bar
+        kamen. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: choiceContents.Array.data[7].choiceName
+      value: 87a4d2a8-1c9f-11f0-8e4d-42010a7be01a
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: choiceContents.Array.data[7].newContent
+      value: "CONFRONTATION_JA\nIch marschierte direkt auf Ihn zu, als er mich entdeckte
+        weiteten sich seine Augen. \xABBev?\xBB\r\nIch verschr\xE4nkte die Arme.
+        \xABMit wem hast du gerade telefoniert?\xBB\r\nEr blinzelte. \xABWie bitte?\xBB\r\n\xABDu
+        hast dich extra aus der Bar geschlichen, um ein geheimes Telefonat zu f\xFChren.
+        Was l\xE4uft hier, Keith?\xBB\r\nF\xFCr einen Moment sah es so aus, als w\xFCrde
+        er nach einer Ausrede suchen. Dann zuckte er mit den Schultern und zwang
+        ein L\xE4cheln auf seine Lippen. \xABEs war nichts. Nur ein Anruf.\xBB\r\nIch
+        verschr\xE4nkte die Arme noch fester. \xABEin geheimer Anruf? In einer dunklen
+        Seitengasse?\xBB\r\nKeith sog scharf die Luft ein und sah sich kurz um, als
+        w\xFCrde er sicherstellen, dass uns niemand h\xF6rte. Dann beugte er sich
+        leicht zu mir vor. \xABBev, das ist nichts, wor\xFCber du dir Gedanken machen
+        musst.\xBB\r\nSeine Worte h\xE4tten beruhigend klingen k\xF6nnen \u2013 wenn
+        nicht genau dieser Satz mein Misstrauen noch mehr geweckt h\xE4tte. \r\n\xABDann
+        geselle mich wieder zu den anderen\xBB, sagte er und machte einen Wink in
+        Richtung Bar. \r\n\xABIch komme gleich nach\xBB, entgegnete ich und schaute
+        Keith nach, wie er im Lokal verschwand. Ich atmete tief ein und versuchte
+        meine Gedanken zu beruhigen, dann ging ich wieder in die Bar und lief auf
+        direktem Weg ui den Toiletten.\r\n\r\n Ich schloss mich ein, setzte mich
+        auf den WC-Deckel und vergrub mein Gesicht in meinen H\xE4nden. Es \xE4rgerte
+        mich, dass ich jetzt schon angefangen hatte, Keith hinterherzuspionieren.
+        Ich schloss die Toilettent\xFCr wieder auf und da stand Amber neben den Lavabos.
+        Als sie mich entdeckte, pfiff sie mir zu und zwinkerte mir entgegen. \xABUhhh,
+        wo wart ihr denn? Pl\xF6tzlich waren du und Keith verschwunden. Hattest du
+        Spass?\xBB\r\n\xABDu meinst ich und Keith\u2009\u2026 hier?\xBB, ich hielt
+        inne und seufzte schliesslich. \xABSch\xF6n w\xE4rs! Aber nein, Keith erhielt
+        einen Anruf und ich spionierte ihm nach.\xBB \r\nEntsetzt schaute mich Amber
+        an. \xABDu hast was gemacht?\xBB \r\n\xABJa, ich weiss, ich f\xFChre mich
+        auf wie ein Teenie.\xBB \r\n\xABWar deine Spionage wenigstens erfolgreich?\xBB,
+        wollte Amber wissen. Nun, ich stellte mir selbst die Frage, war ich erfolgreich?\r\n\xABNein,
+        also ich meine, ja\u2009\u2026\xBB\r\n\xABJa?\xBB\r\n\xABNun, ich habe nicht
+        herausgefunden, mit wem er das Telefongespr\xE4ch f\xFChrte, aber ich war
+        gerade noch rechtzeitig dort, um den Schluss mitzubekommen.\xBB\r\n\xABUnd?\xBB
+        \r\n\xABEr verabschiedete sich von der Person am anderen Ende der Leitung
+        und meinte bis sp\xE4ter.\xBB\r\n\xABUm diese Uhrzeit noch!\xBB, betonte
+        Amber. \r\n\xABJa, das ist es ja, was mich an der ganzen Sache st\xF6rt.\xBB\r\n\xABIch
+        habs!\xBB, Amber schaute mich verschw\xF6rerisch an. \xABWir folgen ihm.\xBB\r\n\xABWir
+        machen was?\xBB\r\n\xABSobald er sich nachher von der Truppe verabschiedet,
+        sagen wir ebenfalls, dass es Zeit f\xFCr uns ist, nach Hause zu gehen. Wir
+        lassen Keith einen kurzen Vorsprung und beobachten genau, in welche Richtung
+        er geht, und dann schleichen wir ihm nach.\xBB Ambers Augen funkelten bei
+        dieser Idee. \r\n\xABSpinnst du? Wir k\xF6nnen ihn doch nicht verfolgen!\xBB,
+        meinte ich entsetzt.\r\n\xABWieso nicht? Das hast du doch bereits eben getan.\xBB
+        \r\n\xABJa, aber\u2009\u2026\xBB \u2013 mir fiel keine Ausrede mehr ein.\r\n\xABSiehst
+        du, wir haben einen Schlachtplan!\xBB, sagte sie entz\xFCckt. \r\nMir war
+        ganz flau im Magen, doch ich wusste, wenn sich Amber etwas in den Kopf gesetzt
+        hatte, liess sie sich nicht mehr davon abbringen. Widerwillig lenkte ich
+        ein. \r\nDer Weg zu unserer Gruppe f\xFChlte sich an wie ein \xABWalk of
+        Shame\xBB. Es kam mir vor, als w\xFCrden uns die ganzen Barbesuchenden misstrauische
+        Blicke zuwerfen, als h\xE4tten sie von unserem Vorhaben Wind bekommen. Ganz
+        benommen nahm ich an unserem Tisch Platz. Anscheinend ging es nur mir so,
+        denn Amber gesellte sich frisch-fr\xF6hlich zu der Gruppe und brachte sich
+        direkt wieder mit ein. \r\n\xABWer ist bei einem weiteren Durchgang Tequila-shots
+        dabei?\xBB, fragte sie in die Runde. Alle prosteten ihr zu und riefen: \xABTequila,
+        Tequila, Tequila!\xBB \r\nIch war zwar der Meinung, dass ich f\xFCr den heutigen
+        Abend gen\xFCgend Alkohol hatte, doch wenn ich genauer nachdachte, kam mir
+        der Shot gerade gelegen. Ich hoffte, mit zunehmendem Alkoholpegel die kommende
+        Spionageaktion etwas lockerer zu sehen. \r\nEs folgten zwei weitere Shotrunden,
+        bis Keith gegen dreiundzwanzig Uhr aufstand und meinte, es w\xE4re Zeit f\xFCr
+        ihn zu gehen mit dem Vorwand, er h\xE4tte ja morgen Fr\xFChdienst. Das war
+        unser Stichwort. Amber suchte meinen Blick und warf mir ein Nicken zu. Verdammt,
+        was erwartete sie nun von mir? Keith war bereits bei der Ausgangst\xFCr.
+        Ich stand auf, f\xFChrte theatralisch meine Hand zu meinem Mund und t\xE4uschte
+        ein G\xE4hnen vor. \xABIch verabschiede mich ebenfalls f\xFCr heute. War
+        ein langer, anstrengender Tag f\xFCr mich.\xBB \r\nBill hob nochmals sein
+        Bier. \xABAuf dich und deine erste Livemoderation bei \u2039Big Apple News\u203A!\xBB\r\n\xABLeute,
+        ich danke euch vielmals f\xFCr diesen Tag und eure Unterst\xFCtzung. Ihr
+        wart der Knaller.\xBB\r\nJetzt stand auch Amber auf. \xABIch wollte auch
+        gleich gehen, ich komme mit dir noch bis zur n\xE4chsten Subwaystation mit.\xBB
+        \r\n\r\nKeith war gerade dabei, in ein Taxi zu steigen, als wir aus der Bar
+        kamen."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: choiceContents.Array.data[8].choiceName
+      value: 90f63df4-1d14-11f0-8386-42010a7be01a
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: choiceContents.Array.data[8].newContent
+      value: "NO_TRACKING\nReflexartig hob Amber die Hand, um das n\xE4chstbeste
+        Taxi f\xFCr uns anzuhalten. \xABLos, beeil dich, steig ein!\xBB\r\nIch r\xFChrte
+        mich nicht. \xABNein, wir k\xF6nnen ihm doch nicht hinterherfahren.\xBB\r\nAmber
+        drehte sich ungeduldig zu mir um. \xABIch nehme nicht an, dass du ihm ohne
+        Auto hinterherrennen willst, oder? Also los, steig ein!\xBB\r\n\xABNein,
+        ich meine, ich will ihm gar nicht hinterherfahren.\xBB\r\nSie blinzelte verwirrt.
+        \xABBitte was?\xBB\r\nIch sch\xFCttelte den Kopf und verschr\xE4nkte die
+        Arme. \xABAmber, das ist verr\xFCckt. Ich wollte ihm nur unauff\xE4llig folgen,
+        nicht wie ein Stalker ein Taxi rufen und ihm durch die halbe Stadt nachspionieren.\xBB\r\n\xABDu
+        willst jetzt aufgeben? Wo bleibt dein Jagdinstinkt?\xBB\r\n\xABIch habe keinen
+        Jagdinstinkt. Und selbst wenn \u2013 was soll das bringen? Was, wenn er nur
+        nach Hause f\xE4hrt oder sich mit jemandem trifft? Ich will das gar nicht
+        wissen.\xBB\r\nAmber seufzte dramatisch und sah Keiths Taxi nach, das in
+        der Dunkelheit verschwand. \xABDu bist echt hoffnungslos, Beverly.\xBB\r\nIch
+        zuckte mit den Schultern. \xABVielleicht.\xBB\r\nAmber schnaubte, liess sich
+        aber schliesslich darauf ein. \xABNa sch\xF6n. Aber dann gehen wir wenigstens
+        noch auf einen letzten Drink.\xBB\r\nIch grinste. \xABDeal.\xBB"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: choiceContents.Array.data[9].choiceName
+      value: 935c095c-1d14-11f0-b7c6-42010a7be01a
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: choiceContents.Array.data[9].newContent
+      value: "ROLLER\nReflexartig hielt Amber die Hand hoch, als wollte sie selbst
+        ein Taxi rufen. Nach dem zweiten Taxi, das an uns vorbeifuhr, ohne uns mitzunehmen,
+        wurde ich ungeduldig. Ich packte sie am Handgelenk und zog sie in die entgegengesetzte
+        Richtung.\r\n\xABVergiss das Taxi, wir nehmen den da!\xBB, rief ich und deutete
+        auf einen roten Motorroller, der vor der Bar stand.\r\n\xABBeverly, das ist
+        Diebstahl! Aber eine grandiose Idee!\xBB, sagte sie, w\xE4hrend sie sich
+        bereits \xFCber den Lenker beugte und am Schloss hantierte.\r\n\xABDas ist
+        eine Notlage! Ausserdem steht der Schl\xFCssel noch drin!\xBB, erwiderte
+        sie triumphierend, als der Motor pl\xF6tzlich aufheulte. \xABAlso, steig
+        auf, Beverly, oder willst du Keith etwa zu Fuss hinterher?\xBB\r\nMein Herz
+        pochte wie verr\xFCckt, und ich hasste mich daf\xFCr, dass es meine Idee
+        mit dem Roller war. Das war v\xF6llig verr\xFCckt. Aber ich tat es trotzdem.
+        Mit einem beherzten Schritt schwang ich mich hinter Amber auf den Roller,
+        klammerte mich an ihrer Taille fest und presste die Augen zusammen, als sie
+        mit einem Ruck losfuhr.\r\nDie kalte New Yorker Nachtluft peitschte uns ins
+        Gesicht, w\xE4hrend Amber den Roller durch den dichten Verkehr schl\xE4ngelte.
+        Keiths Taxi war ein paar Wagen vor uns. \xABDa vorne!\xBB, rief ich, als
+        ich es entdeckte. Amber gab Gas.\r\n\xABHalt dich fest!\xBB, rief sie, und
+        ich tat genau das, w\xE4hrend sie den Roller zwischen zwei Autos hindurchquetschte.
+        Mein Magen machte einen Satz, als wir knapp an einem parkenden Lieferwagen
+        vorbeisausten. \xABDu hast ja einen Todeswunsch!\xBB, keuchte ich.\r\n\xABIch
+        nenne es Abenteuergeist!\xBB, entgegnete Amber mit einem breiten Grinsen.
+        Sie beschleunigte weiter und schoss an einer roten Ampel vorbei. Ein w\xFCtendes
+        Hupkonzert brach hinter uns los.\r\nKeiths Taxi bog scharf nach rechts in
+        eine Seitenstrasse ein. Amber reagierte blitzschnell, drehte den Lenker ruckartig
+        nach rechts, und der Roller rutschte gef\xE4hrlich zur Seite. Ich quietschte
+        erschrocken auf und krallte mich noch fester an ihr fest.\r\n\xABWeniger
+        schreien, mehr Ausschau halten!\xBB, befahl sie. \xABWo ist er jetzt?\xBB\r\n\xABDa
+        vorne! Er wird langsamer!\xBB, rief ich, als das Taxi schliesslich vor einem
+        grossen Geb\xE4ude zum Stehen kam. Ich blinzelte gegen das schummrige Licht
+        der Strassenlaternen. \xABMoment mal \u2026 ist das das Natural History Museum?!\xBB\r\nAmber
+        bremste abrupt, und ich w\xE4re fast nach vorne \xFCber sie gefallen. Der
+        Roller kam mit einem quietschenden Ruck zum Stehen. Vor uns \xF6ffnete sich
+        die Taxit\xFCr, und Keith stieg aus.\r\n\xABOkay, was zum Teufel macht er
+        hier um diese Uhrzeit?\xBB, murmelte Amber.\r\nGerade als ich antworten wollte,
+        \xF6ffnete sich die grosse Eingangst\xFCr des Museums. Eine Gestalt trat
+        heraus und ging zielstrebig auf Keith zu.\r\n\r\nKonzentriert fokussierte
+        ich die Person, die aus dem Museum kam. Ich erkannte die Umrisse einer Frau.
+        Moment, das ist doch nicht?! Amber und ich blickten uns reflexartig an und
+        sagten praktisch gleichzeitig: \xABOMG, das gibt es nicht!\xBB\r\n\xABSiehst
+        du, was ich sehe?\xBB, fragte Amber. \r\nMir fiel die Kinnlade herunter.
+        Ich versuchte mich zu sammeln und stammelte vor mich hin: \xABWenn du Melissa
+        siehst, dann ja.\xBB \r\nIch sah, wie sich die beiden umarmten und dann verschwanden
+        sie auch schon im Geb\xE4ude. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: choiceContents.Array.data[10].choiceName
+      value: 9580eefa-1d14-11f0-bc50-42010a7be01a
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: choiceContents.Array.data[10].newContent
+      value: "FAHRR\xC4DER\nReflexartig blieb Amber stehen und fluchte leise. \xABVerdammt,
+        er nimmt ein Taxi!\xBB\r\n\xABMist, was machen wir jetzt?\xBB Ich sah mich
+        hektisch um.\r\n\xABDort dr\xFCben!\xBB Ich zeigte auf einen Fahrradst\xE4nder
+        mit ein paar Leihr\xE4dern. \xABKomm schon, das ist unsere Chance!\xBB\r\n\xABDu
+        willst ihm auf dem Fahrrad hinterherfahren?\xBB Amber zog skeptisch die Augenbrauen
+        hoch.\r\n\xABHast du eine bessere Idee?\xBB Ich rannte schon los und entriegelte
+        eines der R\xE4der mit einem schnellen Klick auf den Touchscreen. Amber tat
+        es mir nach, sprang auf den Sattel und trat in die Pedale.\r\nKeiths Taxi
+        bog gerade um die Ecke. Amber raste los, als w\xE4re sie Tour-de-France-Fahrerin,
+        und ich hatte M\xFChe, hinterherzukommen.\r\n\xABTritt fester, Beverly, sonst
+        verlieren wir ihn!\xBB rief sie \xFCber ihre Schulter.\r\nIch k\xE4mpfte
+        gegen meine wackligen Beine an und gab mein Bestes, um mitzuhalten. Die Lichter
+        von New York flackerten an uns vorbei, w\xE4hrend wir durch den n\xE4chtlichen
+        Verkehr man\xF6vrierten. Ich h\xF6rte ein paar Fl\xFCche von Fussg\xE4ngern,
+        als wir knapp an ihnen vorbeischossen.\r\nDas Taxi hielt an einer roten Ampel,
+        und wir nutzten die Gelegenheit, um n\xE4her heranzukommen. Ich keuchte:
+        \xABAmber, wir d\xFCrfen nicht auffallen!\xBB\r\n\xABSchon klar.\xBB Sie
+        tat so, als w\xFCrde sie entspannt am Lenker lehnen, w\xE4hrend sie verstohlen
+        das Taxi beobachtete.\r\nDann sprang die Ampel auf Gr\xFCn. Keiths Taxi setzte
+        sich wieder in Bewegung. \xABLos!\xBB Amber trat wieder kr\xE4ftig in die
+        Pedale.\r\nWir jagten durch den Central Park, vorbei an vereinzelten Spazierg\xE4ngern
+        und Strassenmusikern, \xFCberquerten Br\xFCcken und schl\xE4ngelten uns durch
+        enge Wege. Mein Herz pochte wie wild, als das Taxi pl\xF6tzlich vor einem
+        Geb\xE4ude hielt. Wir hielten an. Eine Minute, zwei verstrichen, und es passierte
+        nichts. Keith musste wohl gerade dabei gewesen sein, den Fahrer zu bezahlen.\r\nUnd
+        dann tat sich etwas. Keith \xF6ffnete die hintere T\xFCr und stieg aus dem
+        Taxi. Er winkte dem Fahrer dankend zu und gab der T\xFCr einen Stoss. Er
+        ging um den Wagen und steuerte auf ein gigantisches Geb\xE4ude zu. Ich kniff
+        die Augen zusammen, um in der Dunkelheit besser zu sehen. Moment, wir waren
+        doch nicht etwa vor dem Natural History Museum?!\r\nWas machte Keith kurz
+        vor Mitternacht hier? Hatte er etwas im Museum vergessen? Konnte das nicht
+        bis morgen warten? Und was hatte das vorherige Telefonat damit zu tun?\r\nWir
+        fuhren ein St\xFCck n\xE4her an das Taxi, und im selben Moment kam jemand
+        aus dem Geb\xE4ude und ging direkt auf Keith zu.\r\n\r\nKonzentriert fokussierte
+        ich die Person, die aus dem Museum kam. Ich erkannte die Umrisse einer Frau.
+        Moment, das ist doch nicht?! Amber und ich blickten uns reflexartig an und
+        sagten praktisch gleichzeitig: \xABOMG, das gibt es nicht!\xBB\r\n\xABSiehst
+        du, was ich sehe?\xBB, fragte Amber. \r\nMir fiel die Kinnlade herunter.
+        Ich versuchte mich zu sammeln und stammelte vor mich hin: \xABWenn du Melissa
+        siehst, dann ja.\xBB \r\nIch sah, wie sich die beiden umarmten und dann verschwanden
+        sie auch schon im Geb\xE4ude. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: choiceContents.Array.data[11].choiceName
+      value: 9ac44326-1d14-11f0-8b3f-42010a7be01a
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: choiceContents.Array.data[11].newContent
+      value: "TAXI_2\nReflexartig hielt Amber die Hand hoch und brachte das n\xE4chstbeste
+        Taxi neben uns zum Anhalten. \xABLos, beeil dich, steig ein!\xBB \r\n\xABNein,
+        wir k\xF6nnen ihm doch nicht hinterherfahren.\xBB \r\n\xABIch nehme nicht
+        an, dass du ihm ohne Auto hinterherrennen willst, oder? Also los, steig ein.\xBB
+        \r\n\xABNein, ich meine, ich habe \xFCberhaupt nicht daran gedacht, dass
+        er sich ein Taxi nehmen k\xF6nnte. Ich habe mehr daran gedacht, ihm einfach
+        hinterherzuschleichen wie vorhin beim Telefongespr\xE4ch. Ich wollte nicht
+        noch eine Drittperson involvieren.\xBB\r\n\xABUnd jetzt? Es kommt immer anders
+        als gedacht. Beweg jetzt endlich deinen Hintern in das Taxi\xBB, befahl mir
+        Amber. \r\nIch gehorchte ihr und rutschte \xFCber die Sitzbank. Amber nahm
+        neben mir Platz und wies den Taxifahrer an: \xABBehalten Sie das Taxi vor
+        uns im Auge und fahren Sie ihm bitte m\xF6glichst unauff\xE4llig hinterher.\xBB
+        \r\nAls w\xE4re es das Normalste auf der Welt, nickte der Fahrer und startete
+        den Motor. Ja klar, wir waren in New York, musste ich mir in Erinnerung rufen.
+        Das musste ihm st\xE4ndig passieren. Wahrscheinlich war unsere Aktion noch
+        ganz harmlos im Vergleich mit dem, was er sonst so erlebte. \r\nDas Taxi
+        setzte sich in Bewegung und folgte dem Fahrzeug, in dem Keith sass. Mein
+        Herz klopfte laut in meiner Brust, w\xE4hrend ich aus dem Fenster starrte
+        und versuchte, Keiths Taxi im Blick zu behalten. Die Strassen von New York
+        glitten an uns vorbei, beleuchtet von den funkelnden Lichtern der Stadt.
+        Es war eine seltsame Mischung aus Aufregung und Nervosit\xE4t, die mich ergriffen
+        hatte. \r\nAmber neben mir schien ganz in ihrem Element zu sein. Sie war
+        voller Energie und Tatendrang, w\xE4hrend sie aufgeregt die F\xE4hrte von
+        Keiths Taxi verfolgte. Der Taxifahrer machte seinen Job \xE4usserst gut.
+        Als w\xE4re er ein Gangsterj\xE4ger in New York und machte den lieben langen
+        Tag nichts anderes. Es liess mir keine Ruhe. \xABMister, \xE4hm, wie heissen
+        Sie?\xBB\r\n\xABMeine Name Xavier, aber f\xFCr euch, ich bin Xavi.\xBB \r\n\xABAlles
+        klar, Xavi, freut mich. Fragst du dich nicht, weshalb wir dem anderen Taxi
+        hinterherfahren wollen?\xBB\r\n\xABIhr beide Ladys mich bezahle, ich fahre
+        und nicht frage. Und ich wisse, ich werde von euch sowieso noch erfahren,
+        warum wir diese Verfolgungsjagd machen.\xBB \r\n\xABOkay, fair enough\xBB,
+        musste ich ihm lassen. Von zwei betrunkenen H\xFChnern wie uns w\xFCrde er
+        den Grund fr\xFCher oder sp\xE4ter herausbekommen. Die Verfolgungsjagd f\xFChrte
+        uns durch die belebten Strassen von New York, vorbei an glitzernden Schaufenstern
+        und pulsierenden Menschenmengen. Es war ein atemberaubender Anblick, der
+        mich normalerweise fasziniert h\xE4tte, aber jetzt lag mein Fokus nur auf
+        dem Taxi vor uns.\r\n\xABSchnell, gib Gas, Xavi! Bevor die Ampel rot wird
+        und das andere Taxi uns abh\xE4ngt\xBB, tr\xE4llerte Amber nach vorn, sodass
+        Xavi leicht zusammenzuckte. Er dr\xFCckte das Gaspedal durch und schaffte
+        es gerade noch knapp \xFCber die Kreuzung. \xABWenn ich Busse bekomme, du
+        zahle!\xBB, sagte Xavi und schaute Amber \xFCber den R\xFCckspiegel an. Durch
+        die schnelle Beschleunigung wurde ich in den Sitz gedr\xFCckt und versp\xFCrte
+        ein Kribbeln im Bauch wie auf der Blue Fire im Europa-Park, wenn die Achterbahn
+        in zweieinhalb Sekunden von null auf hundert beschleunigte. An der n\xE4chsten
+        Kreuzung bogen wir scharf rechts ab und ich wurde an die T\xFCr gedr\xFCckt.
+        Allm\xE4hlich wurde mir schlecht und ich musste mich darauf konzentrieren,
+        Xavier nicht in das Auto zu reihern. Das Adrenalin schoss mir durch die Adern,
+        ich f\xFChlte mich wie auf einer Verfolgungsjagd in einem Hollywoodfilm.
+        Vor uns erstreckte sich der Central Park und das Taxi mit Keith darin wurde
+        langsamer. \xABXavi, halt etwas Abstand zum vorderen Taxi\xBB, sagte Amber,
+        ganz in ihrem Element. Xavi gehorchte ihr. Wenige Meter sp\xE4ter kam das
+        Taxi vor uns zum Stillstand. Xavier tat es ihm in etwa hundert Metern Entfernung
+        nach und schaltete die Scheinwerfer aus. Amber und ich streckten die K\xF6pfe
+        zu Xavi vor und blickten voller Aufmerksamkeit aus der Frontscheibe. Eine
+        Minute, zwei verstrichen und es passierte nichts. Keith musste wohl gerade
+        dabei gewesen sein, den Fahrer zu bezahlen. Und dann tat sich etwas. Keith
+        \xF6ffnete die hintere T\xFCr und stieg aus dem Taxi. Er winkte dem Fahrer
+        dankend zu und gab der T\xFCr einen Stoss. Er ging um den Wagen und steuerte
+        auf ein gigantisches Geb\xE4ude zu. Ich kniff die Augen zusammen, um in der
+        Dunkelheit besser zu sehen. Moment, wir waren doch nicht etwa vor dem Natural
+        History Museum?! Was machte Keith kurz vor Mitternacht hier? Hatte er etwas
+        im Museum vergessen? Konnte das nicht bis morgen warten? Und was hatte das
+        vorherige Telefonat damit zu tun? \r\n\xABXavi, kannst du bitte ein kleines
+        St\xFCck n\xE4her an das Geb\xE4ude fahren?\xBB, bat ich ihn. \r\nEr startete
+        den Motor, der Wagen fing an zu rollen und im selben Moment kam jemand aus
+        dem Geb\xE4ude und ging direkt auf Keith zu.\r\n\xABStoooopp, halt den Wagen
+        an!\xBB, befahl ich. \r\nMit einem Ruck hielt das Auto an. \r\n\xABLadys,
+        ihr euch nicht entscheiden k\xF6nnen!\xBB, sagte Xavi und ich h\xF6rte aus
+        seiner Stimme nicht heraus, ob er sich \xFCber uns am\xFCsierte oder ob er
+        sich allm\xE4hlich nervte.\r\n\r\nKonzentriert fokussierte ich die Person,
+        die aus dem Museum kam. Ich erkannte die Umrisse einer Frau. Moment, das
+        ist doch nicht?! Amber und ich blickten uns reflexartig an und sagten praktisch
+        gleichzeitig: \xABOMG, das gibt es nicht!\xBB\r\n\xABSiehst du, was ich sehe?\xBB,
+        fragte Amber. \r\nMir fiel die Kinnlade herunter. Ich versuchte mich zu sammeln
+        und stammelte vor mich hin: \xABWenn du Melissa siehst, dann ja.\xBB \r\nIch
+        sah, wie sich die beiden umarmten und dann verschwanden sie auch schon im
+        Geb\xE4ude. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: choiceContents.Array.data[12].choiceName
+      value: '5042e242-1d16-11f0-a3d8-42010a7be01a '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: choiceContents.Array.data[12].newContent
+      value: "Museum\nAmber und ich kauerten hinter einer grossen Elefantenstatue
+        in der Eingangshalle des Natural History Museums. Es roch nach altem Holz,
+        Reinigungsmitteln und einem Hauch von Abenteuer.\r\n\xABOkay, sie sind da
+        hinten reingegangen\xBB, fl\xFCsterte Amber und deutete auf eine T\xFCr mit
+        der Aufschrift Zugang nur f\xFCr Mitarbeiter.\r\n\xABUnd was genau tun wir
+        hier eigentlich?\xBB, fragte ich skeptisch.\r\n\xABWir schn\xFCffeln.\xBB\r\nIch
+        schnaubte. \xABUnd wenn wir erwischt werden?\xBB\r\nAmber grinste und zuckte
+        die Schultern. \xABDann sagst du, dass du eine investigative Journalistin
+        bist, und ich bin deine furchtlose Assistentin.\xBB\r\nBevor ich widersprechen
+        konnte, hatte sie sich bereits in Bewegung gesetzt. Ich seufzte leise, folgte
+        ihr aber trotzdem.\r\nWir huschten an einem ausgestopften B\xE4ren vorbei
+        und blieben kurz vor der T\xFCr stehen. Ich legte vorsichtig meine Hand auf
+        die Klinke \u2013 unverschlossen. Amber nickte mir zu, dann schoben wir die
+        T\xFCr leise auf und traten in einen schmalen, schlecht beleuchteten Gang.\r\nAm
+        Ende der Flure sahen wir sie: Keith und Melissa standen in einem kleinen
+        Raum voller Equipment. Kamerastative lehnten an der Wand, Kabel lagen kreuz
+        und quer auf dem Boden.\r\nKeith \xF6ffnete einen Metallschrank, w\xE4hrend
+        Melissa die Arme verschr\xE4nkte.\r\n\xABBeeil dich, bevor jemand merkt,
+        dass wir hier sind\xBB, sagte sie leise.\r\n\xABIch suche ja schon\xBB, murmelte
+        Keith. \xABHier \u2026 da sind sie.\xBB\r\nEr zog eine schwarze Tasche aus
+        dem Schrank und \xF6ffnete sie. Ich erkannte die Kameraausr\xFCstung sofort
+        \u2013 unsere Kameras vom Dreh am Nachmittag. Mein Herz machte einen kleinen
+        Satz. Die hatten wir also einfach vergessen?\r\nAmber zog die Augenbrauen
+        hoch und fl\xFCsterte: \xABSag mal \u2026 sind wir denen jetzt echt ins Museum
+        gefolgt, nur weil er unser verdammtes Equipment geholt hat?\xBB\r\nIch verzog
+        das Gesicht. \xABScheint so.\xBB\r\nKeith klappte die Tasche zu, warf einen
+        letzten Blick in den Schrank und drehte sich dann um. Melissa sch\xFCttelte
+        den Kopf.\r\n\xABSag n\xE4chstes Mal einfach fr\xFCher Bescheid, wenn du
+        noch was holen musst. Ich hatte schon ganz andere Vermutungen\xBB, meinte
+        sie.\r\nKeith lachte leise. \xABTja, du bist eben paranoid.\xBB\r\nSie schritten
+        auf die T\xFCr zu \u2013 unsere T\xFCr.\r\n\xABOh verdammt!\xBB, zischte
+        ich.\r\nSchnell zerrte ich Amber mit mir hinter ein Regal. Gerade rechtzeitig.
+        Keith und Melissa marschierten an uns vorbei, keine Ahnung, dass wir nur
+        eine Arml\xE4nge entfernt standen.\r\nAls sich die T\xFCr hinter ihnen schloss,
+        starrten Amber und ich uns an.\r\n\xABIch kann nicht fassen, dass wir fast
+        einen Scooter geklaut haben, nur um ihm wegen dieser dummen Kameras hinterherzujagen\xBB,
+        fl\xFCsterte ich.\r\nAmber atmete tief durch. \xABJa, na ja \u2026 immerhin
+        wissen wir jetzt, dass Keith kein internationaler Kunstdieb ist.\xBB\r\nIch
+        schnaubte. \xABSchade eigentlich. W\xE4re die spannendere Story gewesen.\xBB\r\nAmber
+        grinste. \xABIch sag\u2019s ja, Beverly \u2013 du brauchst dringend ein bisschen
+        mehr Abenteuergeist.\xBB\r\nIch verdrehte die Augen und zog sie am \xC4rmel.
+        \xABKomm. Bevor wir doch noch f\xFCr Einbrecher gehalten werden.\xBB\r\nUnd
+        mit schnellen, leisen Schritten verschwanden wir genauso unbemerkt wieder
+        aus dem Museum, wie wir gekommen waren."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: choiceContents.Array.data[13].choiceName
+      value: 52b72b00-1d16-11f0-8b3f-42010a7be01a
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: choiceContents.Array.data[13].newContent
+      value: "AFFAIRE\nAmber und ich standen da wie versteinert. Der kalte Wind zerrte
+        an unseren M\xE4nteln, doch wir nahmen ihn kaum wahr. Unsere Blicke hingen
+        an der grossen Eingangst\xFCr des Museums, durch die Keith und Melissa gerade
+        verschwunden waren.\r\nAmber war die Erste, die sich aus der Schockstarre
+        l\xF6ste. \xABDas ist doch nicht dein Ernst!\xBB, zischte sie und raufte
+        sich die Haare. \xABDie beiden haben eine Aff\xE4re! Ich wusste doch, dass
+        Keith ein Geheimnis hat!\xBB\r\nIch schluckte schwer. \xABVielleicht \u2026
+        vielleicht gibt es eine andere Erkl\xE4rung?\xBB\r\nAmber schnaubte. \xABOh
+        Beverly, komm schon! Ich meine, wie wahrscheinlich ist es bitte, dass Keith
+        sich mitten in der Nacht mit Melissa trifft, sie sich umarmen und dann gemeinsam
+        in ein Museum schleichen?\xBB\r\nIch biss mir auf die Lippe. Sie hatte ja
+        recht. Die Umarmung war eindeutig gewesen. Keine distanzierte Begr\xFCssung,
+        keine zuf\xE4llige Begegnung \u2013 das war Vertrautheit. Vertrautheit, die
+        \xFCber eine simple Bekanntschaft hinausging.\r\n\xABTrotzdem\xBB, murmelte
+        ich. \xABVielleicht hat er eine Erkl\xE4rung.\xBB\r\nAmber verschr\xE4nkte
+        die Arme. \xABOder er v\xF6gelt sie einfach.\xBB\r\nIch verzog das Gesicht.
+        \xABDanke f\xFCr die bildliche Darstellung.\xBB\r\n\xABGern geschehen.\xBB\r\nWir
+        schwiegen f\xFCr einen Moment.\r\nDann sch\xFCttelte Amber den Kopf. \xABAlso
+        ehrlich, ich dachte immer, Keith w\xE4re anders. Irgendwie \u2026 loyaler.\xBB"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: choiceContents.Array.data[14].choiceName
+      value: 5570a358-1d16-11f0-a32a-42010a7be01a
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: choiceContents.Array.data[14].newContent
+      value: "GRUND\nAmber starrte mich ungl\xE4ubig an. \xABSag mal, willst du mich
+        verarschen? Du hast doch gerade gesehen, was ich gesehen habe!\xBB\r\nIch
+        biss mir auf die Unterlippe und zwang mich, ruhig zu bleiben. Mein Herz raste
+        noch immer, aber eine innere Stimme fl\xFCsterte mir zu, dass ich nicht vorschnell
+        urteilen sollte.\r\n\xABAmber, wir haben keine Beweise, dass hier irgendwas
+        l\xE4uft\xBB, sagte ich schliesslich und merkte selbst, wie zaghaft meine
+        Stimme klang.\r\nSie riss die Augen auf. \xABBeverly, ich bitte dich! Sie
+        treffen sich mitten in der Nacht, umarmen sich und verschwinden dann in einem
+        Museum? Was brauchst du noch, eine Leuchtschrift mit Aff\xE4re drauf?!\xBB\r\nIch
+        seufzte und lehnte mich gegen die Kopfst\xFCtze. \xABEs gibt bestimmt eine
+        logische Erkl\xE4rung.\xBB\r\nAmber schnaubte. \xABOder vielleicht verarscht
+        er dich nach Strich und Faden.\xBB\r\nIch schluckte. Der Gedanke f\xFChlte
+        sich wie ein Stein in meinem Magen an.\r\nXavi r\xE4usperte sich und schaute
+        uns \xFCber den R\xFCckspiegel an. \xABLadys, ihr wollt warten oder fahren?\xBB\r\nAmber
+        drehte sich mit verschr\xE4nkten Armen zu mir. \xABDeine Entscheidung, Beverly.
+        St\xFCrzen wir uns ins Chaos oder tun wir so, als h\xE4tten wir nichts gesehen?\xBB\r\nIch
+        atmete tief durch und blickte wieder auf das riesige Museum, das nun ruhig
+        und unauff\xE4llig in der Dunkelheit lag.\r\n\xABWir tun gar nichts\xBB,
+        sagte ich schliesslich. \xABIch habe \xFCberreagiert. Lass uns fahren.\xBB\r\nAmber
+        verzog das Gesicht, als h\xE4tte ich ihr gerade einen Cosmopolitan mit Essig
+        serviert. \xABBeverly \u2026 du wirst es bereuen.\xBB\r\nVielleicht. Aber
+        solange ich nicht wusste, was hier wirklich los war, wollte ich keine voreiligen
+        Schl\xFCsse ziehen.\r\n\xABXavi, fahr uns nach Hause. Nach DUMBO, bitte!\xBB\r\nEr
+        zuckte mit den Schultern. \xABWie ihr wollt.\xBB\r\nDas Taxi setzte sich
+        in Bewegung, und ich sp\xFCrte, wie sich die Anspannung langsam in mir l\xF6ste
+        \u2013 zumindest f\xFCr den Moment. Doch w\xE4hrend die Lichter von New York
+        an mir vorbeizogen, wusste ich, dass das hier nicht das letzte Mal war, dass
+        ich mich mit Keiths Geheimnissen besch\xE4ftigen w\xFCrde.\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 5766205926528956805, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: m_Pivot.x
@@ -916,6 +1693,10 @@ PrefabInstance:
       value: 1801810542
       objectReference: {fileID: 0}
     - target: {fileID: 8540251058166378552, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8540251058166378552, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: m_ActiveFontFeatures.Array.data[0]
       value: 1801810542
       objectReference: {fileID: 0}
@@ -999,6 +1780,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1400197825 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8316029302857702823, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+  m_PrefabInstance: {fileID: 1076103840}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1479141829
 GameObject:
   m_ObjectHideFlags: 0

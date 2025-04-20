@@ -496,6 +496,7 @@
 "Assets/Convai/Scripts/Runtime/Utils/ConvaiAPIKeySetup.cs"
 "Assets/Convai/Scripts/Runtime/Utils/ConvaiLanguageCheck.cs"
 "Assets/Convai/Scripts/Runtime/Utils/MainThreadDispatcher.cs"
+"Assets/MainButton.cs"
 "Assets/Scenes/Buch/BookContents.cs"
 "Assets/Scenes/Playground/SceneLoader.cs"
 -langversion:9.0

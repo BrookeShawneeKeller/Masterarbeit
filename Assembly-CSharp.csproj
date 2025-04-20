@@ -95,6 +95,7 @@
     <Compile Include="Assets\Convai\Scripts\Runtime\Core\ConvaiGRPCAPI.cs" />
     <Compile Include="Assets\Convai\Scripts\Runtime\UI\Chat\QuestionAnswerUI.cs" />
     <Compile Include="Assets\Convai\Scripts\Runtime\UI\SettingsPanel\FadeCanvas.cs" />
+    <Compile Include="Assets\MainButton.cs" />
     <Compile Include="Assets\Convai\Scripts\Runtime\UI\SettingsPanel\UIMicrophoneSettings.cs" />
     <Compile Include="Assets\Convai\Scripts\Runtime\Core\gRPC\ArkitBlendShapes.cs" />
     <Compile Include="Assets\Scenes\Playground\SceneLoader.cs" />
@@ -172,6 +173,7 @@
     <None Include="Assets\CC4 Characters\Convai_NPC_Beverly\Convai_NPC_Beverly_ImportInfo.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\Convai\Demo\Avatars\Convai NPC Amelia\Shaders\RL_Amplify_CorneaShaderParallax_3D.shader" />
+    <None Include="Assets\TextMesh Pro\Glyph Report.txt" />
     <None Include="Assets\Convai\Plugins\gRPC\System.Buffers\System.Buffers.dll" />
     <None Include="Assets\Convai\Plugins\gRPC\System.Memory\LICENSE.txt" />
     <None Include="Assets\Convai\Plugins\gRPC\Grpc.Core\lib\net45\Grpc.Core.dll" />
