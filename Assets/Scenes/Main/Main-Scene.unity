@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &249448619 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8995187497845040399, guid: 69dd98fa71bd5e649969b163d693f61b, type: 3}
+  m_PrefabInstance: {fileID: 309342842}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &309342842
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -191,10 +196,18 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7945017036825634438, guid: 69dd98fa71bd5e649969b163d693f61b, type: 3}
+      propertyPath: playerCamera
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8040106378873863600, guid: 69dd98fa71bd5e649969b163d693f61b, type: 3}
       propertyPath: rayLength
       value: 2000
       objectReference: {fileID: 0}
+    - target: {fileID: 8040106378873863600, guid: 69dd98fa71bd5e649969b163d693f61b, type: 3}
+      propertyPath: rayOrigin
+      value: 
+      objectReference: {fileID: 1279045462}
     - target: {fileID: 8812258423839311689, guid: 69dd98fa71bd5e649969b163d693f61b, type: 3}
       propertyPath: <ConvaiPlayerDataSO>k__BackingField
       value: 
@@ -239,7 +252,10 @@ PrefabInstance:
     - {fileID: 8995187497845040397, guid: 69dd98fa71bd5e649969b163d693f61b, type: 3}
     - {fileID: 8995187497845040398, guid: 69dd98fa71bd5e649969b163d693f61b, type: 3}
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 8995187497845040399, guid: 69dd98fa71bd5e649969b163d693f61b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1279045462}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69dd98fa71bd5e649969b163d693f61b, type: 3}
 --- !u!1 &583590873
@@ -360,6 +376,11 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!4 &628561968 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5109876859728301467, guid: 9189ffe55ceab914a8d9dbb488ce29df, type: 3}
+  m_PrefabInstance: {fileID: 1193743818}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &803684208
 GameObject:
   m_ObjectHideFlags: 0
@@ -384,13 +405,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 803684208}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1855321262}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1602224945}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &833862649
 GameObject:
@@ -479,7 +500,7 @@ Transform:
   m_GameObject: {fileID: 833862649}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -125, y: 0, z: -1083.6}
+  m_LocalPosition: {x: 0, y: 0, z: -1083.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -619,12 +640,64 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 61940947685857190, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_margin.w
+      value: -48.297485
+      objectReference: {fileID: 0}
+    - target: {fileID: 61940947685857190, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_margin.x
+      value: -51.320312
+      objectReference: {fileID: 0}
+    - target: {fileID: 61940947685857190, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_margin.y
+      value: -33.608765
+      objectReference: {fileID: 0}
+    - target: {fileID: 61940947685857190, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_margin.z
+      value: -28.019531
+      objectReference: {fileID: 0}
+    - target: {fileID: 61940947685857190, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: m_ActiveFontFeatures.Array.data[0]
       value: 1801810542
+      objectReference: {fileID: 0}
+    - target: {fileID: 1262123765911681541, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1299310279635136043, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1299310279635136043, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1299310279635136043, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1299310279635136043, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 144
+      objectReference: {fileID: 0}
+    - target: {fileID: 1299310279635136043, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 41
+      objectReference: {fileID: 0}
+    - target: {fileID: 1299310279635136043, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1633758964747477983, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.7
       objectReference: {fileID: 0}
     - target: {fileID: 1744257862118181678, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 1936092219753782221, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 149
       objectReference: {fileID: 0}
     - target: {fileID: 2169250625388373284, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: m_UiScaleMode
@@ -638,23 +711,21 @@ PrefabInstance:
       propertyPath: m_ReferenceResolution.y
       value: 1080
       objectReference: {fileID: 0}
+    - target: {fileID: 2584340462429814022, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -11.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2584340462429814022, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -34
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969205561126366942, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -289
+      objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: content
-      value: "Kapitel 8\nNew York\nFreitag, 13. Dezember 2022\n\n\n<b><i><color=#00FF00>Verdammt</color></i></b>.
-        Ich hatte verschlafen. Wie hatte das passieren k\xF6nnen? Ich musste den
-        Wecker einfach weggedr\xFCckt haben, ohne es zu merken. Das grelle Leuchten
-        meines Handydisplays blendete mich: 10:45 Uhr. In einer Viertelstunde sollte
-        ich bereits im Natural History Museum sein f\xFCr meine erste grosse live
-        Moderation und das schien kaum machbar. Die Subwayfahrt von Dumbo bis zum
-        Museum w\xFCrde mindestens dreissig Minuten in Anspruch nehmen. Panik durchstr\xF6mte
-        mich, w\xE4hrend ich eilig auf meinem Smartphone tippte und Keith benachrichtigte:\n\nShit!
-        Habe verschlafen. Ich beeile mich, es sollte mir auf 11:45 Uhr reichen. Sorry!\n\nHoffentlich
-        w\xFCrde diese Nachricht ausreichen, um die Situation zu retten. Immerhin
-        begann die Livesendung erst um vierzehn Uhr und wir hatten nicht mehr allzu
-        viel vorzubereiten.\n\nEine Nachricht von Keith ploppte auf: \n\nKeine Sorge,
-        Bill und ich haben alles im Griff! Bis gleich.\n\nJetzt aber los, dachte
-        ich mir. Ich \xFCberlegte, wie ich am schnellsten zum National History Museum
-        gelangte. Mit einem Taxi w\xE4re ich bestimmt schneller als mit der U-Bahn."
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: m_Enabled
@@ -730,7 +801,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: choiceContents.Array.data[0].newContent
-      value: START READING
+      value: "START READING\nKapitel 8\nNew York\nFreitag, 13. Dezember 2022\n\n\n\nVerdammt.
+        Ich hatte verschlafen. Wie hatte das passieren k\xF6nnen? Ich musste den
+        Wecker einfach weggedr\xFCckt haben, ohne es zu merken. Das grelle Leuchten
+        meines Handydisplays blendete mich: 10:45 Uhr. In einer Viertelstunde sollte
+        ich bereits im Natural History Museum sein f\xFCr meine erste grosse live
+        Moderation und das schien kaum machbar. Die Subwayfahrt von Dumbo bis zum
+        Museum w\xFCrde mindestens dreissig Minuten in Anspruch nehmen. Panik durchstr\xF6mte
+        mich, w\xE4hrend ich eilig auf meinem Smartphone tippte und Keith benachrichtigte:\n\nShit!
+        Habe verschlafen. Ich beeile mich, es sollte mir auf 11:45 Uhr reichen. Sorry!\n\nHoffentlich
+        w\xFCrde diese Nachricht ausreichen, um die Situation zu retten. Immerhin
+        begann die Livesendung erst um vierzehn Uhr und wir hatten nicht mehr allzu
+        viel vorzubereiten.\n\nEine Nachricht von Keith ploppte auf: \n\nKeine Sorge,
+        Bill und ich haben alles im Griff! Bis gleich.\n\nJetzt aber los, dachte
+        ich mir. Ich \xFCberlegte, wie ich am schnellsten zum National History Museum
+        gelangte. Mit einem Taxi w\xE4re ich bestimmt schneller als mit der U-Bahn.\n\n"
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: choiceContents.Array.data[1].choiceName
@@ -1693,8 +1778,58 @@ PrefabInstance:
       value: 1801810542
       objectReference: {fileID: 0}
     - target: {fileID: 8540251058166378552, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_text
+      value: "Kapitel 8\nNew York\nFreitag, 13. Dezember 2022\n\n\n\nVerdammt. Ich
+        hatte verschlafen. Wie hatte das passieren k\xF6nnen? Ich musste den Wecker
+        einfach weggedr\xFCckt haben, ohne es zu merken. Das grelle Leuchten meines
+        Handydisplays blendete mich: 10:45 Uhr. In einer Viertelstunde sollte ich
+        bereits im Natural History Museum sein f\xFCr meine erste grosse live Moderation
+        und das schien kaum machbar. Die Subwayfahrt von Dumbo bis zum Museum w\xFCrde
+        mindestens dreissig Minuten in Anspruch nehmen. Panik durchstr\xF6mte mich,
+        w\xE4hrend ich eilig auf meinem Smartphone tippte und Keith benachrichtigte:\n\nShit!
+        Habe verschlafen. Ich beeile mich, es sollte mir auf 11:45 Uhr reichen. Sorry!\n\nHoffentlich
+        w\xFCrde diese Nachricht ausreichen, um die Situation zu retten. Immerhin
+        begann die Livesendung erst um vierzehn Uhr und wir hatten nicht mehr allzu
+        viel vorzubereiten.\n\nEine Nachricht von Keith ploppte auf: \n\nKeine Sorge,
+        Bill und ich haben alles im Griff! Bis gleich.\n\nJetzt aber los, dachte
+        ich mir. Ich \xFCberlegte, wie ich am schnellsten zum National History Museum
+        gelangte. Mit einem Taxi w\xE4re ich bestimmt schneller als mit der U-Bahn."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8540251058166378552, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8540251058166378552, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_margin.w
+      value: 41.270844
+      objectReference: {fileID: 0}
+    - target: {fileID: 8540251058166378552, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_margin.x
+      value: -61.911743
+      objectReference: {fileID: 0}
+    - target: {fileID: 8540251058166378552, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_margin.y
+      value: -88.583374
+      objectReference: {fileID: 0}
+    - target: {fileID: 8540251058166378552, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_margin.z
+      value: -45.217163
+      objectReference: {fileID: 0}
+    - target: {fileID: 8540251058166378552, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 8540251058166378552, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8540251058166378552, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 8540251058166378552, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8540251058166378552, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: m_ActiveFontFeatures.Array.data[0]
@@ -1702,7 +1837,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8816160756017680911, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: m_Name
-      value: Canvas
+      value: UI
       objectReference: {fileID: 0}
     - target: {fileID: 9145345326914757059, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: m_ActiveFontFeatures.Array.data[0]
@@ -1724,6 +1859,79 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5766205926528956805, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
   m_PrefabInstance: {fileID: 1076103840}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1193743818
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1602224945}
+    m_Modifications:
+    - target: {fileID: 5109876859728301467, guid: 9189ffe55ceab914a8d9dbb488ce29df, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 280
+      objectReference: {fileID: 0}
+    - target: {fileID: 5109876859728301467, guid: 9189ffe55ceab914a8d9dbb488ce29df, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 280
+      objectReference: {fileID: 0}
+    - target: {fileID: 5109876859728301467, guid: 9189ffe55ceab914a8d9dbb488ce29df, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 280
+      objectReference: {fileID: 0}
+    - target: {fileID: 5109876859728301467, guid: 9189ffe55ceab914a8d9dbb488ce29df, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 98
+      objectReference: {fileID: 0}
+    - target: {fileID: 5109876859728301467, guid: 9189ffe55ceab914a8d9dbb488ce29df, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5109876859728301467, guid: 9189ffe55ceab914a8d9dbb488ce29df, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.2599373
+      objectReference: {fileID: 0}
+    - target: {fileID: 5109876859728301467, guid: 9189ffe55ceab914a8d9dbb488ce29df, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5109876859728301467, guid: 9189ffe55ceab914a8d9dbb488ce29df, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5109876859728301467, guid: 9189ffe55ceab914a8d9dbb488ce29df, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5109876859728301467, guid: 9189ffe55ceab914a8d9dbb488ce29df, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5109876859728301467, guid: 9189ffe55ceab914a8d9dbb488ce29df, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5109876859728301467, guid: 9189ffe55ceab914a8d9dbb488ce29df, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5109876859728301467, guid: 9189ffe55ceab914a8d9dbb488ce29df, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5109876859728301467, guid: 9189ffe55ceab914a8d9dbb488ce29df, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5594101043587208993, guid: 9189ffe55ceab914a8d9dbb488ce29df, type: 3}
+      propertyPath: m_Name
+      value: 3D-Book
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9189ffe55ceab914a8d9dbb488ce29df, type: 3}
 --- !u!1 &1250541344
 GameObject:
   m_ObjectHideFlags: 0
@@ -1734,6 +1942,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1250541346}
   - component: {fileID: 1250541345}
+  - component: {fileID: 1250541347}
   m_Layer: 0
   m_Name: Narrative_Trigger
   m_TagString: Untagged
@@ -1754,7 +1963,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   convaiNPC: {fileID: 1855321264}
-  selectedTriggerIndex: -1
+  selectedTriggerIndex: 1
   availableTriggers:
   - confrontation_trigger
   - start_section_trigger
@@ -1762,6 +1971,7 @@ MonoBehaviour:
   - tracking_trigger
   - focus_trigger
   - choice_trigger
+  - goodbye_trigger
   onTriggerEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -1779,6 +1989,51 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1250541347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1250541344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0952e79441ef9314494c2276f870a64b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  narrativeDesignTrigger: {fileID: 1250541345}
+  active: 1
+--- !u!1 &1279045461
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1279045462}
+  m_Layer: 0
+  m_Name: RayOrigin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1279045462
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279045461}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 249448619}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1400197825 stripped
 GameObject:
@@ -1818,9 +2073,9 @@ RectTransform:
   m_Father: {fileID: 1076103841}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1080, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1479141831
 MonoBehaviour:
@@ -1836,7 +2091,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1869,7 +2124,7 @@ GameObject:
   - component: {fileID: 1533399682}
   - component: {fileID: 1533399681}
   m_Layer: 0
-  m_Name: Image
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1932,6 +2187,39 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1533399679}
   m_CullTransparentMesh: 1
+--- !u!1 &1602224944
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1602224945}
+  m_Layer: 0
+  m_Name: 3D Content
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1602224945
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602224944}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 803684209}
+  - {fileID: 628561968}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1659876376
 GameObject:
   m_ObjectHideFlags: 0
@@ -2074,13 +2362,6 @@ MonoBehaviour:
     onSectionEnd:
       m_PersistentCalls:
         m_Calls: []
-  - id: 58701d38-1d19-11f0-8e2d-42010a7be01a
-    onSectionStart:
-      m_PersistentCalls:
-        m_Calls: []
-    onSectionEnd:
-      m_PersistentCalls:
-        m_Calls: []
   - id: 90f63df4-1d14-11f0-8386-42010a7be01a
     onSectionStart:
       m_PersistentCalls:
@@ -2172,18 +2453,34 @@ MonoBehaviour:
     onSectionEnd:
       m_PersistentCalls:
         m_Calls: []
+  - id: c68c8d3e-1df4-11f0-8f34-42010a7be01a
+    onSectionStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onSectionEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: 0c141e82-1dee-11f0-a32a-42010a7be01a
+    onSectionStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onSectionEnd:
+      m_PersistentCalls:
+        m_Calls: []
   sectionDataList:
   - sectionId: e203e516-19db-11f0-b31c-42010a7be01a
     sectionName: Welcome_End
     behaviorTreeConstants: 
-    objective: "Schade, ich h\xE4tte dich gerne mit auf eine Reise in die Stadt die
-      niemals schl\xE4ft mitgenommen."
+    objective: "Say this paragraph to the user:\nSchade, ich h\xE4tte dich gerne
+      mit auf eine Reise in die Stadt die niemals schl\xE4ft mitgenommen. Bist du
+      dir sicher, dass du nicht mitkommen m\xF6chtest?"
     characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
   - sectionId: 5042e242-1d16-11f0-a3d8-42010a7be01a
-    sectionName: section 19
+    sectionName: Museum
     behaviorTreeConstants: 
-    objective: "Den beiden hinterher gehen! Ich will wissen was die beiden zu so
-      sp\xE4ter Stunde im Museum machen."
+    objective: "Say this paragraph to the user:\nIch bin schon ganz aufgeregt. Es
+      f\xFChlt sich beinahe an, als ob wir im Film Nachts im Museum mit Ben Stiller
+      gelandet sind. Vielleicht, erwacht das Museum bei Nacht, ja wirklich zum Leben."
     characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
   - sectionId: 9990e12e-1c8a-11f0-a3d8-42010a7be01a
     sectionName: To_transportation_trigger
@@ -2197,19 +2494,24 @@ MonoBehaviour:
   - sectionId: 6833cac2-1c91-11f0-8386-42010a7be01a
     sectionName: To_focus_trigger
     behaviorTreeConstants: 
-    objective: "Say this paragraph to the user inclusive the question at the end:\nKeith
-      hat mich so abgelenkt. Was meinst du, kann ich meinen Fokus wieder zur\xFCck
-      auf die Moderation lenken?"
+    objective: "Say this paragraph to the user inclusive the question at the end:\nVerdammt,
+      das durfte nicht passieren. Keith hat mich so abgelenkt. Was meinst du, kann
+      ich meinen Fokus wieder zur\xFCck auf die Moderation lenken?"
     characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
   - sectionId: 935c095c-1d14-11f0-b7c6-42010a7be01a
     sectionName: Roller
     behaviorTreeConstants: 
-    objective: 
+    objective: 'Say this paragraph to the user:
+
+      Super Idee! Ich wollte schon
+      immer eine Verfolgungsjagd durch New York auf einem Roller machen. Das wird
+      ein Spass!'
     characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
   - sectionId: 5570a358-1d16-11f0-a32a-42010a7be01a
-    sectionName: section 21
+    sectionName: Grund
     behaviorTreeConstants: 
-    objective: 
+    objective: "Say this paragraph to the user:\nSo wird es wohl sein. Ich tendiere
+      oft dazu \xFCberzureagieren."
     characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
   - sectionId: 203a9516-1ca0-11f0-8e2d-42010a7be01a
     sectionName: To_tracking_trigger
@@ -2224,15 +2526,11 @@ MonoBehaviour:
     objective: "Say this paragraph to the user:\nSuper, dann lass uns in die Stadt
       die niemals schl\xE4ft eintauchen. Ich w\xFCnsche dir viel Spass beim Lesen."
     characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
-  - sectionId: 58701d38-1d19-11f0-8e2d-42010a7be01a
-    sectionName: Tracking_End
-    behaviorTreeConstants: 
-    objective: 
-    characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
   - sectionId: 90f63df4-1d14-11f0-8386-42010a7be01a
     sectionName: No tracking
     behaviorTreeConstants: 
-    objective: 
+    objective: "Say this paragraph to the user:\nEs f\xE4llt mir schwer, Keith nicht
+      nach zu spionieren. Aber du hast recht, es geht mich nichts an, wen Keith trifft."
     characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
   - sectionId: 8660d266-1c9f-11f0-a523-42010a7be01a
     sectionName: Confrontation_Nein
@@ -2247,7 +2545,7 @@ MonoBehaviour:
     behaviorTreeConstants: 
     objective: "Say this paragraph to the user inclusive the question at the end:\nHallo,
       ich begr\xFCsse dich herzlich im Buch Cosmopolitan on the Rocks - Die Verwicklung.
-      Ich bin die Protagonistin Beverly Keeton, eine New Yorker Journalistin beim
+      Ich bin die Protagonistin Beverly Kiten, eine New Yorker Journalistin beim
       angesehenen Fernsehsender Big Apple News in New York. Ich lade dich ein, meine
       Welt zu entdecken. Bist du bereit?\n\nIf the user response is not an answer
       to the above question then answer the user question and ask if user would like
@@ -2265,8 +2563,8 @@ MonoBehaviour:
     sectionName: To_confrontation_trigger
     behaviorTreeConstants: 
     objective: "Say this paragraph to the user inclusive the question at the end:\nEs
-      nimmt mich schon wunder mit wem er sich sp sp\xE4t noch trifft. Soll ich Ihn
-      fregen, mit wem er sich gleich treffen wird?"
+      nimmt mich schon wunder mit wem er sich so sp\xE4t noch trifft. Soll ich ihn
+      fragen, mit wem er sich gleich treffen wird?"
     characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
   - sectionId: 9b89a66e-1c8a-11f0-8b3f-42010a7be01a
     sectionName: Taxi
@@ -2296,23 +2594,47 @@ MonoBehaviour:
   - sectionId: 9ac44326-1d14-11f0-8b3f-42010a7be01a
     sectionName: Taxi_2
     behaviorTreeConstants: 
-    objective: 
+    objective: 'Say this paragraph to the user:
+
+      Super Idee! Ich wollte schon
+      immer eine Verfolgungsjagd durch New York in einem Taxi machen. Das wird ein
+      Spass!'
     characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
   - sectionId: d73ff812-1d15-11f0-8b3f-42010a7be01a
-    sectionName: section 18
+    sectionName: To_coice_trigger
     behaviorTreeConstants: 
-    objective: 
+    objective: "Say this paragraph to the user inclusive the question at the end:
+      \nWas sollen wir nun machen? Sollen wir den beiden hinterherspionieren? Oder
+      meinst du der Fall ist klar, die beiden haben eine Affaire? Oder glaubst du
+      ich habe \xFCberreagiert und es gibt einen plausieblen Grund?"
     characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
   - sectionId: 52b72b00-1d16-11f0-8b3f-42010a7be01a
-    sectionName: section 20
+    sectionName: Affaire
     behaviorTreeConstants: 
-    objective: "Da l\xE4sst sich nichts machen. Der Fall ist klar, die beiden haben
-      eine Aff\xE4ire."
+    objective: "Say this paragraph to the user:\nAch, wie schade! Immer gerate ich
+      an die falschen M\xE4nner."
     characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
   - sectionId: 9580eefa-1d14-11f0-bc50-42010a7be01a
     sectionName: "Fahrr\xE4der"
     behaviorTreeConstants: 
-    objective: 
+    objective: "Say this paragraph to the user:\nOkay, wenn du meinst, dann nehmen
+      wir Fahrr\xE4der. K\xF6nnte aber ein bisschen kalt werden!"
+    characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
+  - sectionId: c68c8d3e-1df4-11f0-8f34-42010a7be01a
+    sectionName: To_goodbye_trigger
+    behaviorTreeConstants: 
+    objective: 'Say this paragraph to the user:
+
+      Vielen Dank bist du auf meine
+      Reise mitgekommen. Ich verabschiede mich und hoffe, dich bald wieder zu sehen!'
+    characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
+  - sectionId: 0c141e82-1dee-11f0-a32a-42010a7be01a
+    sectionName: End
+    behaviorTreeConstants: 
+    objective: 'Say this paragraph to the user:
+
+      Alles klar! Kein Problem.
+      Ich verabschiede mich von dir!'
     characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
   triggerDataList:
   - triggerId: 04abbffa-1c8c-11f0-9759-42010a7be01a
@@ -2345,6 +2667,11 @@ MonoBehaviour:
     triggerMessage: The user has finished reading.
     destinationSection: d73ff812-1d15-11f0-8b3f-42010a7be01a
     characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
+  - triggerId: f401a4dc-1df6-11f0-b0ff-42010a7be01a
+    triggerName: goodbye_trigger
+    triggerMessage: The user has finished reading.
+    destinationSection: c68c8d3e-1df4-11f0-8f34-42010a7be01a
+    characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
 --- !u!114 &1855321264 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1925729846038284158, guid: 93589b90e208c064aa94b47597fac0b2, type: 3}
@@ -2363,7 +2690,7 @@ SceneRoots:
   - {fileID: 1659876379}
   - {fileID: 833862652}
   - {fileID: 583590875}
-  - {fileID: 803684209}
+  - {fileID: 1602224945}
   - {fileID: 1076103840}
   - {fileID: 309342842}
   - {fileID: 1250541346}

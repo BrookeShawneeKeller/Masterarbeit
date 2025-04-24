@@ -1,5 +1,5 @@
-Font:   Style: 
-Point Size: 0   SP/PD Ratio: +unendlich
+Font: Merriweather  Style: Light
+Point Size: 60   SP/PD Ratio: 50.0%
 
 Characters included: 99/99
 Missing characters: 0

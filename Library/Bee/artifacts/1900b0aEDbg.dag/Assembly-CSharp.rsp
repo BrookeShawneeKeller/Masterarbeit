@@ -499,6 +499,7 @@
 "Assets/MainButton.cs"
 "Assets/Scenes/Buch/BookContents.cs"
 "Assets/Scenes/Playground/SceneLoader.cs"
+"Assets/Scripts/NarrationStartController.cs"
 -langversion:9.0
 
 /deterministic

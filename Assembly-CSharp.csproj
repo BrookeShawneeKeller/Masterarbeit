@@ -69,6 +69,7 @@
     <Compile Include="Assets\Convai\Scripts\Runtime\Features\Actions\ConvaiActionsHandler.cs" />
     <Compile Include="Assets\Convai\Scripts\Runtime\Extensions\SkinnedMeshRendererExtension.cs" />
     <Compile Include="Assets\Convai\Scripts\Runtime\Extensions\ImageExtensions.cs" />
+    <Compile Include="Assets\Scripts\NarrationStartController.cs" />
     <Compile Include="Assets\Convai\Scripts\Runtime\UI\Utils\ActiveStatusHandler.cs" />
     <Compile Include="Assets\Convai\Scripts\Runtime\PlayerStats\ConvaiPlayerDataHandler.cs" />
     <Compile Include="Assets\Convai\Scripts\Runtime\Core\ConvaiNPCAudioManager.cs" />

@@ -12,6 +12,9 @@ namespace Convai.Scripts.Runtime.Core
     {
         private static readonly RaycastHit[] RaycastHits = new RaycastHit[1];
 
+        [SerializeField]
+        private Transform rayOrigin;
+
         [Tooltip("Length of the ray used for detecting NPCs.")] [SerializeField]
         private float rayLength = 2.0f;
 
@@ -43,13 +46,11 @@ namespace Convai.Scripts.Runtime.Core
                 Instance = this;
             else
                 Destroy(gameObject);
-
-            _mainCamera = Camera.main;
         }
 
         private void LateUpdate()
         {
-            Ray ray = new(_mainCamera.transform.position, _mainCamera.transform.forward);
+            Ray ray = new(rayOrigin.position, rayOrigin.forward);
             bool foundConvaiNPC = false;
 
             if (Physics.RaycastNonAlloc(ray, RaycastHits, rayLength) > 0)
@@ -85,24 +86,20 @@ namespace Convai.Scripts.Runtime.Core
 
         private void OnDrawGizmos()
         {
-            if (_mainCamera == null)
-                _mainCamera = Camera.main;
-
-            if (_mainCamera == null)
+            if (rayOrigin == null)
                 return;
 
-            Transform cameraTransform = _mainCamera.transform;
-            Vector3 rayOrigin = cameraTransform.position;
-            Vector3 rayDirection = cameraTransform.forward;
+            Vector3 rayOriginTransform = rayOrigin.position;
+            Vector3 rayDirection = rayOrigin.forward;
 
             // Drawing the main ray
             Gizmos.color = Color.blue;
-            Gizmos.DrawRay(rayOrigin, rayDirection.normalized * rayLength);
+            Gizmos.DrawRay(rayOriginTransform, rayDirection.normalized * rayLength);
 
-            if (_lastHitNpc != null) DrawVisionConeArc(rayOrigin, rayDirection, cameraTransform.up);
+            if (_lastHitNpc != null) DrawVisionConeArc(rayOriginTransform, rayDirection, rayOrigin.up);
         }
 
-        private void DrawVisionConeArc(Vector3 rayOrigin, Vector3 rayDirection, Vector3 up)
+        private void DrawVisionConeArc(Vector3 rayOriginTransform, Vector3 rayDirection, Vector3 up)
         {
             const int arcResolution = 50; // number of segments to use for arc
             float angleStep = 2 * visionConeAngle / arcResolution; // angle between each segment
@@ -112,7 +109,7 @@ namespace Convai.Scripts.Runtime.Core
             for (int i = 1; i <= arcResolution; i++)
             {
                 Vector3 nextPoint = Quaternion.AngleAxis(-visionConeAngle + angleStep * i, up) * rayDirection * rayLength;
-                Gizmos.DrawLine(rayOrigin + previousPoint, rayOrigin + nextPoint);
+                Gizmos.DrawLine(rayOriginTransform + previousPoint, rayOriginTransform + nextPoint);
                 previousPoint = nextPoint;
             }
 
@@ -123,8 +120,8 @@ namespace Convai.Scripts.Runtime.Core
             Vector3 rightDirection = rightRotation * rayDirection;
 
             Gizmos.color = Color.yellow;
-            Gizmos.DrawLine(rayOrigin, rayOrigin + leftDirection.normalized * rayLength);
-            Gizmos.DrawLine(rayOrigin, rayOrigin + rightDirection.normalized * rayLength);
+            Gizmos.DrawLine(rayOriginTransform, rayOriginTransform + leftDirection.normalized * rayLength);
+            Gizmos.DrawLine(rayOriginTransform, rayOriginTransform + rightDirection.normalized * rayLength);
         }
 
         /// <summary>
