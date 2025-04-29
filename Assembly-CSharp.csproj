@@ -84,6 +84,7 @@
     <Compile Include="Assets\Convai\Scripts\Runtime\Features\LongTermMemory\LTMStatus.cs" />
     <Compile Include="Assets\Convai\Scripts\Runtime\Features\NPC2NPC\Speech Bubble System\ISpeechBubbleDisplay.cs" />
     <Compile Include="Assets\Convai\Scripts\Runtime\Addons\NotificationSystem\NetworkReachabilityChecker.cs" />
+    <Compile Include="Assets\ButtonShowTimer.cs" />
     <Compile Include="Assets\Convai\Scripts\Runtime\Extensions\TransformExtensions.cs" />
     <Compile Include="Assets\Convai\Scripts\Runtime\UI\SettingsPanel\UISettingsPanel.cs" />
     <Compile Include="Assets\Convai\Demo\Scripts\NPCBehaviorController.cs" />

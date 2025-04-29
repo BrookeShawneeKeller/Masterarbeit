@@ -640,28 +640,40 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 61940947685857190, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
-      propertyPath: m_margin.w
-      value: -48.297485
-      objectReference: {fileID: 0}
-    - target: {fileID: 61940947685857190, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
-      propertyPath: m_margin.x
-      value: -51.320312
-      objectReference: {fileID: 0}
-    - target: {fileID: 61940947685857190, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
-      propertyPath: m_margin.y
-      value: -33.608765
-      objectReference: {fileID: 0}
-    - target: {fileID: 61940947685857190, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
-      propertyPath: m_margin.z
-      value: -28.019531
-      objectReference: {fileID: 0}
-    - target: {fileID: 61940947685857190, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: m_ActiveFontFeatures.Array.data[0]
       value: 1801810542
+      objectReference: {fileID: 0}
+    - target: {fileID: 789530157710790436, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 789530157710790436, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 650
+      objectReference: {fileID: 0}
+    - target: {fileID: 789530157710790436, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 260
+      objectReference: {fileID: 0}
+    - target: {fileID: 789530157710790436, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1262123765911681541, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1262123765911681541, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1299310279635136043, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1299310279635136043, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1299310279635136043, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: m_LocalScale.x
@@ -676,12 +688,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1299310279635136043, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1299310279635136043, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 144
+      value: 235
       objectReference: {fileID: 0}
     - target: {fileID: 1299310279635136043, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 41
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 1299310279635136043, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: m_ConstrainProportionsScale
@@ -689,15 +705,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1633758964747477983, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.7
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1633758964747477983, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1633758964747477983, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1744257862118181678, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 1936092219753782221, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 1936092219753782221, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 650
+      objectReference: {fileID: 0}
+    - target: {fileID: 1936092219753782221, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -260
+      objectReference: {fileID: 0}
+    - target: {fileID: 1936092219753782221, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 149
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2169250625388373284, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: m_UiScaleMode
@@ -713,15 +749,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2584340462429814022, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2584340462429814022, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -34
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2584340462429814022, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969205561126366942, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969205561126366942, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969205561126366942, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969205561126366942, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 230
       objectReference: {fileID: 0}
     - target: {fileID: 2969205561126366942, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -289
+      value: -350
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: content
@@ -741,7 +797,7 @@ PrefabInstance:
       objectReference: {fileID: 1250541345}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: pageTriggers.Array.size
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: choiceContents.Array.size
@@ -749,23 +805,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: pageTriggers.Array.data[0].eventName
-      value: start_section_trigger
-      objectReference: {fileID: 0}
-    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
-      propertyPath: pageTriggers.Array.data[1].eventName
       value: transportation_trigger
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
-      propertyPath: pageTriggers.Array.data[2].eventName
+      propertyPath: pageTriggers.Array.data[1].eventName
       value: focus_trigger
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
-      propertyPath: pageTriggers.Array.data[3].eventName
+      propertyPath: pageTriggers.Array.data[2].eventName
       value: confrontation_trigger
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
-      propertyPath: pageTriggers.Array.data[4].eventName
+      propertyPath: pageTriggers.Array.data[3].eventName
       value: tracking_trigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: pageTriggers.Array.data[4].eventName
+      value: choice_trigger
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: pageTriggers.Array.data[5].eventName
@@ -773,23 +829,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: pageTriggers.Array.data[0].pageNumber
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: pageTriggers.Array.data[1].pageNumber
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
-      propertyPath: pageTriggers.Array.data[2].pageNumber
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: pageTriggers.Array.data[2].pageNumber
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: pageTriggers.Array.data[3].pageNumber
-      value: 9
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: pageTriggers.Array.data[4].pageNumber
-      value: 11
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: pageTriggers.Array.data[5].pageNumber
@@ -801,21 +857,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: choiceContents.Array.data[0].newContent
-      value: "START READING\nKapitel 8\nNew York\nFreitag, 13. Dezember 2022\n\n\n\nVerdammt.
-        Ich hatte verschlafen. Wie hatte das passieren k\xF6nnen? Ich musste den
-        Wecker einfach weggedr\xFCckt haben, ohne es zu merken. Das grelle Leuchten
-        meines Handydisplays blendete mich: 10:45 Uhr. In einer Viertelstunde sollte
-        ich bereits im Natural History Museum sein f\xFCr meine erste grosse live
-        Moderation und das schien kaum machbar. Die Subwayfahrt von Dumbo bis zum
-        Museum w\xFCrde mindestens dreissig Minuten in Anspruch nehmen. Panik durchstr\xF6mte
-        mich, w\xE4hrend ich eilig auf meinem Smartphone tippte und Keith benachrichtigte:\n\nShit!
+      value: "Kapitel 8\nNew York\nFreitag, 13. Dezember 2022\n\n\n\nVerdammt. Ich
+        hatte verschlafen. Wie hatte das passieren k\xF6nnen? Ich musste den Wecker
+        einfach weggedr\xFCckt haben, ohne es zu merken. Das grelle Leuchten meines
+        Handydisplays blendete mich: 10:45 Uhr. In einer Viertelstunde sollte ich
+        bereits im Natural History Museum sein f\xFCr meine erste grosse live Moderation
+        und das schien kaum machbar. Die Subwayfahrt von Dumbo bis zum Museum w\xFCrde
+        mindestens dreissig Minuten in Anspruch nehmen. Panik durchstr\xF6mte mich,
+        w\xE4hrend ich eilig auf meinem Smartphone tippte und Keith benachrichtigte:\n\nShit!
         Habe verschlafen. Ich beeile mich, es sollte mir auf 11:45 Uhr reichen. Sorry!\n\nHoffentlich
         w\xFCrde diese Nachricht ausreichen, um die Situation zu retten. Immerhin
         begann die Livesendung erst um vierzehn Uhr und wir hatten nicht mehr allzu
-        viel vorzubereiten.\n\nEine Nachricht von Keith ploppte auf: \n\nKeine Sorge,
+        viel vorzubereiten.\nEine Nachricht von Keith ploppte auf: \n\nKeine Sorge,
         Bill und ich haben alles im Griff! Bis gleich.\n\nJetzt aber los, dachte
         ich mir. Ich \xFCberlegte, wie ich am schnellsten zum National History Museum
-        gelangte. Mit einem Taxi w\xE4re ich bestimmt schneller als mit der U-Bahn.\n\n"
+        gelangte. Mit einem Taxi w\xE4re ich bestimmt schneller als mit der U-Bahn.\n"
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: choiceContents.Array.data[1].choiceName
@@ -823,7 +879,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: choiceContents.Array.data[1].newContent
-      value: WELCOME END
+      value: .
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: choiceContents.Array.data[2].choiceName
@@ -831,8 +887,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: choiceContents.Array.data[2].newContent
-      value: "TAXI\nMit einem energischen Satz sprang ich aus den Federn, zog schnell
-        meinen Pyjama aus und schl\xFCpfte stattdessen in meinen dunkelblauen Jumpsuit.
+      value: "Mit einem energischen Satz sprang ich aus den Federn, zog schnell meinen
+        Pyjama aus und schl\xFCpfte stattdessen in meinen dunkelblauen Jumpsuit.
         Im Badezimmer putzte ich mir die Z\xE4hne und zwang meine wilden Haare zu
         einem strengen Dutt. Keine halbe Stunde sp\xE4ter sass ich bereits in einem
         Taxi und hoffte, dass ich so schneller an mein Ziel gelangen w\xFCrde.\r\nDoch
@@ -930,8 +986,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: choiceContents.Array.data[3].newContent
-      value: "U-BAHN\nMit einem energischen Satz sprang ich aus den Federn, zog schnell
-        meinen Pyjama aus und schl\xFCpfte stattdessen in meinen dunkelblauen Jumpsuit.
+      value: "Mit einem energischen Satz sprang ich aus den Federn, zog schnell meinen
+        Pyjama aus und schl\xFCpfte stattdessen in meinen dunkelblauen Jumpsuit.
         Im Badezimmer putzte ich mir die Z\xE4hne und zwang meine wilden Haare zu
         einem strengen Dutt. Keine halbe Stunde sp\xE4ter befand ich mich bereits
         in der U-Bahn.\r\nIch sprintete die Treppe zum Museumseingang hinauf, zeigte
@@ -1020,10 +1076,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: choiceContents.Array.data[4].newContent
-      value: "FOCUS_NEIN\nEr stand l\xE4ssig im Publikum, die Arme verschr\xE4nkt,
-        das Licht spiegelte sich in seinen Haaren, und er hatte diesen Blick \u2013
-        diesen unwiderstehlichen, verschmitzten Keith-Blick, der aussah, als h\xE4tte
-        er gerade etwas unglaublich Lustiges gedacht, das er mir sofort ins Ohr fl\xFCstern
+      value: "Er stand l\xE4ssig im Publikum, die Arme verschr\xE4nkt, das Licht
+        spiegelte sich in seinen Haaren, und er hatte diesen Blick \u2013 diesen
+        unwiderstehlichen, verschmitzten Keith-Blick, der aussah, als h\xE4tte er
+        gerade etwas unglaublich Lustiges gedacht, das er mir sofort ins Ohr fl\xFCstern
         wollte.\r\nOh. Mein. Gott.\r\nMein Hirn stotterte, mein Mund \xF6ffnete sich,
         aber meine Gedanken fielen wie Dominosteine um. Was hatte ich gerade sagen
         wollen? Worum ging es hier nochmal? Diamanten? Museen? Oder um die Tatsache,
@@ -1096,15 +1152,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: choiceContents.Array.data[5].newContent
-      value: "FOCUS_JA\nDie Live\xFCbertragung ging weiter und ich f\xFChrte das
-        Interview mit Melissa fort. Es war ein magischer Moment und ich konnte es
-        kaum glauben, dass ich Teil dieses historischen Ereignisses war.\r\nIch hatte
-        w\xE4hrend der gesamten Sendezeit Angst, dass meine Stimme versagte oder
-        dass ich den Faden verl\xF6re, aber das passierte nicht. Ich vergass die
-        Zuschauenden und die Kameras um mich herum und f\xFChrte gelassen das Gespr\xE4ch
-        zu Ende. \r\nNachdem die Kameras aus waren, sagte Bill mit einem breiten
-        Grinsen: \xABBeverly, einfach spitze!\xBB \r\nEr streckte seine Hand f\xFCr
-        einen High five aus und ich klatschte ab. \xABVielen Dank! Es war der Wahnsinn!
+      value: "Die Live\xFCbertragung ging weiter und ich f\xFChrte das Interview
+        mit Melissa fort. Es war ein magischer Moment und ich konnte es kaum glauben,
+        dass ich Teil dieses historischen Ereignisses war.\r\nIch hatte w\xE4hrend
+        der gesamten Sendezeit Angst, dass meine Stimme versagte oder dass ich den
+        Faden verl\xF6re, aber das passierte nicht. Ich vergass die Zuschauenden
+        und die Kameras um mich herum und f\xFChrte gelassen das Gespr\xE4ch zu Ende.
+        \r\nNachdem die Kameras aus waren, sagte Bill mit einem breiten Grinsen:
+        \xABBeverly, einfach spitze!\xBB \r\nEr streckte seine Hand f\xFCr einen
+        High five aus und ich klatschte ab. \xABVielen Dank! Es war der Wahnsinn!
         Es war genau so, wie ich mir meine erste Live\xADreportage immer ertr\xE4umt
         hatte \u2013 nein, es war sogar noch viel aufregender!\xBB, sagte ich \xFCberw\xE4ltigt.\r\n\xABDein
         erster Auftritt vor der Kamera! Das muss definitiv gefeiert werden. Wer ist
@@ -1152,26 +1208,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: choiceContents.Array.data[6].newContent
-      value: "CONFRONTATION_NEIN\nIch war wie versteinert. In dem Moment wurde mir
-        klar, wie bescheuert es von mir war, ihm hinterherzuspionieren. Ich musste
-        schleunigst hier weg, um unentdeckt zu bleiben. Die Eingangst\xFCr war zu
-        weit entfernt. Jetzt war schnelles Handeln gefragt. Ich mischte mich einfach
-        unbemerkt unter die Rauchenden, schloss mich einem F\xFCnfergr\xFCppchen
-        an und fragte in die Runde: \xABHat jemand eine Zigarette f\xFCr mich?\xBB
-        \r\n\xABKlar, kannst eine von mir haben\xBB, antwortete mir ein s\xFCdl\xE4ndischer
-        Typ mit Baseballcap. Dankend nahm ich sie entgegen. In diesem Moment h\xF6rte
-        ich von hinten Keiths Stimme. \xABBev? Beverly? Was machst du hier draussen?
-        Wusste gar nicht, dass du rauchst!\xBB \r\nVerdammte Scheisse, ja, das wusste
-        ich auch nicht. Wie konnte ich mich auch nur immer in solche Situationen
-        hineinreiten? Ich musste das Spiel weiterziehen. L\xE4ssig drehte ich mich
-        zu ihm um und nahm das Feuerzeug, das mir der Latinotyp hinstreckte, entgegen.
-        Meine Hand bewegte sich mit dem Feuerzeug langsam in Richtung Mund. Ich entz\xFCndete
-        eine kleine Flamme. Ein langer Atemzug liess die Zigarette erglimmen. Ich
-        stiess den Rauch so sachte aus, wie es mir nur m\xF6glich war und hoffte
-        dabei, dass ich irgendwie sexy aussah. Ich sp\xFCrte das Nikotin in meiner
-        Lunge, es gab mir in diesem Moment einen Kick und ich antwortete Keith ganz
-        locker: \xABAch weisst du, hin und wieder, wenn mir gerade danach ist.\xBB
-        \r\nIch setzte die Zigarette erneut an, was sich als grosser Fehler herausstellte.
+      value: "Ich war wie versteinert. In dem Moment wurde mir klar, wie bescheuert
+        es von mir war, ihm hinterherzuspionieren. Ich musste schleunigst hier weg,
+        um unentdeckt zu bleiben. Die Eingangst\xFCr war zu weit entfernt. Jetzt
+        war schnelles Handeln gefragt. Ich mischte mich einfach unbemerkt unter die
+        Rauchenden, schloss mich einem F\xFCnfergr\xFCppchen an und fragte in die
+        Runde: \xABHat jemand eine Zigarette f\xFCr mich?\xBB \r\n\xABKlar, kannst
+        eine von mir haben\xBB, antwortete mir ein s\xFCdl\xE4ndischer Typ mit Baseballcap.
+        Dankend nahm ich sie entgegen. In diesem Moment h\xF6rte ich von hinten Keiths
+        Stimme. \xABBev? Beverly? Was machst du hier draussen? Wusste gar nicht,
+        dass du rauchst!\xBB \r\nVerdammte Scheisse, ja, das wusste ich auch nicht.
+        Wie konnte ich mich auch nur immer in solche Situationen hineinreiten? Ich
+        musste das Spiel weiterziehen. L\xE4ssig drehte ich mich zu ihm um und nahm
+        das Feuerzeug, das mir der Latinotyp hinstreckte, entgegen. Meine Hand bewegte
+        sich mit dem Feuerzeug langsam in Richtung Mund. Ich entz\xFCndete eine kleine
+        Flamme. Ein langer Atemzug liess die Zigarette erglimmen. Ich stiess den
+        Rauch so sachte aus, wie es mir nur m\xF6glich war und hoffte dabei, dass
+        ich irgendwie sexy aussah. Ich sp\xFCrte das Nikotin in meiner Lunge, es
+        gab mir in diesem Moment einen Kick und ich antwortete Keith ganz locker:
+        \xABAch weisst du, hin und wieder, wenn mir gerade danach ist.\xBB \r\nIch
+        setzte die Zigarette erneut an, was sich als grosser Fehler herausstellte.
         Der Rauch reizte meinen Rachen und ich wurde mit einem Hustenanfall bestraft.
         Mein Kopf err\xF6tete und ich hoffte, dass meine Tarnung nicht aufgeflogen
         war und Keith mir meine Schauspielk\xFCnste abkaufte. \r\n\xABAlles klar,
@@ -1239,9 +1295,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: choiceContents.Array.data[7].newContent
-      value: "CONFRONTATION_JA\nIch marschierte direkt auf Ihn zu, als er mich entdeckte
-        weiteten sich seine Augen. \xABBev?\xBB\r\nIch verschr\xE4nkte die Arme.
-        \xABMit wem hast du gerade telefoniert?\xBB\r\nEr blinzelte. \xABWie bitte?\xBB\r\n\xABDu
+      value: "Ich marschierte direkt auf Ihn zu, als er mich entdeckte weiteten sich
+        seine Augen. \xABBev?\xBB\r\nIch verschr\xE4nkte die Arme. \xABMit wem hast
+        du gerade telefoniert?\xBB\r\nEr blinzelte. \xABWie bitte?\xBB\r\n\xABDu
         hast dich extra aus der Bar geschlichen, um ein geheimes Telefonat zu f\xFChren.
         Was l\xE4uft hier, Keith?\xBB\r\nF\xFCr einen Moment sah es so aus, als w\xFCrde
         er nach einer Ausrede suchen. Dann zuckte er mit den Schultern und zwang
@@ -1316,15 +1372,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: choiceContents.Array.data[8].newContent
-      value: "NO_TRACKING\nReflexartig hob Amber die Hand, um das n\xE4chstbeste
-        Taxi f\xFCr uns anzuhalten. \xABLos, beeil dich, steig ein!\xBB\r\nIch r\xFChrte
-        mich nicht. \xABNein, wir k\xF6nnen ihm doch nicht hinterherfahren.\xBB\r\nAmber
-        drehte sich ungeduldig zu mir um. \xABIch nehme nicht an, dass du ihm ohne
-        Auto hinterherrennen willst, oder? Also los, steig ein!\xBB\r\n\xABNein,
-        ich meine, ich will ihm gar nicht hinterherfahren.\xBB\r\nSie blinzelte verwirrt.
-        \xABBitte was?\xBB\r\nIch sch\xFCttelte den Kopf und verschr\xE4nkte die
-        Arme. \xABAmber, das ist verr\xFCckt. Ich wollte ihm nur unauff\xE4llig folgen,
-        nicht wie ein Stalker ein Taxi rufen und ihm durch die halbe Stadt nachspionieren.\xBB\r\n\xABDu
+      value: "Reflexartig hob Amber die Hand, um das n\xE4chstbeste Taxi f\xFCr uns
+        anzuhalten. \xABLos, beeil dich, steig ein!\xBB\r\nIch r\xFChrte mich nicht.
+        \xABNein, wir k\xF6nnen ihm doch nicht hinterherfahren.\xBB\r\nAmber drehte
+        sich ungeduldig zu mir um. \xABIch nehme nicht an, dass du ihm ohne Auto
+        hinterherrennen willst, oder? Also los, steig ein!\xBB\r\n\xABNein, ich meine,
+        ich will ihm gar nicht hinterherfahren.\xBB\r\nSie blinzelte verwirrt. \xABBitte
+        was?\xBB\r\nIch sch\xFCttelte den Kopf und verschr\xE4nkte die Arme. \xABAmber,
+        das ist verr\xFCckt. Ich wollte ihm nur unauff\xE4llig folgen, nicht wie
+        ein Stalker ein Taxi rufen und ihm durch die halbe Stadt nachspionieren.\xBB\r\n\xABDu
         willst jetzt aufgeben? Wo bleibt dein Jagdinstinkt?\xBB\r\n\xABIch habe keinen
         Jagdinstinkt. Und selbst wenn \u2013 was soll das bringen? Was, wenn er nur
         nach Hause f\xE4hrt oder sich mit jemandem trifft? Ich will das gar nicht
@@ -1340,8 +1396,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: choiceContents.Array.data[9].newContent
-      value: "ROLLER\nReflexartig hielt Amber die Hand hoch, als wollte sie selbst
-        ein Taxi rufen. Nach dem zweiten Taxi, das an uns vorbeifuhr, ohne uns mitzunehmen,
+      value: "Reflexartig hielt Amber die Hand hoch, als wollte sie selbst ein Taxi
+        rufen. Nach dem zweiten Taxi, das an uns vorbeifuhr, ohne uns mitzunehmen,
         wurde ich ungeduldig. Ich packte sie am Handgelenk und zog sie in die entgegengesetzte
         Richtung.\r\n\xABVergiss das Taxi, wir nehmen den da!\xBB, rief ich und deutete
         auf einen roten Motorroller, der vor der Bar stand.\r\n\xABBeverly, das ist
@@ -1391,10 +1447,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: choiceContents.Array.data[10].newContent
-      value: "FAHRR\xC4DER\nReflexartig blieb Amber stehen und fluchte leise. \xABVerdammt,
-        er nimmt ein Taxi!\xBB\r\n\xABMist, was machen wir jetzt?\xBB Ich sah mich
-        hektisch um.\r\n\xABDort dr\xFCben!\xBB Ich zeigte auf einen Fahrradst\xE4nder
-        mit ein paar Leihr\xE4dern. \xABKomm schon, das ist unsere Chance!\xBB\r\n\xABDu
+      value: "Reflexartig blieb Amber stehen und fluchte leise. \xABVerdammt, er
+        nimmt ein Taxi!\xBB\r\n\xABMist, was machen wir jetzt?\xBB Ich sah mich hektisch
+        um.\r\n\xABDort dr\xFCben!\xBB Ich zeigte auf einen Fahrradst\xE4nder mit
+        ein paar Leihr\xE4dern. \xABKomm schon, das ist unsere Chance!\xBB\r\n\xABDu
         willst ihm auf dem Fahrrad hinterherfahren?\xBB Amber zog skeptisch die Augenbrauen
         hoch.\r\n\xABHast du eine bessere Idee?\xBB Ich rannte schon los und entriegelte
         eines der R\xE4der mit einem schnellen Klick auf den Touchscreen. Amber tat
@@ -1439,7 +1495,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: choiceContents.Array.data[11].newContent
-      value: "TAXI_2\nReflexartig hielt Amber die Hand hoch und brachte das n\xE4chstbeste
+      value: "Reflexartig hielt Amber die Hand hoch und brachte das n\xE4chstbeste
         Taxi neben uns zum Anhalten. \xABLos, beeil dich, steig ein!\xBB \r\n\xABNein,
         wir k\xF6nnen ihm doch nicht hinterherfahren.\xBB \r\n\xABIch nehme nicht
         an, dass du ihm ohne Auto hinterherrennen willst, oder? Also los, steig ein.\xBB
@@ -1523,20 +1579,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: choiceContents.Array.data[12].newContent
-      value: "Museum\nAmber und ich kauerten hinter einer grossen Elefantenstatue
-        in der Eingangshalle des Natural History Museums. Es roch nach altem Holz,
-        Reinigungsmitteln und einem Hauch von Abenteuer.\r\n\xABOkay, sie sind da
-        hinten reingegangen\xBB, fl\xFCsterte Amber und deutete auf eine T\xFCr mit
-        der Aufschrift Zugang nur f\xFCr Mitarbeiter.\r\n\xABUnd was genau tun wir
-        hier eigentlich?\xBB, fragte ich skeptisch.\r\n\xABWir schn\xFCffeln.\xBB\r\nIch
-        schnaubte. \xABUnd wenn wir erwischt werden?\xBB\r\nAmber grinste und zuckte
-        die Schultern. \xABDann sagst du, dass du eine investigative Journalistin
-        bist, und ich bin deine furchtlose Assistentin.\xBB\r\nBevor ich widersprechen
-        konnte, hatte sie sich bereits in Bewegung gesetzt. Ich seufzte leise, folgte
-        ihr aber trotzdem.\r\nWir huschten an einem ausgestopften B\xE4ren vorbei
-        und blieben kurz vor der T\xFCr stehen. Ich legte vorsichtig meine Hand auf
-        die Klinke \u2013 unverschlossen. Amber nickte mir zu, dann schoben wir die
-        T\xFCr leise auf und traten in einen schmalen, schlecht beleuchteten Gang.\r\nAm
+      value: "Amber und ich kauerten hinter einer grossen Elefantenstatue in der
+        Eingangshalle des Natural History Museums. Es roch nach altem Holz, Reinigungsmitteln
+        und einem Hauch von Abenteuer.\r\n\xABOkay, sie sind da hinten reingegangen\xBB,
+        fl\xFCsterte Amber und deutete auf eine T\xFCr mit der Aufschrift Zugang
+        nur f\xFCr Mitarbeiter.\r\n\xABUnd was genau tun wir hier eigentlich?\xBB,
+        fragte ich skeptisch.\r\n\xABWir schn\xFCffeln.\xBB\r\nIch schnaubte. \xABUnd
+        wenn wir erwischt werden?\xBB\r\nAmber grinste und zuckte die Schultern.
+        \xABDann sagst du, dass du eine investigative Journalistin bist, und ich
+        bin deine furchtlose Assistentin.\xBB\r\nBevor ich widersprechen konnte,
+        hatte sie sich bereits in Bewegung gesetzt. Ich seufzte leise, folgte ihr
+        aber trotzdem.\r\nWir huschten an einem ausgestopften B\xE4ren vorbei und
+        blieben kurz vor der T\xFCr stehen. Ich legte vorsichtig meine Hand auf die
+        Klinke \u2013 unverschlossen. Amber nickte mir zu, dann schoben wir die T\xFCr
+        leise auf und traten in einen schmalen, schlecht beleuchteten Gang.\r\nAm
         Ende der Flure sahen wir sie: Keith und Melissa standen in einem kleinen
         Raum voller Equipment. Kamerastative lehnten an der Wand, Kabel lagen kreuz
         und quer auf dem Boden.\r\nKeith \xF6ffnete einen Metallschrank, w\xE4hrend
@@ -1574,9 +1630,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: choiceContents.Array.data[13].newContent
-      value: "AFFAIRE\nAmber und ich standen da wie versteinert. Der kalte Wind zerrte
-        an unseren M\xE4nteln, doch wir nahmen ihn kaum wahr. Unsere Blicke hingen
-        an der grossen Eingangst\xFCr des Museums, durch die Keith und Melissa gerade
+      value: "Amber und ich standen da wie versteinert. Der kalte Wind zerrte an
+        unseren M\xE4nteln, doch wir nahmen ihn kaum wahr. Unsere Blicke hingen an
+        der grossen Eingangst\xFCr des Museums, durch die Keith und Melissa gerade
         verschwunden waren.\r\nAmber war die Erste, die sich aus der Schockstarre
         l\xF6ste. \xABDas ist doch nicht dein Ernst!\xBB, zischte sie und raufte
         sich die Haare. \xABDie beiden haben eine Aff\xE4re! Ich wusste doch, dass
@@ -1600,34 +1656,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: choiceContents.Array.data[14].newContent
-      value: "GRUND\nAmber starrte mich ungl\xE4ubig an. \xABSag mal, willst du mich
-        verarschen? Du hast doch gerade gesehen, was ich gesehen habe!\xBB\r\nIch
-        biss mir auf die Unterlippe und zwang mich, ruhig zu bleiben. Mein Herz raste
-        noch immer, aber eine innere Stimme fl\xFCsterte mir zu, dass ich nicht vorschnell
-        urteilen sollte.\r\n\xABAmber, wir haben keine Beweise, dass hier irgendwas
-        l\xE4uft\xBB, sagte ich schliesslich und merkte selbst, wie zaghaft meine
-        Stimme klang.\r\nSie riss die Augen auf. \xABBeverly, ich bitte dich! Sie
-        treffen sich mitten in der Nacht, umarmen sich und verschwinden dann in einem
-        Museum? Was brauchst du noch, eine Leuchtschrift mit Aff\xE4re drauf?!\xBB\r\nIch
-        seufzte und lehnte mich gegen die Kopfst\xFCtze. \xABEs gibt bestimmt eine
-        logische Erkl\xE4rung.\xBB\r\nAmber schnaubte. \xABOder vielleicht verarscht
-        er dich nach Strich und Faden.\xBB\r\nIch schluckte. Der Gedanke f\xFChlte
-        sich wie ein Stein in meinem Magen an.\r\nXavi r\xE4usperte sich und schaute
-        uns \xFCber den R\xFCckspiegel an. \xABLadys, ihr wollt warten oder fahren?\xBB\r\nAmber
-        drehte sich mit verschr\xE4nkten Armen zu mir. \xABDeine Entscheidung, Beverly.
-        St\xFCrzen wir uns ins Chaos oder tun wir so, als h\xE4tten wir nichts gesehen?\xBB\r\nIch
-        atmete tief durch und blickte wieder auf das riesige Museum, das nun ruhig
-        und unauff\xE4llig in der Dunkelheit lag.\r\n\xABWir tun gar nichts\xBB,
-        sagte ich schliesslich. \xABIch habe \xFCberreagiert. Lass uns fahren.\xBB\r\nAmber
-        verzog das Gesicht, als h\xE4tte ich ihr gerade einen Cosmopolitan mit Essig
-        serviert. \xABBeverly \u2026 du wirst es bereuen.\xBB\r\nVielleicht. Aber
-        solange ich nicht wusste, was hier wirklich los war, wollte ich keine voreiligen
-        Schl\xFCsse ziehen.\r\n\xABXavi, fahr uns nach Hause. Nach DUMBO, bitte!\xBB\r\nEr
-        zuckte mit den Schultern. \xABWie ihr wollt.\xBB\r\nDas Taxi setzte sich
-        in Bewegung, und ich sp\xFCrte, wie sich die Anspannung langsam in mir l\xF6ste
-        \u2013 zumindest f\xFCr den Moment. Doch w\xE4hrend die Lichter von New York
-        an mir vorbeizogen, wusste ich, dass das hier nicht das letzte Mal war, dass
-        ich mich mit Keiths Geheimnissen besch\xE4ftigen w\xFCrde.\r\n"
+      value: "Amber starrte mich ungl\xE4ubig an. \xABSag mal, willst du mich verarschen?
+        Du hast doch gerade gesehen, was ich gesehen habe!\xBB\r\nIch biss mir auf
+        die Unterlippe und zwang mich, ruhig zu bleiben. Mein Herz raste noch immer,
+        aber eine innere Stimme fl\xFCsterte mir zu, dass ich nicht vorschnell urteilen
+        sollte.\r\n\xABAmber, wir haben keine Beweise, dass hier irgendwas l\xE4uft\xBB,
+        sagte ich schliesslich und merkte selbst, wie zaghaft meine Stimme klang.\r\nSie
+        riss die Augen auf. \xABBeverly, ich bitte dich! Sie treffen sich mitten
+        in der Nacht, umarmen sich und verschwinden dann in einem Museum? Was brauchst
+        du noch, eine Leuchtschrift mit Aff\xE4re drauf?!\xBB\r\nIch seufzte und
+        lehnte mich gegen die Kopfst\xFCtze. \xABEs gibt bestimmt eine logische Erkl\xE4rung.\xBB\r\nAmber
+        schnaubte. \xABOder vielleicht verarscht er dich nach Strich und Faden.\xBB\r\nIch
+        schluckte. Der Gedanke f\xFChlte sich wie ein Stein in meinem Magen an.\r\nXavi
+        r\xE4usperte sich und schaute uns \xFCber den R\xFCckspiegel an. \xABLadys,
+        ihr wollt warten oder fahren?\xBB\r\nAmber drehte sich mit verschr\xE4nkten
+        Armen zu mir. \xABDeine Entscheidung, Beverly. St\xFCrzen wir uns ins Chaos
+        oder tun wir so, als h\xE4tten wir nichts gesehen?\xBB\r\nIch atmete tief
+        durch und blickte wieder auf das riesige Museum, das nun ruhig und unauff\xE4llig
+        in der Dunkelheit lag.\r\n\xABWir tun gar nichts\xBB, sagte ich schliesslich.
+        \xABIch habe \xFCberreagiert. Lass uns fahren.\xBB\r\nAmber verzog das Gesicht,
+        als h\xE4tte ich ihr gerade einen Cosmopolitan mit Essig serviert. \xABBeverly
+        \u2026 du wirst es bereuen.\xBB\r\nVielleicht. Aber solange ich nicht wusste,
+        was hier wirklich los war, wollte ich keine voreiligen Schl\xFCsse ziehen.\r\n\xABXavi,
+        fahr uns nach Hause. Nach DUMBO, bitte!\xBB\r\nEr zuckte mit den Schultern.
+        \xABWie ihr wollt.\xBB\r\nDas Taxi setzte sich in Bewegung, und ich sp\xFCrte,
+        wie sich die Anspannung langsam in mir l\xF6ste \u2013 zumindest f\xFCr den
+        Moment. Doch w\xE4hrend die Lichter von New York an mir vorbeizogen, wusste
+        ich, dass das hier nicht das letzte Mal war, dass ich mich mit Keiths Geheimnissen
+        besch\xE4ftigen w\xFCrde.\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 5766205926528956805, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: m_Pivot.x
@@ -1778,55 +1834,13 @@ PrefabInstance:
       value: 1801810542
       objectReference: {fileID: 0}
     - target: {fileID: 8540251058166378552, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
-      propertyPath: m_text
-      value: "Kapitel 8\nNew York\nFreitag, 13. Dezember 2022\n\n\n\nVerdammt. Ich
-        hatte verschlafen. Wie hatte das passieren k\xF6nnen? Ich musste den Wecker
-        einfach weggedr\xFCckt haben, ohne es zu merken. Das grelle Leuchten meines
-        Handydisplays blendete mich: 10:45 Uhr. In einer Viertelstunde sollte ich
-        bereits im Natural History Museum sein f\xFCr meine erste grosse live Moderation
-        und das schien kaum machbar. Die Subwayfahrt von Dumbo bis zum Museum w\xFCrde
-        mindestens dreissig Minuten in Anspruch nehmen. Panik durchstr\xF6mte mich,
-        w\xE4hrend ich eilig auf meinem Smartphone tippte und Keith benachrichtigte:\n\nShit!
-        Habe verschlafen. Ich beeile mich, es sollte mir auf 11:45 Uhr reichen. Sorry!\n\nHoffentlich
-        w\xFCrde diese Nachricht ausreichen, um die Situation zu retten. Immerhin
-        begann die Livesendung erst um vierzehn Uhr und wir hatten nicht mehr allzu
-        viel vorzubereiten.\n\nEine Nachricht von Keith ploppte auf: \n\nKeine Sorge,
-        Bill und ich haben alles im Griff! Bis gleich.\n\nJetzt aber los, dachte
-        ich mir. Ich \xFCberlegte, wie ich am schnellsten zum National History Museum
-        gelangte. Mit einem Taxi w\xE4re ich bestimmt schneller als mit der U-Bahn."
-      objectReference: {fileID: 0}
-    - target: {fileID: 8540251058166378552, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8540251058166378552, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
-      propertyPath: m_margin.w
-      value: 41.270844
-      objectReference: {fileID: 0}
-    - target: {fileID: 8540251058166378552, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
-      propertyPath: m_margin.x
-      value: -61.911743
-      objectReference: {fileID: 0}
-    - target: {fileID: 8540251058166378552, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
-      propertyPath: m_margin.y
-      value: -88.583374
-      objectReference: {fileID: 0}
-    - target: {fileID: 8540251058166378552, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
-      propertyPath: m_margin.z
-      value: -45.217163
-      objectReference: {fileID: 0}
-    - target: {fileID: 8540251058166378552, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-    - target: {fileID: 8540251058166378552, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
-      propertyPath: m_fontStyle
+      propertyPath: m_enableAutoSizing
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8540251058166378552, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 8540251058166378552, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
@@ -1838,6 +1852,26 @@ PrefabInstance:
     - target: {fileID: 8816160756017680911, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: m_Name
       value: UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 9105336299864940572, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 9105336299864940572, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 9105336299864940572, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9105336299864940572, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -260
+      objectReference: {fileID: 0}
+    - target: {fileID: 9105336299864940572, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -350
       objectReference: {fileID: 0}
     - target: {fileID: 9145345326914757059, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: m_ActiveFontFeatures.Array.data[0]
@@ -2162,7 +2196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2683,6 +2717,74 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b38e4bc919e1f040ba78aea7472893e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1932104304
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1932104306}
+  - component: {fileID: 1932104305}
+  m_Layer: 0
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!328 &1932104305
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932104304}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: 3712e5f595ccd624a9df163ae63cb1fc, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 833862651}
+  m_TargetTexture: {fileID: 0}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: <noninit>
+  m_RenderMode: 0
+  m_AspectRatio: 2
+  m_DataSource: 0
+  m_TimeUpdateMode: 2
+  m_PlaybackSpeed: 0.5
+  m_AudioOutputMode: 2
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 0
+  m_Url: 
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 1
+  m_Looping: 1
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
+  m_VideoShaders: []
+--- !u!4 &1932104306
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932104304}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1096.8586, y: 628.9249, z: -970.7002}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -2694,3 +2796,4 @@ SceneRoots:
   - {fileID: 1076103840}
   - {fileID: 309342842}
   - {fileID: 1250541346}
+  - {fileID: 1932104306}

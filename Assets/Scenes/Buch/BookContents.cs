@@ -8,7 +8,7 @@ namespace ChristinaCreatesGames.Typography.Book
 {
     public class BookContents : MonoBehaviour
     {
-        [TextArea(10,20)]
+        [TextArea(10, 20)]
         [SerializeField] private string content;
         [Space]
         [SerializeField] private TMP_Text leftSide;
@@ -24,7 +24,7 @@ namespace ChristinaCreatesGames.Typography.Book
         [Header("Narrative Design Trigger")]
         [SerializeField] private NarrativeDesignTrigger narrativeTrigger;
 
-        [Tooltip("Liste der Seitenzahlen und zugehörigen ConvAI‑Triggernamen")]
+        [Tooltip("Liste der Seitenzahlen und zugehörigen ConvAI-Triggernamen")]
         [SerializeField] private List<PageTrigger> pageTriggers = new();
         private Dictionary<int, string> _triggerDictionary;
 
@@ -43,14 +43,14 @@ namespace ChristinaCreatesGames.Typography.Book
         [System.Serializable]
         public class ChoiceContent
         {
-            public string choiceName;    // hier die Section-ID aus ConvAI
-            [TextArea(5,10)]
-            public string newContent;    // der Text, der danach im Buch erscheinen soll
+            public string choiceName;
+            [TextArea(5, 10)]
+            public string newContent;
         }
 
         private void Awake()
         {
-            // Initialer Aufbau
+            Debug.Log("[BookContents] Awake: Setup content and build dictionaries.");
             SetupContent();
             UpdatePagination();
             BuildTriggerDictionary();
@@ -59,17 +59,18 @@ namespace ChristinaCreatesGames.Typography.Book
 
         private void Start()
         {
+            Debug.Log("[BookContents] Start: Initializing section subscriptions.");
             StartCoroutine(InitSectionSubscriptions());
         }
 
         private IEnumerator InitSectionSubscriptions()
         {
             yield return new WaitUntil(() =>
-                narrativeTrigger != null
-                && narrativeTrigger.convaiNPC != null
-                && narrativeTrigger.convaiNPC.narrativeDesignManager != null
-                && narrativeTrigger.convaiNPC.narrativeDesignManager.sectionChangeEventsDataList != null
-                && narrativeTrigger.convaiNPC.narrativeDesignManager.sectionChangeEventsDataList.Count > 0
+                narrativeTrigger != null &&
+                narrativeTrigger.convaiNPC != null &&
+                narrativeTrigger.convaiNPC.narrativeDesignManager != null &&
+                narrativeTrigger.convaiNPC.narrativeDesignManager.sectionChangeEventsDataList != null &&
+                narrativeTrigger.convaiNPC.narrativeDesignManager.sectionChangeEventsDataList.Count > 0
             );
 
             SubscribeSectionEvents();
@@ -79,51 +80,83 @@ namespace ChristinaCreatesGames.Typography.Book
         {
             _triggerDictionary = new Dictionary<int, string>();
             foreach (var pt in pageTriggers)
+            {
                 if (!_triggerDictionary.ContainsKey(pt.pageNumber))
+                {
                     _triggerDictionary.Add(pt.pageNumber, pt.eventName);
+                    Debug.Log($"[BookContents] Trigger-Dictionary: Seite {pt.pageNumber} → Event '{pt.eventName}'.");
+                }
+            }
         }
 
         private void BuildChoiceMap()
         {
             _choiceMap = new Dictionary<string, string>();
             foreach (var cc in choiceContents)
+            {
                 if (!_choiceMap.ContainsKey(cc.choiceName))
+                {
                     _choiceMap.Add(cc.choiceName, cc.newContent);
+                    Debug.Log($"[BookContents] Choice-Map: Section '{cc.choiceName}' → neuer Text geladen.");
+                }
+            }
         }
 
         private void SetupContent()
         {
-            leftSide.text  = content;
+            leftSide.text = content;
             rightSide.text = content;
+            Debug.Log($"[BookContents] SetupContent: Text gesetzt (Länge: {content.Length} Zeichen)");
         }
 
         private void UpdatePagination()
         {
-            leftPagination .text = leftSide .pageToDisplay.ToString();
+            leftPagination.text = leftSide.pageToDisplay.ToString();
             rightPagination.text = rightSide.pageToDisplay.ToString();
-        }
-
-        public void PreviousPage()
-        {
-            if (leftSide.pageToDisplay < 1)
-                leftSide.pageToDisplay = 1;
-            else if (leftSide.pageToDisplay - 2 > 1)
-                leftSide.pageToDisplay -= 2;
-            else
-                leftSide.pageToDisplay = 1;
-
-            rightSide.pageToDisplay = leftSide.pageToDisplay + 1;
-            UpdatePagination();
-            CheckForTrigger();
+            Debug.Log($"[BookContents] UpdatePagination: links={leftSide.pageToDisplay}, rechts={rightSide.pageToDisplay}");
         }
 
         public void NextPage()
         {
-            if (rightSide.pageToDisplay >= rightSide.textInfo.pageCount)
-                return;
+            int currentLeft = leftSide.pageToDisplay;
+            int currentRight = rightSide.pageToDisplay;
+            int total = rightSide.textInfo.pageCount;
+            Debug.Log($"[BookContents] NextPage clicked: left={currentLeft}, right={currentRight}, totalPages={total}");
 
-            if (leftSide.pageToDisplay >= leftSide.textInfo.pageCount - 1)
-                leftSide.pageToDisplay = leftSide.textInfo.pageCount - 1;
+            if (currentRight >= total)
+            {
+                Debug.Log($"[BookContents] Ende erreicht auf Seite {currentRight} von {total}");
+                if (_triggerDictionary != null && _triggerDictionary.TryGetValue(currentLeft, out string eventName))
+                {
+                    narrativeTrigger.UpdateAvailableTriggers();
+                    int idx = narrativeTrigger.availableTriggers.IndexOf(eventName);
+                    Debug.Log($"[BookContents] availableTriggers enthält {narrativeTrigger.availableTriggers.Count} Einträge");
+
+                    if (idx >= 0)
+                    {
+                        narrativeTrigger.selectedTriggerIndex = idx;
+                        narrativeTrigger.InvokeSelectedTrigger();
+                        Debug.Log($"[BookContents] Trigger '{eventName}' (Index {idx}) ausgelöst.");
+                    }
+                    else
+                        Debug.LogWarning($"[BookContents] Trigger '{eventName}' nicht in availableTriggers gefunden.");
+
+                    if (nextPageObject != null)
+                    {
+                        nextPageObject.SetActive(false);
+                        Debug.Log("[BookContents] NextPage-Button deaktiviert.");
+                    }
+                }
+                else
+                {
+                    Debug.LogWarning($"[BookContents] Kein Trigger für Seite {currentLeft} definiert.");
+                }
+                return;
+            }
+
+            Debug.Log("[BookContents] Normales Blättern");
+            if (leftSide.pageToDisplay >= total - 1)
+                leftSide.pageToDisplay = total - 1;
             else
                 leftSide.pageToDisplay += 2;
 
@@ -135,33 +168,34 @@ namespace ChristinaCreatesGames.Typography.Book
         private void CheckForTrigger()
         {
             int currentPage = leftSide.pageToDisplay;
-            if (_triggerDictionary != null
-                && _triggerDictionary.TryGetValue(currentPage, out string eventName))
+            Debug.Log($"[BookContents] CheckForTrigger auf Seite {currentPage}");
+            if (_triggerDictionary != null && _triggerDictionary.TryGetValue(currentPage, out string eventName))
             {
+                Debug.Log($"[BookContents] Trigger gefunden: {eventName}");
                 narrativeTrigger.UpdateAvailableTriggers();
-
                 int idx = narrativeTrigger.availableTriggers.IndexOf(eventName);
                 if (idx >= 0)
                 {
                     narrativeTrigger.selectedTriggerIndex = idx;
                     narrativeTrigger.InvokeSelectedTrigger();
-                    Debug.Log($"[BookContents] ConvAI‑Trigger '{eventName}' (Index {idx}) auf Seite {currentPage} gesendet.");
-
-                    // NextPage-Knopf ausblenden
+                    Debug.Log($"[BookContents] Trigger '{eventName}' ausgelöst.");
                     if (nextPageObject != null)
+                    {
                         nextPageObject.SetActive(false);
+                        Debug.Log("[BookContents] NextPage-Button deaktiviert nach Trigger.");
+                    }
                 }
                 else
-                {
-                    Debug.LogWarning($"[BookContents] ConvAI‑Trigger '{eventName}' nicht in availableTriggers gefunden.");
-                }
+                    Debug.LogWarning($"[BookContents] Trigger '{eventName}' nicht gefunden.");
             }
+            else
+                Debug.Log($"[BookContents] Kein Trigger für Seite {currentPage}.");
         }
 
         private void SubscribeSectionEvents()
         {
             var ndManager = narrativeTrigger.convaiNPC.narrativeDesignManager;
-            Debug.Log($"[BookContents] Registriere {ndManager.sectionChangeEventsDataList.Count} Section-Events.");
+            Debug.Log($"[BookContents] Registriere {ndManager.sectionChangeEventsDataList.Count} Section-Events");
 
             foreach (var sc in ndManager.sectionChangeEventsDataList)
             {
@@ -173,18 +207,29 @@ namespace ChristinaCreatesGames.Typography.Book
 
         private void HandleSectionStart(string sectionId)
         {
-            Debug.Log($"[BookContents] Section-Start empfangen: '{sectionId}'");
-
+            Debug.Log($"[BookContents] HandleSectionStart: Abschnitt '{sectionId}' gestartet.");
             if (_choiceMap.TryGetValue(sectionId, out string nextText))
             {
-                content = nextText;
+                Debug.Log($"[BookContents] Alter Content-Länge: {content.Length}");
+                // Text anhängen, nicht ersetzen
+                if (content == ""){
+                    content = nextText;
+                }
+                else{
+                    content += "/n" + "/n" +  nextText;
+                }
+                
+                Debug.Log($"[BookContents] Neuer Content-Länge: {content.Length}");
+
                 SetupContent();
                 UpdatePagination();
-                Debug.Log($"[BookContents] Text für Section '{sectionId}' aktualisiert.");
+                Debug.Log("[BookContents] SetupContent und UpdatePagination nach Text-Anhang ausgeführt.");
 
-                // NextPage-Knopf wieder einblenden
                 if (nextPageObject != null)
+                {
                     nextPageObject.SetActive(true);
+                    Debug.Log("[BookContents] NextPage-Button wieder aktiviert.");
+                }
             }
             else
             {
