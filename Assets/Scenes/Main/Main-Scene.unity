@@ -851,6 +851,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: talkTaste
+      value: 
+      objectReference: {fileID: 774940263}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: tTasteHint
       value: 
       objectReference: {fileID: 774940263}
@@ -1596,7 +1600,9 @@ PrefabInstance:
         verdammt!\xBB, zischte ich.\r\nSchnell zerrte ich Amber mit mir hinter ein
         Regal. Gerade rechtzeitig. Keith und Melissa marschierten an uns vorbei.\r\nIch
         verdrehte die Augen und zog Amber am \xC4rmel. \xABKomm. Bevor wir doch noch
-        f\xFCr Einbrecher gehalten werden.\xBB\r\n"
+        f\xFCr Einbrecher gehalten werden.\xBB\r\nUnd mit schnellen, leisen Schritten
+        verschwanden wir genauso unbemerkt wieder aus dem Museum, wie wir gekommen
+        waren.\n"
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: choiceContents.Array.data[13].choiceName
@@ -1640,34 +1646,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: choiceContents.Array.data[14].newContent
-      value: "Amber starrte mich ungl\xE4ubig an. \xABSag mal, willst du mich verarschen?
-        Du hast doch gerade gesehen, was ich gesehen habe!\xBB\r\nIch biss mir auf
-        die Unterlippe und zwang mich, ruhig zu bleiben. Mein Herz raste noch immer,
-        aber eine innere Stimme fl\xFCsterte mir zu, dass ich nicht vorschnell urteilen
-        sollte.\r\n\xABAmber, wir haben keine Beweise, dass hier irgendwas l\xE4uft\xBB,
-        sagte ich schliesslich und merkte selbst, wie zaghaft meine Stimme klang.\r\nSie
-        riss die Augen auf. \xABBeverly, ich bitte dich! Sie treffen sich mitten
-        in der Nacht, umarmen sich und verschwinden dann in einem Museum? Was brauchst
-        du noch, eine Leuchtschrift mit Aff\xE4re drauf?!\xBB\r\nIch seufzte und
-        lehnte mich gegen die Kopfst\xFCtze. \xABEs gibt bestimmt eine logische Erkl\xE4rung.\xBB\r\nAmber
-        schnaubte. \xABOder vielleicht verarscht er dich nach Strich und Faden.\xBB\r\nIch
-        schluckte. Der Gedanke f\xFChlte sich wie ein Stein in meinem Magen an.\r\nXavi
-        r\xE4usperte sich und schaute uns \xFCber den R\xFCckspiegel an. \xABLadys,
-        ihr wollt warten oder fahren?\xBB\r\nAmber drehte sich mit verschr\xE4nkten
-        Armen zu mir. \xABDeine Entscheidung, Beverly. St\xFCrzen wir uns ins Chaos
-        oder tun wir so, als h\xE4tten wir nichts gesehen?\xBB\r\nIch atmete tief
-        durch und blickte wieder auf das riesige Museum, das nun ruhig und unauff\xE4llig
-        in der Dunkelheit lag.\r\n\xABWir tun gar nichts\xBB, sagte ich schliesslich.
-        \xABIch habe \xFCberreagiert. Lass uns fahren.\xBB\r\nAmber verzog das Gesicht,
-        als h\xE4tte ich ihr gerade einen Cosmopolitan mit Essig serviert. \xABBeverly
-        \u2026 du wirst es bereuen.\xBB\r\nVielleicht. Aber solange ich nicht wusste,
-        was hier wirklich los war, wollte ich keine voreiligen Schl\xFCsse ziehen.\r\n\xABXavi,
-        fahr uns nach Hause. Nach DUMBO, bitte!\xBB\r\nEr zuckte mit den Schultern.
-        \xABWie ihr wollt.\xBB\r\nDas Taxi setzte sich in Bewegung, und ich sp\xFCrte,
-        wie sich die Anspannung langsam in mir l\xF6ste \u2013 zumindest f\xFCr den
-        Moment. Doch w\xE4hrend die Lichter von New York an mir vorbeizogen, wusste
-        ich, dass das hier nicht das letzte Mal war, dass ich mich mit Keiths Geheimnissen
-        besch\xE4ftigen w\xFCrde."
+      value: "\n\nAmber starrte mich ungl\xE4ubig an. \xABSag mal, willst du mich
+        verarschen? Du hast doch gerade gesehen, was ich gesehen habe!\xBB\r\nIch
+        biss mir auf die Unterlippe und zwang mich, ruhig zu bleiben. Mein Herz raste
+        noch immer, aber eine innere Stimme fl\xFCsterte mir zu, dass ich nicht vorschnell
+        urteilen sollte.\r\n\xABAmber, wir haben keine Beweise, dass hier irgendwas
+        l\xE4uft\xBB, sagte ich schliesslich und merkte selbst, wie zaghaft meine
+        Stimme klang.\r\nSie riss die Augen auf. \xABBeverly, ich bitte dich! Sie
+        treffen sich mitten in der Nacht, umarmen sich und verschwinden dann in einem
+        Museum? Was brauchst du noch, eine Leuchtschrift mit Aff\xE4re drauf?!\xBB\r\nIch
+        seufzte und lehnte mich gegen die Kopfst\xFCtze. \xABEs gibt bestimmt eine
+        logische Erkl\xE4rung.\xBB\r\nAmber schnaubte. \xABOder vielleicht verarscht
+        er dich nach Strich und Faden.\xBB\r\nIch schluckte. Der Gedanke f\xFChlte
+        sich wie ein Stein in meinem Magen an.\r\nXavi r\xE4usperte sich und schaute
+        uns \xFCber den R\xFCckspiegel an. \xABLadys, ihr wollt warten oder fahren?\xBB\r\nAmber
+        drehte sich mit verschr\xE4nkten Armen zu mir. \xABDeine Entscheidung, Beverly.
+        St\xFCrzen wir uns ins Chaos oder tun wir so, als h\xE4tten wir nichts gesehen?\xBB\r\nIch
+        atmete tief durch und blickte wieder auf das riesige Museum, das nun ruhig
+        und unauff\xE4llig in der Dunkelheit lag.\r\n\xABWir tun gar nichts\xBB,
+        sagte ich schliesslich. \xABIch habe \xFCberreagiert. Lass uns fahren.\xBB\r\nAmber
+        verzog das Gesicht, als h\xE4tte ich ihr gerade einen Cosmopolitan mit Essig
+        serviert. \xABBeverly \u2026 du wirst es bereuen.\xBB\r\nVielleicht. Aber
+        solange ich nicht wusste, was hier wirklich los war, wollte ich keine voreiligen
+        Schl\xFCsse ziehen.\r\n\xABXavi, fahr uns nach Hause. Nach DUMBO, bitte!\xBB\r\nEr
+        zuckte mit den Schultern. \xABWie ihr wollt.\xBB\r\nDas Taxi setzte sich
+        in Bewegung, und ich sp\xFCrte, wie sich die Anspannung langsam in mir l\xF6ste
+        \u2013 zumindest f\xFCr den Moment. Doch w\xE4hrend die Lichter von New York
+        an mir vorbeizogen, wusste ich, dass das hier nicht das letzte Mal war, dass
+        ich mich mit Keiths Geheimnissen besch\xE4ftigen w\xFCrde."
       objectReference: {fileID: 0}
     - target: {fileID: 5766205926528956805, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: m_Pivot.x

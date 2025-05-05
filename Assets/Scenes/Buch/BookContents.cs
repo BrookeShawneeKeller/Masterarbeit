@@ -20,6 +20,7 @@ namespace ChristinaCreatesGames.Typography.Book
         [Header("UI Controls")]
         [Tooltip("Das GameObject, das den Next-Page-Knopf enthält")]
         [SerializeField] private GameObject nextPageObject;
+        [SerializeField] private GameObject talkTaste;
 
         [Header("Narrative Design Trigger")]
         [SerializeField] private NarrativeDesignTrigger narrativeTrigger;
@@ -155,6 +156,12 @@ namespace ChristinaCreatesGames.Typography.Book
                     nextPageObject.SetActive(false);
                     Debug.Log("[BookContents] NextPage-Button deaktiviert.");
                 }
+
+                if (talkTaste != null)
+                {
+                    talkTaste.SetActive(true);
+                    Debug.Log("[BookContents] Talk Taste aktiviert.");
+                }
                 return;
             }
 
@@ -186,6 +193,12 @@ namespace ChristinaCreatesGames.Typography.Book
                     {
                         nextPageObject.SetActive(false);
                         Debug.Log("[BookContents] NextPage-Button deaktiviert nach Trigger.");
+                    }
+
+                    if (talkTaste != null)
+                    {
+                    talkTaste.SetActive(false);
+                    Debug.Log("[BookContents] Talk Taste deaktiviert nach Trigger.");
                     }
                 }
                 else
@@ -221,7 +234,7 @@ namespace ChristinaCreatesGames.Typography.Book
                 }
                 else
                 {
-                    content += "/n" + "/n" + nextText;
+                    content += nextText;
                 }
 
                 Debug.Log($"[BookContents] Neuer Content-Länge: {content.Length}");
@@ -235,6 +248,11 @@ namespace ChristinaCreatesGames.Typography.Book
                     nextPageObject.SetActive(true);
                     Debug.Log("[BookContents] NextPage-Button wieder aktiviert.");
                 }
+                if (talkTaste != null)
+                    {
+                    talkTaste.SetActive(false);
+                    Debug.Log("[BookContents] Talk Taste deaktiviert..");
+                    }
             }
             else
             {
