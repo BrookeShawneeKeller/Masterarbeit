@@ -48,6 +48,9 @@ namespace ChristinaCreatesGames.Typography.Book
             public string newContent;
         }
 
+        // Neue Variable, um den Start-Trigger einmalig auszuführen
+        [SerializeField] private bool startTriggerExecuted = false;
+
         private void Awake()
         {
             Debug.Log("[BookContents] Awake: Setup content and build dictionaries.");
@@ -61,6 +64,23 @@ namespace ChristinaCreatesGames.Typography.Book
         {
             Debug.Log("[BookContents] Start: Initializing section subscriptions.");
             StartCoroutine(InitSectionSubscriptions());
+
+            // Optionaler NPC-Starttrigger (einmalig bei Spielstart)
+            if (!startTriggerExecuted)
+            {
+                if (_triggerDictionary.TryGetValue(0, out string startEvent)) // Seite 0 als Starttrigger
+                {
+                    narrativeTrigger.UpdateAvailableTriggers();
+                    int idx = narrativeTrigger.availableTriggers.IndexOf(startEvent);
+                    if (idx >= 0)
+                    {
+                        narrativeTrigger.selectedTriggerIndex = idx;
+                        narrativeTrigger.InvokeSelectedTrigger();
+                        Debug.Log($"[BookContents] Starttrigger '{startEvent}' ausgelöst.");
+                    }
+                    startTriggerExecuted = true; // Start-Trigger wurde ausgeführt
+                }
+            }
         }
 
         private IEnumerator InitSectionSubscriptions()
@@ -126,30 +146,14 @@ namespace ChristinaCreatesGames.Typography.Book
             if (currentRight >= total)
             {
                 Debug.Log($"[BookContents] Ende erreicht auf Seite {currentRight} von {total}");
-                if (_triggerDictionary != null && _triggerDictionary.TryGetValue(currentLeft, out string eventName))
-                {
-                    narrativeTrigger.UpdateAvailableTriggers();
-                    int idx = narrativeTrigger.availableTriggers.IndexOf(eventName);
-                    Debug.Log($"[BookContents] availableTriggers enthält {narrativeTrigger.availableTriggers.Count} Einträge");
+                
+                // CheckForTrigger wird hier einmalig aufgerufen, wenn das Ende erreicht ist
+                CheckForTrigger();
 
-                    if (idx >= 0)
-                    {
-                        narrativeTrigger.selectedTriggerIndex = idx;
-                        narrativeTrigger.InvokeSelectedTrigger();
-                        Debug.Log($"[BookContents] Trigger '{eventName}' (Index {idx}) ausgelöst.");
-                    }
-                    else
-                        Debug.LogWarning($"[BookContents] Trigger '{eventName}' nicht in availableTriggers gefunden.");
-
-                    if (nextPageObject != null)
-                    {
-                        nextPageObject.SetActive(false);
-                        Debug.Log("[BookContents] NextPage-Button deaktiviert.");
-                    }
-                }
-                else
+                if (nextPageObject != null)
                 {
-                    Debug.LogWarning($"[BookContents] Kein Trigger für Seite {currentLeft} definiert.");
+                    nextPageObject.SetActive(false);
+                    Debug.Log("[BookContents] NextPage-Button deaktiviert.");
                 }
                 return;
             }
@@ -162,7 +166,6 @@ namespace ChristinaCreatesGames.Typography.Book
 
             rightSide.pageToDisplay = leftSide.pageToDisplay + 1;
             UpdatePagination();
-            CheckForTrigger();
         }
 
         private void CheckForTrigger()
@@ -212,13 +215,15 @@ namespace ChristinaCreatesGames.Typography.Book
             {
                 Debug.Log($"[BookContents] Alter Content-Länge: {content.Length}");
                 // Text anhängen, nicht ersetzen
-                if (content == ""){
+                if (content == "")
+                {
                     content = nextText;
                 }
-                else{
-                    content += "/n" + "/n" +  nextText;
+                else
+                {
+                    content += "/n" + "/n" + nextText;
                 }
-                
+
                 Debug.Log($"[BookContents] Neuer Content-Länge: {content.Length}");
 
                 SetupContent();

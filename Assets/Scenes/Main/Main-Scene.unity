@@ -381,6 +381,81 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5109876859728301467, guid: 9189ffe55ceab914a8d9dbb488ce29df, type: 3}
   m_PrefabInstance: {fileID: 1193743818}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &774940263
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 774940264}
+  - component: {fileID: 774940266}
+  - component: {fileID: 774940265}
+  m_Layer: 5
+  m_Name: T-Taste
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &774940264
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774940263}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1646837803}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 401, y: -316}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &774940265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774940263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 989bc05094c803347843a6829d74dd99, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &774940266
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774940263}
+  m_CullTransparentMesh: 1
 --- !u!1 &803684208
 GameObject:
   m_ObjectHideFlags: 0
@@ -676,28 +751,16 @@ PrefabInstance:
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1299310279635136043, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 4.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1299310279635136043, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1299310279635136043, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1299310279635136043, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1299310279635136043, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 235
+      value: 399.4
       objectReference: {fileID: 0}
     - target: {fileID: 1299310279635136043, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -10
+      value: -315.1
       objectReference: {fileID: 0}
     - target: {fileID: 1299310279635136043, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: m_ConstrainProportionsScale
@@ -788,6 +851,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: tTasteHint
+      value: 
+      objectReference: {fileID: 774940263}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: tTasteImage
+      value: 
+      objectReference: {fileID: 774940263}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: nextPageObject
       value: 
       objectReference: {fileID: 1400197825}
@@ -800,8 +871,20 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: triggerPages.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: choiceContents.Array.size
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: triggerPages.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: triggerAudioClips.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: pageTriggers.Array.data[0].eventName
@@ -1481,7 +1564,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: choiceContents.Array.data[12].choiceName
-      value: '5042e242-1d16-11f0-a3d8-42010a7be01a '
+      value: 5042e242-1d16-11f0-a3d8-42010a7be01a
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: choiceContents.Array.data[12].newContent
@@ -1513,9 +1596,7 @@ PrefabInstance:
         verdammt!\xBB, zischte ich.\r\nSchnell zerrte ich Amber mit mir hinter ein
         Regal. Gerade rechtzeitig. Keith und Melissa marschierten an uns vorbei.\r\nIch
         verdrehte die Augen und zog Amber am \xC4rmel. \xABKomm. Bevor wir doch noch
-        f\xFCr Einbrecher gehalten werden.\xBB\r\nUnd mit schnellen, leisen Schritten
-        verschwanden wir genauso unbemerkt wieder aus dem Museum, wie wir gekommen
-        waren.\r\n"
+        f\xFCr Einbrecher gehalten werden.\xBB\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 5198421846402412849, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: choiceContents.Array.data[13].choiceName
@@ -1789,6 +1870,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5766205926528956805, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       insertIndex: 1
       addedObject: {fileID: 1479141830}
+    - targetCorrespondingSourceObject: {fileID: 1633758964747477983, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 774940264}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
 --- !u!224 &1076103841 stripped
@@ -2157,6 +2241,11 @@ Transform:
   - {fileID: 628561968}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1646837803 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1633758964747477983, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+  m_PrefabInstance: {fileID: 1076103840}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1659876376
 GameObject:
   m_ObjectHideFlags: 0
@@ -2538,7 +2627,7 @@ MonoBehaviour:
       Spass!'
     characterId: 081bbff2-de1e-11ef-ad7d-42010a7be016
   - sectionId: d73ff812-1d15-11f0-8b3f-42010a7be01a
-    sectionName: To_coice_trigger
+    sectionName: To_choice_trigger
     behaviorTreeConstants: 
     objective: "Say this paragraph to the user inclusive the question at the end:
       \nWas sollen wir nun machen? Sollen wir den beiden hinterherspionieren? Oder
