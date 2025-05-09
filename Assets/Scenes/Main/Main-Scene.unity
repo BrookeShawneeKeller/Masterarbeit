@@ -123,6 +123,16 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &17620413 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1514468120490647774, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+  m_PrefabInstance: {fileID: 1076103840}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &19990646 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5553930714762645433, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+  m_PrefabInstance: {fileID: 1076103840}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &249448619 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8995187497845040399, guid: 69dd98fa71bd5e649969b163d693f61b, type: 3}
@@ -895,9 +905,13 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1514468120490647774, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1633758964747477983, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -2.8
       objectReference: {fileID: 0}
     - target: {fileID: 1633758964747477983, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1836,6 +1850,10 @@ PrefabInstance:
         an mir vorbeizogen, wusste ich, dass das hier nicht das letzte Mal war, dass
         ich mich mit Keiths Geheimnissen besch\xE4ftigen w\xFCrde."
       objectReference: {fileID: 0}
+    - target: {fileID: 5553930714762645433, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5766205926528956805, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1980,6 +1998,10 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 8316029302857702823, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8343112355405219230, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: m_ActiveFontFeatures.Array.data[0]
       value: 1801810542
@@ -2114,6 +2136,62 @@ PrefabInstance:
     - target: {fileID: 5594101043587208993, guid: 9189ffe55ceab914a8d9dbb488ce29df, type: 3}
       propertyPath: m_Name
       value: 3D-Book
+      objectReference: {fileID: 0}
+    - target: {fileID: 6757012015260410528, guid: 9189ffe55ceab914a8d9dbb488ce29df, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6757012015260410528, guid: 9189ffe55ceab914a8d9dbb488ce29df, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6757012015260410528, guid: 9189ffe55ceab914a8d9dbb488ce29df, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6757012015260410528, guid: 9189ffe55ceab914a8d9dbb488ce29df, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6757012015260410528, guid: 9189ffe55ceab914a8d9dbb488ce29df, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6757012015260410528, guid: 9189ffe55ceab914a8d9dbb488ce29df, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6757012015260410528, guid: 9189ffe55ceab914a8d9dbb488ce29df, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7613158355080864112, guid: 9189ffe55ceab914a8d9dbb488ce29df, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8849297330785573284, guid: 9189ffe55ceab914a8d9dbb488ce29df, type: 3}
+      propertyPath: m_DirtyAABB
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8849297330785573284, guid: 9189ffe55ceab914a8d9dbb488ce29df, type: 3}
+      propertyPath: m_AABB.m_Center.y
+      value: 0.000000029802322
+      objectReference: {fileID: 0}
+    - target: {fileID: 8849297330785573284, guid: 9189ffe55ceab914a8d9dbb488ce29df, type: 3}
+      propertyPath: m_AABB.m_Center.z
+      value: 0.56720585
+      objectReference: {fileID: 0}
+    - target: {fileID: 8849297330785573284, guid: 9189ffe55ceab914a8d9dbb488ce29df, type: 3}
+      propertyPath: m_AABB.m_Extent.x
+      value: 0.4900296
+      objectReference: {fileID: 0}
+    - target: {fileID: 8849297330785573284, guid: 9189ffe55ceab914a8d9dbb488ce29df, type: 3}
+      propertyPath: m_AABB.m_Extent.y
+      value: 0.40752736
+      objectReference: {fileID: 0}
+    - target: {fileID: 8849297330785573284, guid: 9189ffe55ceab914a8d9dbb488ce29df, type: 3}
+      propertyPath: m_AABB.m_Extent.z
+      value: 0.56727284
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2566,7 +2644,67 @@ MonoBehaviour:
   - id: dc7cae70-19db-11f0-84f5-42010a7be01a
     onSectionStart:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1857016748}
+          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+          m_MethodName: SetTrigger
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: RotateAndOpenBook
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 2111429888}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 1400197825}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 17620413}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 19990646}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
     onSectionEnd:
       m_PersistentCalls:
         m_Calls: []
@@ -2753,7 +2891,7 @@ MonoBehaviour:
     behaviorTreeConstants: 
     objective: "Say this paragraph to the user inclusive the question at the end:\nHallo,
       ich begr\xFCsse dich herzlich im Buch Cosmopolitan on the Rocks - Die Verwicklung.
-      Ich bin die Protagonistin Beverly Kiten, eine New Yorker Journalistin beim
+      Ich bin die Protagonistin Beverly Keyten, eine New Yorker Journalistin beim
       angesehenen Fernsehsender Big Apple News in New York. Ich lade dich ein, meine
       Welt zu entdecken. Bist du bereit?\n\nIf the user response is not an answer
       to the above question then answer the user question and ask if user would like
@@ -2964,6 +3102,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2111429888 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7613158355080864112, guid: 9189ffe55ceab914a8d9dbb488ce29df, type: 3}
+  m_PrefabInstance: {fileID: 1193743818}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

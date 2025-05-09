@@ -104,6 +104,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: 3D-Book
       objectReference: {fileID: 0}
+    - target: {fileID: 4299901466802140116, guid: 1fe04e9452b6e964787c70b66c04b690, type: 3}
+      propertyPath: m_DirtyAABB
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4299901466802140116, guid: 1fe04e9452b6e964787c70b66c04b690, type: 3}
+      propertyPath: m_AABB.m_Center.y
+      value: 0.000000029802322
+      objectReference: {fileID: 0}
+    - target: {fileID: 4299901466802140116, guid: 1fe04e9452b6e964787c70b66c04b690, type: 3}
+      propertyPath: m_AABB.m_Center.z
+      value: 0.56720585
+      objectReference: {fileID: 0}
+    - target: {fileID: 4299901466802140116, guid: 1fe04e9452b6e964787c70b66c04b690, type: 3}
+      propertyPath: m_AABB.m_Extent.x
+      value: 0.4900296
+      objectReference: {fileID: 0}
+    - target: {fileID: 4299901466802140116, guid: 1fe04e9452b6e964787c70b66c04b690, type: 3}
+      propertyPath: m_AABB.m_Extent.y
+      value: 0.40752736
+      objectReference: {fileID: 0}
+    - target: {fileID: 4299901466802140116, guid: 1fe04e9452b6e964787c70b66c04b690, type: 3}
+      propertyPath: m_AABB.m_Extent.z
+      value: 0.56727284
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
