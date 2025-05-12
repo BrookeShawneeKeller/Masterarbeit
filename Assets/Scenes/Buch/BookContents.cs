@@ -25,6 +25,9 @@ namespace ChristinaCreatesGames.Typography.Book
         [Header("Narrative Design Trigger")]
         [SerializeField] private NarrativeDesignTrigger narrativeTrigger;
 
+        [Header("Animator vom Prefab in Szene")]
+        [SerializeField] private Animator prefabAnimator;   
+
         [Tooltip("Liste der Seitenzahlen und zugehörigen ConvAI-Triggernamen")]
         [SerializeField] private List<PageTrigger> pageTriggers = new();
         private Dictionary<int, string> _triggerDictionary;
@@ -143,7 +146,7 @@ namespace ChristinaCreatesGames.Typography.Book
             int currentRight = rightSide.pageToDisplay;
             int total = rightSide.textInfo.pageCount;
             Debug.Log($"[BookContents] NextPage clicked: left={currentLeft}, right={currentRight}, totalPages={total}");
-
+            
             if (currentRight >= total)
             {
                 Debug.Log($"[BookContents] Ende erreicht auf Seite {currentRight} von {total}");
@@ -164,6 +167,8 @@ namespace ChristinaCreatesGames.Typography.Book
                 }
                 return;
             }
+            else
+                prefabAnimator.SetTrigger("AnimatePage");
 
             Debug.Log("[BookContents] Normales Blättern");
             if (leftSide.pageToDisplay >= total - 1)
