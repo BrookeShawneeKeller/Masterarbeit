@@ -8,53 +8,76 @@ namespace ChristinaCreatesGames.Typography.Book
 {
     public class BookContents : MonoBehaviour
     {
+        //VARIABLEN / PARAMETER -> werden im Editor gesetzt.
         [TextArea(10, 20)]
         [SerializeField] private string content;
         [Space]
+
+
+        [Header("Page References)")]
+        [Tooltip("Left and right page of book")]
         [SerializeField] private TMP_Text leftSide;
         [SerializeField] private TMP_Text rightSide;
         [Space]
+
+
+        [Header("Page Navigation (Pagination)")]
+        [Tooltip("Left and right page number text field")]
         [SerializeField] private TMP_Text leftPagination;
         [SerializeField] private TMP_Text rightPagination;
 
+
         [Header("UI Controls")]
-        [Tooltip("Das GameObject, das den Next-Page-Knopf enthält")]
+        [Tooltip("Next-Page Button Reference")]
         [SerializeField] private GameObject nextPageObject;
         [SerializeField] private GameObject talkTaste;
 
-        [Header("Narrative Design Trigger")]
+
+        [Header("Narrative Design Trigger Script (ConvAI)")]
         [SerializeField] private NarrativeDesignTrigger narrativeTrigger;
 
-        [Header("Animator vom Prefab in Szene")]
+
+        [Header("3d-Book Animator")]
         [SerializeField] private Animator prefabAnimator;   
+
 
         [Tooltip("Liste der Seitenzahlen und zugehörigen ConvAI-Triggernamen")]
         [SerializeField] private List<PageTrigger> pageTriggers = new();
         private Dictionary<int, string> _triggerDictionary;
 
+
         [System.Serializable]
         public class PageTrigger
         {
-            public int pageNumber;
-            public string eventName;
+            public int pageNumber; //Die Numer welche das Event triggered
+            public string eventName; //Das Event, welches bei der Nummer getriggered wird. EventName von ConvAI Narratvie Design
         }
+
 
         [Header("Choice → neuer Text")]
         [Tooltip("Mapping von Section-ID zu neuem Buchtext")]
-        [SerializeField] private List<ChoiceContent> choiceContents = new();
-        private Dictionary<string, string> _choiceMap;
-
+        [SerializeField] private List<ChoiceContent> choiceContents = new(); 
+        private Dictionary<string, string> _choiceMap; 
         [System.Serializable]
         public class ChoiceContent
         {
             public string choiceName;
             [TextArea(5, 10)]
-            public string newContent;
+            public string newContent; //Text welcher zur Choice gehört
+
         }
+
 
         // Neue Variable, um den Start-Trigger einmalig auszuführen
         [SerializeField] private bool startTriggerExecuted = false;
 
+
+
+
+        //FUNKTION
+
+        //Funktion Awake wird einmal zu Beginn ausgeführt.
+        //Erstellt die Dictionaires anhand von Input und updated das Buch.    
         private void Awake()
         {
             Debug.Log("[BookContents] Awake: Setup content and build dictionaries.");
@@ -64,6 +87,8 @@ namespace ChristinaCreatesGames.Typography.Book
             BuildChoiceMap();
         }
 
+    
+        //Start die Section Subscriptions -> Events werden gemappt zu den 'Listener'
         private void Start()
         {
             Debug.Log("[BookContents] Start: Initializing section subscriptions.");
@@ -87,6 +112,8 @@ namespace ChristinaCreatesGames.Typography.Book
             }
         }
 
+
+        //Section Events von ConvAI Character, welche wir 'beobachten' müssen, um darauf zu reagieren können.
         private IEnumerator InitSectionSubscriptions()
         {
             yield return new WaitUntil(() =>
@@ -100,6 +127,8 @@ namespace ChristinaCreatesGames.Typography.Book
             SubscribeSectionEvents();
         }
 
+
+        //Erstellt das Trigger Dictionary -> bestimmte Seitenzahlen triggern ein Event, hier hinterlegt.
         private void BuildTriggerDictionary()
         {
             _triggerDictionary = new Dictionary<int, string>();
@@ -113,6 +142,8 @@ namespace ChristinaCreatesGames.Typography.Book
             }
         }
 
+
+        //Die ChoiceMap beinhaltet welche Section ID welchen Text ans Buch hängt. Somit ist der Ablauf des Buches abhängig von Spieler Input.
         private void BuildChoiceMap()
         {
             _choiceMap = new Dictionary<string, string>();
@@ -126,6 +157,8 @@ namespace ChristinaCreatesGames.Typography.Book
             }
         }
 
+
+        //Textseiten werden mit Content gefüllt -> dies ist der Buchtext
         private void SetupContent()
         {
             leftSide.text = content;
@@ -133,6 +166,8 @@ namespace ChristinaCreatesGames.Typography.Book
             Debug.Log($"[BookContents] SetupContent: Text gesetzt (Länge: {content.Length} Zeichen)");
         }
 
+
+        //Seitenzahlen am unteren Rand des Buches werden upgedated
         private void UpdatePagination()
         {
             leftPagination.text = leftSide.pageToDisplay.ToString();
@@ -140,6 +175,8 @@ namespace ChristinaCreatesGames.Typography.Book
             Debug.Log($"[BookContents] UpdatePagination: links={leftSide.pageToDisplay}, rechts={rightSide.pageToDisplay}");
         }
 
+
+        //Diese Funktion bestimmt was passiert, beim Klick auf den "Next Page Button".
         public void NextPage()
         {
             int currentLeft = leftSide.pageToDisplay;
@@ -167,6 +204,7 @@ namespace ChristinaCreatesGames.Typography.Book
                 }
                 return;
             }
+            //Wenn wir nicht das Ende des Buches erreicht haben, dann spielen wir die Seiten-Blättern Animation ab.
             else
                 prefabAnimator.SetTrigger("AnimatePage");
 
@@ -180,6 +218,10 @@ namespace ChristinaCreatesGames.Typography.Book
             UpdatePagination();
         }
 
+
+        //Wir prüfen, ob ein Trigger korrekt gesetzt wurde, am Ende des Buchtexts.
+        //Wenn ja, dann triggern wir ein Event, mit einer Frage des ConvAI Characters.
+        //Nach Beantwortung durch Spieler -> neuer Buchtext wird hinzugefügt.
         private void CheckForTrigger()
         {
             int currentPage = leftSide.pageToDisplay;
@@ -213,6 +255,8 @@ namespace ChristinaCreatesGames.Typography.Book
                 Debug.Log($"[BookContents] Kein Trigger für Seite {currentPage}.");
         }
 
+    
+        //Wir fügen 'Listener' pro Section Event hinzu. Diese werden gebraucht, wenn der Character eine Frage stellt und der Spieler eine Antwort geben muss.
         private void SubscribeSectionEvents()
         {
             var ndManager = narrativeTrigger.convaiNPC.narrativeDesignManager;
@@ -226,6 +270,9 @@ namespace ChristinaCreatesGames.Typography.Book
             }
         }
 
+
+        //Prüft den Start einer neuen Section und passt den Text an.
+        //Aktiviert auch den Button um blättern zu können.
         private void HandleSectionStart(string sectionId)
         {
             Debug.Log($"[BookContents] HandleSectionStart: Abschnitt '{sectionId}' gestartet.");
