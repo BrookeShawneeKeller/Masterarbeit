@@ -171,11 +171,12 @@
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\Fonts\Merriweather(1)\README.txt" />
     <None Include="Assets\Convai\Demo\Avatars\Convai NPC Amelia\Shaders\RL_Amplify_SkinShader_Variants_3D.shader" />
+    <None Include="Assets\Fonts\Gabarito(1)\README.txt" />
     <None Include="Assets\CC4 Characters\Convai_NPC_Beverly\Convai_NPC_Beverly_ImportInfo.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\Convai\Demo\Avatars\Convai NPC Amelia\Shaders\RL_Amplify_CorneaShaderParallax_3D.shader" />
-    <None Include="Assets\TextMesh Pro\Glyph Report.txt" />
     <None Include="Assets\Convai\Plugins\gRPC\System.Buffers\System.Buffers.dll" />
     <None Include="Assets\Convai\Plugins\gRPC\System.Memory\LICENSE.txt" />
     <None Include="Assets\Convai\Plugins\gRPC\Grpc.Core\lib\net45\Grpc.Core.dll" />
@@ -187,6 +188,8 @@
     <None Include="Assets\Convai\Demo\Avatars\Convai NPC Amelia\Shaders\RL_Amplify_HairShader_1st_Pass_Variants_3D.shader" />
     <None Include="Assets\Convai\Art\UI\Custom Fonts\Space_Grotesk\OFL.txt" />
     <None Include="Assets\Convai\Plugins\gRPC\System.Diagnostics.DiagnosticSource\LICENSE.txt" />
+    <None Include="Assets\Fonts\Crimson_Text\OFL.txt" />
+    <None Include="Assets\Fonts\Merriweather(1)\OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\Convai\Demo\Avatars\Convai NPC Amelia\Shaders\RL_Amplify_HairShader_Coverage_3D.shader" />
     <None Include="Assets\Convai\Plugins\gRPC\Google.Protobuf\Google.Protobuf.dll" />
@@ -217,6 +220,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\Convai\Demo\Avatars\Convai NPC Amelia\Shaders\RL_Amplify_TeethShader_3D.shader" />
     <None Include="Assets\Convai\Plugins\gRPC\Grpc.Core\lib\net45\Grpc.Core.xml" />
+    <None Include="Assets\Fonts\Gabarito(1)\OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\Convai\Demo\Avatars\Convai NPC Amelia\Shaders\RL_EyeOcclusionShader_3D.shader" />
     <None Include="Assets\Convai\Demo\Avatars\Convai NPC Amelia\Shaders\RL_EyeShaderParallax_Dummy_3D.shader" />
