@@ -1023,7 +1023,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 789530157710790436, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 260
+      value: 251
       objectReference: {fileID: 0}
     - target: {fileID: 789530157710790436, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1091,7 +1091,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1936092219753782221, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -260
+      value: -268
       objectReference: {fileID: 0}
     - target: {fileID: 1936092219753782221, guid: 6943c6cbf74b0a546bfbe13a42c35e31, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2315,6 +2315,10 @@ PrefabInstance:
     - target: {fileID: 5594101043587208993, guid: 9189ffe55ceab914a8d9dbb488ce29df, type: 3}
       propertyPath: m_Name
       value: 3D-Book
+      objectReference: {fileID: 0}
+    - target: {fileID: 5594101043587208993, guid: 9189ffe55ceab914a8d9dbb488ce29df, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6757012015260410528, guid: 9189ffe55ceab914a8d9dbb488ce29df, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
