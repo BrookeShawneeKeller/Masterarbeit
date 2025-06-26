@@ -49,7 +49,7 @@ namespace ChristinaCreatesGames.Typography.Book
         public class PageTrigger
         {
             public int pageNumber; // Die Nummer, welche das Event triggert
-            public string eventName; // Das Event, welches bei der Nummer getriggert wird
+            public string eventName; // Das Event, welches bei der Nummer getriggert wird. EventName von ConvAI Narratvie Design
         }
 
         [Header("Choice → neuer Text")]
@@ -64,9 +64,14 @@ namespace ChristinaCreatesGames.Typography.Book
             [TextArea(5, 10)]
             public string newContent; // Text, welcher zur Choice gehört
         }
-
+        // Neue Variable, um den Start-Trigger einmalig auszuführen
         [SerializeField] private bool startTriggerExecuted = false;
 
+
+        //FUNKTION
+
+        //Funktion Awake wird einmal zu Beginn ausgeführt.
+        //Erstellt die Dictionaires anhand von Input und updated das Buch.  
         private void Awake()
         {
             Debug.Log("[BookContents] Awake: Setup content and build dictionaries.");
@@ -76,14 +81,18 @@ namespace ChristinaCreatesGames.Typography.Book
             BuildChoiceMap();
         }
 
+
+        //Start die Section Subscriptions -> Events werden gemappt zu den 'Listener'
         private void Start()
         {
             Debug.Log("[BookContents] Start: Initializing section subscriptions.");
             StartCoroutine(InitSectionSubscriptions());
 
+
+            // Optionaler NPC-Starttrigger (einmalig bei Spielstart)            
             if (!startTriggerExecuted)
             {
-                if (_triggerDictionary.TryGetValue(0, out string startEvent))
+                if (_triggerDictionary.TryGetValue(0, out string startEvent)) // Seite 0 als Starttrigger
                 {
                     narrativeTrigger.UpdateAvailableTriggers();
                     int idx = narrativeTrigger.availableTriggers.IndexOf(startEvent);
@@ -93,11 +102,13 @@ namespace ChristinaCreatesGames.Typography.Book
                         narrativeTrigger.InvokeSelectedTrigger();
                         Debug.Log($"[BookContents] Starttrigger '{startEvent}' ausgelöst.");
                     }
-                    startTriggerExecuted = true;
+                    startTriggerExecuted = true;  // Start-Trigger wurde ausgeführt
                 }
             }
         }
 
+
+        //Section Events von ConvAI Character, welche wir 'beobachten' müssen, um darauf zu reagieren können.
         private IEnumerator InitSectionSubscriptions()
         {
             yield return new WaitUntil(() =>
@@ -111,6 +122,8 @@ namespace ChristinaCreatesGames.Typography.Book
             SubscribeSectionEvents();
         }
 
+
+        //Erstellt das Trigger Dictionary -> bestimmte Seitenzahlen triggern ein Event, hier hinterlegt.
         private void BuildTriggerDictionary()
         {
             _triggerDictionary = new Dictionary<int, string>();
@@ -124,6 +137,8 @@ namespace ChristinaCreatesGames.Typography.Book
             }
         }
 
+
+        //Die ChoiceMap beinhaltet welche Section ID welchen Text ans Buch hängt. Somit ist der Ablauf des Buches abhängig von Spieler Input.
         private void BuildChoiceMap()
         {
             _choiceMap = new Dictionary<string, string>();
@@ -137,6 +152,8 @@ namespace ChristinaCreatesGames.Typography.Book
             }
         }
 
+
+        //Textseiten werden mit Content gefüllt -> dies ist der Buchtext
         private void SetupContent()
         {
             leftSide.text = content;
@@ -144,6 +161,8 @@ namespace ChristinaCreatesGames.Typography.Book
             Debug.Log($"[BookContents] SetupContent: Text gesetzt (Länge: {content.Length} Zeichen)");
         }
 
+
+        //Seitenzahlen am unteren Rand des Buches werden upgedated
         private void UpdatePagination()
         {
             leftPagination.text = leftSide.pageToDisplay.ToString();
@@ -151,6 +170,8 @@ namespace ChristinaCreatesGames.Typography.Book
             Debug.Log($"[BookContents] UpdatePagination: links={leftSide.pageToDisplay}, rechts={rightSide.pageToDisplay}");
         }
 
+
+        //Diese Funktion bestimmt was passiert, beim Klick auf den "Next Page Button".
         public void NextPage()
         {
             int currentLeft = leftSide.pageToDisplay;
@@ -161,6 +182,8 @@ namespace ChristinaCreatesGames.Typography.Book
             if (currentRight >= total)
             {
                 Debug.Log($"[BookContents] Ende erreicht auf Seite {currentRight} von {total}");
+
+                 // CheckForTrigger wird hier einmalig aufgerufen, wenn das Ende erreicht ist               
                 CheckForTrigger();
                 if (nextPageObject != null)
                 {
@@ -182,7 +205,7 @@ namespace ChristinaCreatesGames.Typography.Book
                 Debug.Log("[BookContents] PageTurn SFX abgespielt.");
             }
 
-            // Animation abspielen
+            //Wenn wir nicht das Ende des Buches erreicht haben, dann spielen wir die Seiten-Blättern Animation ab.
             prefabAnimator.SetTrigger("AnimatePage");
             Debug.Log("[BookContents] Normales Blättern");
 
@@ -196,58 +219,62 @@ namespace ChristinaCreatesGames.Typography.Book
             UpdatePagination();
         }
 
+
+        //Wir prüfen, ob ein Trigger korrekt gesetzt wurde, am Ende des Buchtexts.
+        //Wenn ja, dann triggern wir ein Event, mit einer Frage des ConvAI Characters.
+        //Nach Beantwortung durch Spieler -> neuer Buchtext wird hinzugefügt.
         private void CheckForTrigger()
-{
-    int currentPage = leftSide.pageToDisplay;
-    Debug.Log($"[BookContents] CheckForTrigger auf Seite {currentPage}");
-    
-    if (_triggerDictionary != null && _triggerDictionary.TryGetValue(currentPage, out string eventName))
-    {
-        Debug.Log($"[BookContents] Trigger gefunden: {eventName}");
-        
-        narrativeTrigger.UpdateAvailableTriggers();
-        int idx = narrativeTrigger.availableTriggers.IndexOf(eventName);
-        
-        if (idx >= 0)
         {
-            narrativeTrigger.selectedTriggerIndex = idx;
-            narrativeTrigger.InvokeSelectedTrigger();
-            Debug.Log($"[BookContents] Trigger '{eventName}' ausgelöst.");
+            int currentPage = leftSide.pageToDisplay;
+            Debug.Log($"[BookContents] CheckForTrigger auf Seite {currentPage}");
+
+            if (_triggerDictionary != null && _triggerDictionary.TryGetValue(currentPage, out string eventName))
+            {
+                Debug.Log($"[BookContents] Trigger gefunden: {eventName}");
+
+                narrativeTrigger.UpdateAvailableTriggers();
+                int idx = narrativeTrigger.availableTriggers.IndexOf(eventName);
+
+                if (idx >= 0)
+                {
+                    narrativeTrigger.selectedTriggerIndex = idx;
+                    narrativeTrigger.InvokeSelectedTrigger();
+                    Debug.Log($"[BookContents] Trigger '{eventName}' ausgelöst.");
 
                     if (nextPageObject != null)
-            {
-                nextPageObject.SetActive(false);
-                Debug.Log("[BookContents] NextPage-Button deaktiviert nach Trigger.");
-            }
-            if (talkTaste != null)
-            {
-                talkTaste.SetActive(false);
-                Debug.Log("[BookContents] Talk Taste deaktiviert nach Trigger.");
-            }
+                    {
+                        nextPageObject.SetActive(false);
+                        Debug.Log("[BookContents] NextPage-Button deaktiviert nach Trigger.");
+                    }
+                    if (talkTaste != null)
+                    {
+                        talkTaste.SetActive(false);
+                        Debug.Log("[BookContents] Talk Taste deaktiviert nach Trigger.");
+                    }
 
-            // *** NEU: Buch-Schließ-Animation bei "to_goodbye_trigger" ***
-            if (eventName == "to_goodbye_trigger")
+                    // Buch-Schliess-Animation bei "to_goodbye_trigger"
+                    if (eventName == "to_goodbye_trigger")
+                    {
+                        Debug.Log("[BookContents] Last trigger 'to_goodbye_trigger' erkannt – Buch wird geschlossen.");
+                        leftSide.text = "";
+                        rightSide.text = "";
+
+                        talkTaste.SetActive(false);
+                        prefabAnimator.SetTrigger("CloseBook");
+                    }
+                }
+                else
+                {
+                    Debug.LogWarning($"[BookContents] Trigger '{eventName}' nicht gefunden.");
+                }
+            }
+            else
             {
-                Debug.Log("[BookContents] Last trigger 'to_goodbye_trigger' erkannt – Buch wird geschlossen.");
-                leftSide.text = "";
-                rightSide.text = "";
-                
-                talkTaste.SetActive(false);
-                prefabAnimator.SetTrigger("CloseBook");
+                Debug.Log($"[BookContents] Kein Trigger für Seite {currentPage}.");
             }
         }
-        else
-        {
-            Debug.LogWarning($"[BookContents] Trigger '{eventName}' nicht gefunden.");
-        }
-    }
-    else
-    {
-        Debug.Log($"[BookContents] Kein Trigger für Seite {currentPage}.");
-    }
-}
 
-
+        //Wir fügen 'Listener' pro Section Event hinzu. Diese werden gebraucht, wenn der Character eine Frage stellt und der Spieler eine Antwort geben muss.
         private void SubscribeSectionEvents()
         {
             var ndManager = narrativeTrigger.convaiNPC.narrativeDesignManager;
@@ -258,6 +285,9 @@ namespace ChristinaCreatesGames.Typography.Book
             }
         }
 
+
+        //Prüft den Start einer neuen Section und passt den Text an.
+        //Aktiviert auch den Button um blättern zu können.
         private void HandleSectionStart(string sectionId)
         {
             if (_choiceMap.TryGetValue(sectionId, out string nextText))
